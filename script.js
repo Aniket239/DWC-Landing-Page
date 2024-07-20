@@ -15,3 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('#nav-links li');
+
+    navLinks.forEach((link, index) => {
+        setTimeout(() => {
+            link.classList.add('animate');
+        }, 200 * index); // Adjust the delay as needed
+    });
+});
+
