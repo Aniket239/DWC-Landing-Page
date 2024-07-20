@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
-            const offset = 60; // Adjust this value based on your fixed navbar height
+            const offset = 100; // Adjust this value based on your fixed navbar height
 
             window.scrollTo({
                 top: targetSection.offsetTop - offset,
