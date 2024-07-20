@@ -1,3 +1,5 @@
+
+// ================================================== scroll to section =========================================================
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('nav ul li a');
 
@@ -6,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
-            const offset = 100; // Adjust this value based on your fixed navbar height
+            const offset = 70; // Adjust this value based on your fixed navbar height
 
             window.scrollTo({
                 top: targetSection.offsetTop - offset,
@@ -15,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// ================================================== nav items animation =========================================================
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('#nav-links li');
@@ -25,4 +30,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 200 * index); // Adjust the delay as needed
     });
 });
+
+// ================================================== about the project animation =========================================================
+
+
+const aboutProjectSection = document.querySelector('#about-the-project');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+            observer.unobserve(entry.target);
+        }
+    });
+});
+
+observer.observe(aboutProjectSection);
+
 

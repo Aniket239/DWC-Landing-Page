@@ -28,7 +28,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
-    background-color: #F2F2F2;
+    background-color: white;
+    z-index: 100;
 }
 
 nav ul{
@@ -87,6 +88,20 @@ main{
     flex-direction: column;
 }
 
+/* Define the animation effect for the project overview section */
+#about-the-project {
+    opacity: 0;
+    transform: translateY(180px); /* Start the section 30px below its final position */
+    transition: opacity 1.5s, transform 1.5s;
+}
+
+/* Animate the project overview section when it becomes visible */
+#about-the-project.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 .project-about
 {   
     width: 70vw;
@@ -111,6 +126,24 @@ main{
     align-items: center;
     margin: 0 50px 50px 50px;
 }
+
+.download-brochure {
+    padding: 10px 20px;
+    background-color: #004221;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+.download-brochure:hover {
+    background-color: #59a14f; /* Change to a lighter shade for the glow effect */
+}
+
 
 .project-config{
     height: 100vh;
