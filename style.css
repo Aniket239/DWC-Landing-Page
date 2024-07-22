@@ -63,8 +63,10 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: black;
-    font-size: 22px;
+    color: #333;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
 }
 
 nav ul li a img{
@@ -81,7 +83,7 @@ main{
 }
 
 .about-the-project{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     padding-top: 50px;
     align-items: center;
@@ -101,6 +103,11 @@ main{
     transform: translateY(0);
 }
 
+.about-the-project h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 34px;
+}
+
 
 .project-about
 {   
@@ -109,6 +116,7 @@ main{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    font-family: "Poppins", sans-serif;
 }
 
 .project-about-icons{
@@ -129,7 +137,7 @@ main{
 
 .download-brochure {
     padding: 10px 20px;
-    background-color: #004221;
+    background-color: #215B43;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -141,14 +149,160 @@ main{
 }
 
 .download-brochure:hover {
-    background-color: #59a14f; /* Change to a lighter shade for the glow effect */
+    background-color: #143628; /* Change to a lighter shade for the glow effect */
 }
 
 
-.project-config{
+.form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
-    background-color: #3D9970;
+    width: 100vw;
+    display: none;
+    place-items: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 50;
+    overflow: auto;
 }
+
+.material-symbols-outlined {
+    position: absolute;
+    top: 40px; /* Adjust as needed for vertical position */
+    right: 40px; /* Adjust as needed for horizontal position */
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    cursor: pointer;
+}
+
+
+.enquiry-form {
+    position: relative;
+    width: 30%;
+    margin:0 auto;
+    padding: 60px;
+    background: #ceffd1;
+    border-radius: 0px;
+    border: 2px solid #173d2d;
+}
+
+.form-heading {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+}
+
+input[type="submit"] {
+    background-color: #215B43;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #173d2d;
+}
+
+/* Hide the up and down arrows for number input field */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.unit-details {
+    height: 80vh;
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.unit-details h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 34px;
+    color: black; /* Golden heading color */
+}
+
+.unit-cards {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.unit-details .unit-card {
+    height: 40vh;
+    width: 25vw;
+    box-shadow: 0 8px 16px rgba(33, 91, 67, 0.3); /* Shadow effect on hover */
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.unit-details .unit-card:hover {
+    box-shadow: 0 8px 16px rgba(33, 91, 67, 0.4); /* Shadow effect on hover */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.unit-details .unit-card h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    color: #215B43; /* Golden text color */
+}
+
+.unit-details .unit-card p{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+
+.unit-details .unit-card button.view-details {
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: 2px solid #215B43; /* Golden border color for the button */
+    background-color: white;
+    color: #215B43; /* Golden text color */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+.unit-details .unit-card button.view-details:hover {
+    background-color: #215B43; /* Color change on button hover */
+    color: white;
+}
+
 
 .gallery{
     height: 100vh;

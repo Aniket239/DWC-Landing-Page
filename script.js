@@ -47,4 +47,51 @@ const observer = new IntersectionObserver(entries => {
 
 observer.observe(aboutProjectSection);
 
+// ============================================== form ============================================
+function enquiryForm() {
+    const formContainer = document.getElementById('form-container');
+    const body = document.getElementsByTagName('body')[0];
+    formContainer.style.display = 'grid'; // Display the form container
+    body.style.overflow = 'hidden';
+}
+
+// Add an event listener to the "Download Brochure" button
+const downloadBrochureBtn = document.querySelector('.download-brochure');
+downloadBrochureBtn.addEventListener('click', enquiryForm);
+
+const closeButton = document.getElementById('close-button');
+closeButton.addEventListener('click', closeForm);
+
+function closeForm(){
+    const formContainer = document.getElementById('form-container');
+    const body = document.getElementsByTagName('body')[0];
+    formContainer.style.display = 'none'; // Display the form container
+    body.style.overflow = 'auto';
+
+}
+
+document.getElementById('nameInput').setCustomValidity('Please enter your full name');
+document.getElementById('phoneInput').setCustomValidity('Please enter a valid 10-Digit mobile number');
+function clearValidityMessage(element) {
+    element.setCustomValidity('');
+}
+
+function clearValidityMessage(element) {
+    element.setCustomValidity('');
+}
+
+document.getElementById('phoneInput').addEventListener('input', function() {
+    let phoneValue = this.value;
+    let regex = /^\d{10}$/;
+    
+    if (!regex.test(phoneValue)) {
+        this.setCustomValidity('Please enter a valid 10-digit mobile number');
+    } else {
+        this.setCustomValidity('');
+    }
+});
+
+
+
+
 
