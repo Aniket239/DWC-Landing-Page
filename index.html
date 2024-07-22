@@ -39,10 +39,8 @@
     </main>
     <div class="form-container" id="form-container">
         <form action="" class="enquiry-form">
-            <span class="material-symbols-outlined" id="close-button">
-                close
-            </span>
-            <h2 class="form-heading">Enquire Now</h2>
+            <span class="material-symbols-outlined" id="close-button">close</span>
+            <h2 class="form-heading">Enquire Now</h2><br><br>
             <div class="group">
                 <input type="text" class="input" id="nameInput" required oninput="clearValidityMessage(this)">
                 <span class="highlight"></span>
@@ -56,13 +54,14 @@
                 <label>Mobile</label>
             </div><br><br>
             <div class="group">
-                <input required="" type="text" class="input">
+                <input required type="text" class="input" id="emailInput" oninput="clearValidityMessage(this)">
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>Email</label>
-              </div><br><br>
+            </div><br><br>
             <input type="submit">
         </form>
+        
     </div>
     <section class="about-the-project" id="about-the-project" class="scroll-animation"><br><br>
         <h1>Project Overview</h1><br><br><br>
@@ -120,6 +119,7 @@
     </section>
     <section class="gallery" id="gallery">
         <h1>Gallery</h1>
+        
     </section>
     <section class="amenities" id="amenities">
         <h1>Amenities</h1>

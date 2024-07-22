@@ -72,13 +72,28 @@ function closeForm(){
 
 document.getElementById('nameInput').setCustomValidity('Please enter your full name');
 document.getElementById('phoneInput').setCustomValidity('Please enter a valid 10-Digit mobile number');
-function clearValidityMessage(element) {
-    element.setCustomValidity('');
-}
+document.getElementById('emailInput').setCustomValidity('');
 
 function clearValidityMessage(element) {
     element.setCustomValidity('');
+    console.log(element.value);
+    if (element.value !== '') {
+        element.classList.add('has-value');
+    } else {
+        element.classList.remove('has-value');
+    }
 }
+
+function validatePhone(element){
+    console.log(element.value);
+    if (element.value !== '') {
+        element.classList.add('has-value');
+    } else {
+        element.classList.remove('has-value');
+    }
+}
+
+
 
 document.getElementById('phoneInput').addEventListener('input', function() {
     let phoneValue = this.value;
