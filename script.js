@@ -107,6 +107,60 @@ document.getElementById('phoneInput').addEventListener('input', function() {
 });
 
 
+// ================================= Gallery ========================================
+const tabs = document.getElementsByClassName('gallery-tab');
+const tabContents = document.getElementsByClassName('gallery-tab-content');
+
+function showTab(tabIndex) {
+    for (let content of tabContents) {
+        content.classList.remove('active');
+        content.classList.add('hidden');
+    }
+
+    setTimeout(() => {
+        tabContents[tabIndex - 1].classList.remove('hidden');
+        tabContents[tabIndex - 1].classList.add('active');
+    }, 300);
+    
+    // Manage tab focus
+    for (let tab of tabs) {
+        tab.classList.remove('focus');
+    }
+    tabs[tabIndex - 1].classList.add('focus');
+}
+
+// Initialize the first tab as active and focused
+tabs[0].classList.add('focus');
+showTab(1);
+
+// Modal functionality
+const modal = document.getElementById('modal');
+const modalImage = document.getElementById('modal-image');
+
+function openModal(imageElement) {
+    modal.style.display = "block";
+    modalImage.src = imageElement.querySelector('img').src;
+}
+
+function closeModal() {
+    modal.style.display = "none";
+}
+
+// Attach click event listeners to img-container elements
+const imgContainers = document.getElementsByClassName('img-container');
+for (let container of imgContainers) {
+    container.addEventListener('click', function() {
+        openModal(this);
+    });
+}
+
+
+
+
+
+
+
+
 
 
 
