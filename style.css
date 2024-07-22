@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -19,10 +19,10 @@
 }
 
 
-nav{
+nav {
     position: fixed;
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
     width: 96vw;
     height: 70px;
     justify-content: space-between;
@@ -30,9 +30,10 @@ nav{
     padding: 0 30px;
     background-color: white;
     z-index: 100;
+    top: 0;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -40,19 +41,24 @@ nav ul{
     flex-direction: row;
 }
 
-nav ul li{
+nav ul li {
     margin-right: 50px;
     opacity: 0;
-    transform: translateY(-30px); /* Start the items 30px above their final position */
+    transform: translateY(-30px);
+    /* Start the items 30px above their final position */
     transition: opacity 0.5s, transform 0.5s;
 }
 
 #nav-links li:nth-child(1) {
-    transition-delay: 0.1s; /* Delay for the first item */
+    transition-delay: 0.1s;
+    /* Delay for the first item */
 }
+
 #nav-links li:nth-child(2) {
-    transition-delay: 0.2s; /* Delay for the second item */
+    transition-delay: 0.2s;
+    /* Delay for the second item */
 }
+
 /* Add similar transition-delay properties for the rest of the list items */
 
 /* Animate the list items when they become visible */
@@ -61,7 +67,7 @@ nav ul li{
     transform: translateY(0);
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: #333;
     font-size: 20px;
@@ -69,23 +75,23 @@ nav ul li a{
     font-weight: bold;
 }
 
-nav ul li a img{
+nav ul li a img {
     margin-top: 3%;
     width: 160px;
     height: 70px;
 }
 
-main{
+main {
     background-image: url("assets/DWC\ banner.webp");
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    margin-top: 20px;
 }
 
-.about-the-project{
-    height: 80vh;
+.about-the-project {
+    height: 90vh;
     display: flex;
-    padding-top: 50px;
     align-items: center;
     flex-direction: column;
 }
@@ -93,7 +99,8 @@ main{
 /* Define the animation effect for the project overview section */
 #about-the-project {
     opacity: 0;
-    transform: translateY(180px); /* Start the section 30px below its final position */
+    transform: translateY(180px);
+    /* Start the section 30px below its final position */
     transition: opacity 1.5s, transform 1.5s;
 }
 
@@ -103,14 +110,13 @@ main{
     transform: translateY(0);
 }
 
-.about-the-project h1{
+.about-the-project h1 {
     font-family: "Roboto", sans-serif;
     font-size: 34px;
 }
 
 
-.project-about
-{   
+.project-about {
     width: 70vw;
     display: flex;
     justify-content: space-between;
@@ -119,7 +125,7 @@ main{
     font-family: "Poppins", sans-serif;
 }
 
-.project-about-icons{
+.project-about-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -127,7 +133,7 @@ main{
 }
 
 
-.project-about-icon{
+.project-about-icon {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -135,23 +141,55 @@ main{
     margin: 0 50px 50px 50px;
 }
 
-.download-brochure {
-    padding: 10px 20px;
-    background-color: #215B43;
+/* .download-brochure {
+    padding: 15px 20px;
+    background-color: #1a4734;
+    border: 2px solid #000000;
     color: #fff;
-    border: none;
-    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 }
 
 .download-brochure:hover {
-    background-color: #143628; /* Change to a lighter shade for the glow effect */
+    background-color: #000000; /* Change to a lighter shade for the glow effect */
+/* box-shadow: 0 0 10px #215B43; /* Add a subtle shadow effect */
+/* transform: scale(1.1); */
+/* } */
+
+.download-brochure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+    background-color: #215B43;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(255, 255, 255, 0.333);
+    border-radius: 40px 40px 40px 40px;
+    padding: 16px 24px 16px 28px;
+    transform: translate(0px, 0px) rotate(0deg);
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
 }
 
+.download-brochure:hover {
+    color: #ffffff;
+    background-color: #338a65;
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+
+.download-brochure:active {
+    box-shadow: none;
+}
 
 .form-container {
     position: fixed;
@@ -169,8 +207,10 @@ main{
 
 .material-symbols-outlined {
     position: absolute;
-    top: 40px; /* Adjust as needed for vertical position */
-    right: 40px; /* Adjust as needed for horizontal position */
+    top: 40px;
+    /* Adjust as needed for vertical position */
+    right: 40px;
+    /* Adjust as needed for horizontal position */
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     cursor: pointer;
 }
@@ -179,7 +219,7 @@ main{
 .enquiry-form {
     position: relative;
     width: 30%;
-    margin:0 auto;
+    margin: 0 auto;
     padding: 60px;
     background: #ceffd1;
     border-radius: 0px;
@@ -192,23 +232,101 @@ main{
     color: #333;
 }
 
-label {
-    display: block;
-    margin-top: 10px;
-    font-weight: 500;
-    font-family: "Poppins", sans-serif;
+.group {
+    position: relative;
 }
 
-input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: "Poppins", sans-serif;
+.input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
 }
+
+.input:focus {
+    outline: none;
+}
+
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.input:focus~label,
+.input:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus~.bar:before,
+.input:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
 
 input[type="submit"] {
     background-color: #215B43;
@@ -218,6 +336,7 @@ input[type="submit"] {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 15px;
+    padding: 10px 30px;
 }
 
 input[type="submit"]:hover {
@@ -225,11 +344,12 @@ input[type="submit"]:hover {
 }
 
 /* Hide the up and down arrows for number input field */
-input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 input[type=number] {
     -moz-appearance: textfield;
 }
@@ -245,7 +365,8 @@ input[type=number] {
 .unit-details h1 {
     font-family: "Roboto", sans-serif;
     font-size: 34px;
-    color: black; /* Golden heading color */
+    color: black;
+    /* Golden heading color */
 }
 
 .unit-cards {
@@ -257,9 +378,10 @@ input[type=number] {
 }
 
 .unit-details .unit-card {
-    height: 40vh;
+    height: 50vh;
     width: 25vw;
-    box-shadow: 0 8px 16px rgba(33, 91, 67, 0.3); /* Shadow effect on hover */
+    box-shadow: 0 8px 16px rgba(33, 91, 67, 0.3);
+    /* Shadow effect on hover */
     border-radius: 20px;
     padding: 20px;
     display: flex;
@@ -270,17 +392,20 @@ input[type=number] {
 }
 
 .unit-details .unit-card:hover {
-    box-shadow: 0 8px 16px rgba(33, 91, 67, 0.4); /* Shadow effect on hover */
-    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 8px 16px rgba(33, 91, 67, 0.4);
+    /* Shadow effect on hover */
+    transform: scale(1.05);
+    /* Scale up on hover */
 }
 
 .unit-details .unit-card h3 {
     font-family: "Roboto", sans-serif;
     font-size: 26px;
-    color: #215B43; /* Golden text color */
+    color: #215B43;
+    /* Golden text color */
 }
 
-.unit-details .unit-card p{
+.unit-details .unit-card p {
     font-family: "Poppins", sans-serif;
     font-size: 20px;
 }
@@ -288,58 +413,61 @@ input[type=number] {
 .unit-details .unit-card button.view-details {
     padding: 10px 20px;
     margin-top: 15px;
-    border: 2px solid #215B43; /* Golden border color for the button */
+    border: 2px solid #215B43;
+    /* Golden border color for the button */
     background-color: white;
-    color: #215B43; /* Golden text color */
+    color: #215B43;
+    /* Golden text color */
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 40px 40px 40px 40px;
     transition: all 0.3s;
     font-family: "Poppins", sans-serif;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .unit-details .unit-card button.view-details:hover {
-    background-color: #215B43; /* Color change on button hover */
+    background-color: #215B43;
+    /* Color change on button hover */
     color: white;
 }
 
 
-.gallery{
+.gallery {
     height: 100vh;
     background-color: #993D70;
 }
 
-.amenities{
+.amenities {
     height: 100vh;
     background-color: #703D99;
 }
 
-.floor-plans{
+.floor-plans {
     height: 100vh;
     background-color: #99703D;
 }
 
-.location-map{
+.location-map {
     height: 100vh;
     background-color: #70993D;
 }
 
-.project-video{
+.project-video {
     height: 100vh;
     background-color: #3D7099;
 }
 
-.home-loan{
+.home-loan {
     height: 100vh;
     background-color: #3D9999;
 }
 
-.legacy{
+.legacy {
     height: 100vh;
     background-color: #993D3D;
 }
 
-footer{
+footer {
     bottom: 0;
     height: 30vh;
     background-color: #004221;
@@ -347,4 +475,3 @@ footer{
     text-align: center;
     padding: 10px;
 }
-

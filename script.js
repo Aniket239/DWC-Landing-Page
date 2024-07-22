@@ -67,8 +67,8 @@ function closeForm(){
     const body = document.getElementsByTagName('body')[0];
     formContainer.style.display = 'none'; // Display the form container
     body.style.overflow = 'auto';
-
 }
+
 
 document.getElementById('nameInput').setCustomValidity('Please enter your full name');
 document.getElementById('phoneInput').setCustomValidity('Please enter a valid 10-Digit mobile number');
