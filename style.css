@@ -687,7 +687,7 @@ footer {
 
 @media (max-width: 768px) {
     nav{
-        width: 99vw;
+        width: 98vw;
         padding: 0 10px;
     }
   .nav-items {
