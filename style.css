@@ -340,9 +340,8 @@ input[type="number"] {
 }
 
 .unit-details {
-  height: 80vh;
   display: flex;
-  padding-top: 50px;
+  padding: 150px 0;
   align-items: center;
   flex-direction: column;
 }
@@ -746,6 +745,16 @@ footer {
     margin: 0 0 20px 0;
     width: 50%;
     text-align: center;
+  }
+
+  .unit-cards{
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .unit-details .unit-card{
+    height: 30vh;
+    width: 50vw;
+    margin-bottom: 20px;
   }
 }
 
