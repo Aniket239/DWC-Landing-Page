@@ -18,6 +18,41 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+function openMenu(){
+    var checkbox = document.getElementById('hamburger-checkbox');
+    const mobileNav = document.querySelector('.mobile-nav')
+    // Now, you can check if the checkbox is checked or not
+    if (checkbox.checked) {
+      console.log('The checkbox is checked');
+      mobileNav.style.display = 'flex';
+    } else {
+      console.log('The checkbox is not checked');
+      mobileNav.style.display = 'none';
+    }    
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+    const mobileNav = document.querySelector('.mobile-nav')
+    var checkbox = document.getElementById('hamburger-checkbox');
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            mobileNav.style.display = 'none';
+            checkbox.checked = false;
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            const offset = 70; // Adjust this value based on your fixed navbar height
+
+            window.scrollTo({
+                top: targetSection.offsetTop - offset,
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+
+
 
 
 // ================================================== nav items animation =========================================================

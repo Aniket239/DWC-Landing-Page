@@ -39,7 +39,7 @@
       <ul class="nav-items-hamburger" id="nav-links">
         <li>
           <label class="hamburger">
-            <input type="checkbox" />
+            <input type="checkbox" onclick="openMenu()" id="hamburger-checkbox"/>
             <svg viewBox="0 0 32 32">
               <path
                 class="line line-top-bottom"
@@ -51,6 +51,14 @@
         </li>
       </ul>
     </nav>
+    <div class="mobile-nav">
+        <a id="mobile-nav-item" href="#about-the-project">About</a>
+        <a id="mobile-nav-item" href="#gallery">Gallery</a>
+        <a id="mobile-nav-item" href="#amenities">Amenities</a>
+        <a id="mobile-nav-item" href="#floor-plans">Floor Plans</a>
+        <a id="mobile-nav-item" href="#location-map">Location Map</a>
+        <a id="mobile-nav-item" href="#home-loan">Home Loan</a>
+    </div>
 
     <main id="main"></main>
     <div class="form-container" id="form-container">
