@@ -459,6 +459,8 @@ input[type="number"] {
   font-size: 15px;
   letter-spacing: 2px;
   display: inline-block; /* Keep tabs inline */
+  margin-right: 3px;
+
 }
 
 .gallery-tab:focus,
@@ -784,6 +786,7 @@ footer {
     font-size: 14px;
     padding: 8px;
     min-width:auto;
+    margin-right: 3px;
   }
 
 }
