@@ -79,7 +79,6 @@ nav ul li a img {
   margin-top: 3%;
   width: 160px;
   height: 70px;
-  mix-blend-mode: lighten;
 }
 
 .nav-items-hamburger{
@@ -687,11 +686,16 @@ footer {
 
 @media (max-width: 768px) {
     nav{
-        width: 98vw;
+        width: 95vw;
         padding: 0 10px;
     }
   .nav-items {
     display: none;
+  }
+  nav ul li a img {
+    margin-top: 3%;
+    width: 160px;
+    height: 65px;
   }
   .nav-items-hamburger{
     display: block;
