@@ -82,6 +82,10 @@ nav ul li a img {
   mix-blend-mode: lighten;
 }
 
+.nav-items-hamburger{
+    display: none;
+}
+
 main {
   background-image: url("assets/DWC\ banner.webp");
   height: 100vh;
@@ -683,12 +687,15 @@ footer {
 
 @media (max-width: 768px) {
     nav{
-        width: 95vw;
+        width: 84vw;
         padding: 0 10px;
     }
   .nav-items {
     display: none;
   }
+  .nav-items-hamburger{
+    display: block;
+}
   .nav-items-hamburger li{
     margin: 0;
   }
