@@ -82,8 +82,8 @@ nav ul li a img {
   height: 70px;
 }
 
-.nav-items-hamburger{
-    display: none;
+.nav-items-hamburger {
+  display: none;
 }
 
 main {
@@ -250,8 +250,8 @@ main {
   -webkit-transition: 0.2s ease all;
 }
 
-.input:focus ~ .form-label,
-.input.has-value ~ .form-label {
+.input:focus~.form-label,
+.input.has-value~.form-label {
   top: -20px;
   font-size: 14px;
   color: #000000;
@@ -284,8 +284,8 @@ main {
   right: 0%;
 }
 
-.input:focus ~ .bar:before,
-.input:focus ~ .bar:after {
+.input:focus~.bar:before,
+.input:focus~.bar:after {
   width: 100%;
 }
 
@@ -299,7 +299,7 @@ main {
   opacity: 0.5;
 }
 
-.input:focus ~ .highlight {
+.input:focus~.highlight {
   animation: inputHighlighter 0.3s ease;
 }
 
@@ -415,13 +415,13 @@ input[type="number"] {
   /* Color change on button hover */
   color: white;
 }
-
 .gallery {
-  height: 100vh;
   background-color: white;
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 150px;
+  min-height: 50vh;
 }
 
 .gallery h1 {
@@ -431,11 +431,20 @@ input[type="number"] {
 }
 
 .gallery-tabs {
-  width: 80%;
+  width: 85%;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none;  /* Hide scrollbar in IE and Edge */
+}
+
+/* Hide scrollbar in WebKit-based browsers */
+.gallery-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 /* Style the tabs */
@@ -444,11 +453,12 @@ input[type="number"] {
   padding: 10px;
   border: none;
   background-color: #cecccc;
-  width: 25%;
+  min-width: 25%; /* Ensure minimum width */
   text-align: center;
   transition: all 0.3s;
   font-size: 15px;
   letter-spacing: 2px;
+  display: inline-block; /* Keep tabs inline */
 }
 
 .gallery-tab:focus,
@@ -468,6 +478,7 @@ input[type="number"] {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 20px;
+  width: 90%;
 }
 
 .material-symbols-outlined {
@@ -476,17 +487,15 @@ input[type="number"] {
 
 /* Show the active tab content */
 .gallery-tab-content.active {
-  display: flex;
   opacity: 1;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  width: 95%;
 }
 
 .img-container {
   position: relative;
-  width: 20%;
-  height: 20%;
   margin: 5px;
   cursor: pointer;
   border: 1px solid black;
@@ -495,8 +504,10 @@ input[type="number"] {
 
 .gallery-tab-content img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
   border-radius: 15px;
+  object-fit: cover;
 }
 
 #zoom-icon {
@@ -521,46 +532,9 @@ input[type="number"] {
 .modal {
   display: none;
   position: fixed;
+  justify-content: center;
+  align-items: center;
   z-index: 1000;
-  padding-top: 60px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-.close {
-  position: absolute;
-  top: 20px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Modal for zoom effect */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  padding-top: 60px;
   left: 0;
   top: 0;
   width: 100%;
@@ -603,6 +577,7 @@ input[type="number"] {
   font-size: 34px;
   color: #000000;
 }
+
 .carousel {
   position: relative;
   width: 80%;
@@ -685,24 +660,29 @@ footer {
 /* ==================================================== Mobile version ========================================= */
 
 @media (max-width: 768px) {
-    nav{
-        width: 95vw;
-        padding: 0 10px;
-    }
+  nav {
+    width: 95vw;
+    padding: 0 10px;
+  }
+
   .nav-items {
     display: none;
   }
+
   nav ul li a img {
     margin-top: 3%;
     width: 160px;
     height: 65px;
   }
-  .nav-items-hamburger{
+
+  .nav-items-hamburger {
     display: block;
-}
-  .nav-items-hamburger li{
+  }
+
+  .nav-items-hamburger li {
     margin: 0;
   }
+
   .hamburger {
     cursor: pointer;
   }
@@ -734,21 +714,21 @@ footer {
     stroke-dasharray: 12 63;
   }
 
-  .hamburger input:checked + svg {
+  .hamburger input:checked+svg {
     transform: rotate(-45deg);
   }
 
-  .hamburger input:checked + svg .line-top-bottom {
+  .hamburger input:checked+svg .line-top-bottom {
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
   }
 
-  .enquiry-form{
+  .enquiry-form {
     padding: 7%;
     width: 70%;
   }
 
-  .mobile-nav{
+  .mobile-nav {
     height: 60vh;
     display: none;
     justify-content: center;
@@ -761,21 +741,22 @@ footer {
     margin-top: 50px;
   }
 
-  .mobile-nav a{
+  .mobile-nav a {
     text-decoration: none;
     color: black;
     margin-bottom: 50px;
   }
 
-  .project-about{
+  .project-about {
     width: 90vw;
   }
-  .project-about p{
+
+  .project-about p {
     width: 90%;
     text-align: center;
   }
 
-  .project-about-icon{
+  .project-about-icon {
     margin: 0 0 0 0;
     width: 50%;
     text-align: center;
@@ -783,21 +764,33 @@ footer {
     height: 20vh;
   }
 
-  .unit-cards{
+  .unit-cards {
     flex-direction: column;
     padding: 10px 0;
   }
-  .unit-details .unit-card{
+
+  .unit-details .unit-card {
     height: 30vh;
     width: 50vw;
     margin-bottom: 20px;
   }
+
+  .gallery-tab-content.active {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
+  }
+
+  .gallery-tab {
+    font-size: 14px;
+    padding: 8px;
+    min-width:auto;
+  }
+
 }
 
 /* =================================================== Small mobile version ==================================== */
 
-@media screen and (min-width: 480px) {
-}
+@media screen and (min-width: 480px) {}
 
 /* Custom breakpoints */
 /* @media (max-width: 480px) {

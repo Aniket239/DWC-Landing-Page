@@ -175,7 +175,7 @@ const modal = document.getElementById('modal');
 const modalImage = document.getElementById('modal-image');
 
 function openModal(imageElement) {
-    modal.style.display = "block";
+    modal.style.display = "flex";
     modalImage.src = imageElement.querySelector('img').src;
 }
 
