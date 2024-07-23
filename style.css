@@ -741,6 +741,12 @@ footer {
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
   }
+
+  .project-about-icon{
+    margin: 0 0 20px 0;
+    width: 50%;
+    text-align: center;
+  }
 }
 
 /* =================================================== Small mobile version ==================================== */
