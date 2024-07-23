@@ -453,11 +453,12 @@ input[type="number"] {
   padding: 10px;
   border: none;
   background-color: #cecccc;
+  font-family: "Poppins", sans-serif;
   min-width: 25%; /* Ensure minimum width */
   text-align: center;
   transition: all 0.3s;
-  font-size: 15px;
-  letter-spacing: 2px;
+  font-size: 17px;
+  font-weight: 500;
   display: inline-block; /* Keep tabs inline */
   margin-right: 3px;
 
