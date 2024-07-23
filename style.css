@@ -95,7 +95,6 @@ main {
 }
 
 .about-the-project {
-  height: 90vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -134,6 +133,7 @@ main {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .project-about-icon {
