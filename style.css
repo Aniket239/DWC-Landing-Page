@@ -237,7 +237,7 @@ main {
   outline: none;
 }
 
-.group label {
+.form-label {
   color: #000000;
   font-size: 18px;
   font-weight: normal;
@@ -250,8 +250,8 @@ main {
   -webkit-transition: 0.2s ease all;
 }
 
-.input:focus ~ .group label,
-.input.has-value ~ .group label {
+.input:focus ~ .form-label,
+.input.has-value ~ .form-label {
   top: -20px;
   font-size: 14px;
   color: #000000;
@@ -718,10 +718,6 @@ footer {
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .enquiry-form{
-    padding: 7%;
-    width: 70%;
-  }
 
   .line {
     fill: none;
@@ -745,6 +741,11 @@ footer {
   .hamburger input:checked + svg .line-top-bottom {
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
+  }
+
+  .enquiry-form{
+    padding: 7%;
+    width: 70%;
   }
 
   .mobile-nav{
