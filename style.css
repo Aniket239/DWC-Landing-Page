@@ -746,8 +746,16 @@ footer {
     stroke-dashoffset: -32.42;
   }
 
+  .project-about{
+    width: 90vw;
+  }
+  .project-about p{
+    width: 90%;
+    text-align: center;
+  }
+
   .project-about-icon{
-    margin: 0 0 20px 0;
+    margin: 0 0 0 0;
     width: 50%;
     text-align: center;
     justify-content: flex-start;
