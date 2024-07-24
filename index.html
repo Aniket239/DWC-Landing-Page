@@ -308,32 +308,84 @@
             <img class="modal-content" id="modal-image">
         </div>
     </section>
+
     <section class="amenities" id="amenities">
         <h1>Amenities</h1>
-        <div class="carousel">
-            <div class="carousel-container">
-                <div class="carousel-item">
-                    <img class="amenities-desktop-image" src="assets/DWC banner.webp" alt="Amenity 1">
-                    <img class="amenities-mobile-image" src="assets/DWC banner mobile.jpg" alt="Amenity 1">
-                </div>
-                <div class="carousel-item">
-                    <img class="amenities-desktop-image" src="assets/DWC banner.webp" alt="Amenity 2">
-                    <img class="amenities-mobile-image" src="assets/DWC banner mobile.jpg" alt="Amenity 2">
-                </div>
-                <div class="carousel-item">
-                    <img class="amenities-desktop-image" src="assets/DWC banner.webp" alt="Amenity 3">
-                    <img class="amenities-mobile-image" src="assets/DWC banner mobile.jpg" alt="Amenity 3">
-                </div>
-                <!-- Add more items as needed -->
+        <div class="amenities-container">
+            <div class="amenities-list">
+                <ul id="amenities-list">
+                    <li onclick="showSlide(0)">Swimming Pool</li>
+                    <li onclick="showSlide(1)">Convenience Store</li>
+                    <li onclick="showSlide(2)">Gymnasium</li>
+                    <li onclick="showSlide(3)">Mini Theatre</li>
+                    <li onclick="showSlide(4)">Jacuzzi</li>
+                    <li onclick="showSlide(5)">Barbecue Corner</li>
+                    <li onclick="showSlide(6)">Indoor Gamer</li>
+                    <li onclick="showSlide(7)">Cricket Field</li>
+                    <li onclick="showSlide(8)">ATM</li>
+                    <li onclick="showSlide(9)">Children Park</li>
+                </ul>
             </div>
-            <button class="carousel-control prev" onclick="prevSlide()">
-                &#10094;
-            </button>
-            <button class="carousel-control next" onclick="nextSlide()">
-                &#10095;
-            </button>
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-item">
+                        <img class="amenities-desktop-image" src="assets/DWC banner.webp" alt="Swimming Pool">
+                        <img class="amenities-mobile-image" src="assets/DWC banner mobile.jpg" alt="Swimming Pool">
+                        <p class="amenities-name">Swimming Pool</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="amenities-desktop-image" src="assets/DWC banner.webp" alt="Convenience Store">
+                        <img class="amenities-mobile-image" src="assets/DWC banner mobile.jpg" alt="Convenience Store">
+                        <p class="amenities-name">Convenience Store</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="amenities-desktop-image" src="assets/DWC banner.webp" alt="Gymnasium">
+                        <img class="amenities-mobile-image" src="assets/DWC banner mobile.jpg" alt="Gymnasium">
+                        <p class="amenities-name">Gymnasium</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="amenities-desktop-image" src="assets/DWC banner.webp" alt="Mini Theatre">
+                        <img class="amenities-mobile-image" src="assets/DWC banner mobile.jpg" alt="Mini Theatre">
+                        <p class="amenities-name">Mini Theatre</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="amenities-desktop-image" src="assets/DWC banner.webp" alt="Jacuzzi">
+                        <img class="amenities-mobile-image" src="assets/DWC banner mobile.jpg" alt="Jacuzzi">
+                        <p class="amenities-name">Jacuzzi</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="amenities-desktop-image" src="assets/DWC banner.webp" alt="Barbecue Corner">
+                        <img class="amenities-mobile-image" src="assets/DWC banner mobile.jpg" alt="Barbecue Corner">
+                        <p class="amenities-name">Barbecue Corner</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="amenities-desktop-image" src="assets/DWC banner.webp" alt="Indoor Games">
+                        <img class="amenities-mobile-image" src="assets/DWC banner mobile.jpg" alt="Indoor Games">
+                        <p class="amenities-name">Indoor Games</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="amenities-desktop-image" src="assets/DWC banner.webp" alt="Cricket Field">
+                        <img class="amenities-mobile-image" src="assets/DWC banner mobile.jpg" alt="Cricket Field">
+                        <p class="amenities-name">Cricket Field</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="amenities-desktop-image" src="assets/DWC banner.webp" alt="ATM">
+                        <img class="amenities-mobile-image" src="assets/DWC banner mobile.jpg" alt="ATM">
+                        <p class="amenities-name">ATM</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="amenities-desktop-image" src="assets/DWC banner.webp" alt="Children Park">
+                        <img class="amenities-mobile-image" src="assets/DWC banner mobile.jpg" alt="Children Park">
+                        <p class="amenities-name">Children Park</p>
+                    </div>
+                    <!-- Add more items as needed -->
+                </div>
+                <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+            </div>
         </div>
     </section>
+    
     <section class="floor-plans" id="floor-plans">
         <h1>Floor Plans</h1>
         <div class="floor-plans-tabs">

@@ -27,7 +27,7 @@ nav {
   padding: 0 30px;
   background-color: white;
   z-index: 100;
-  top: 0;
+  top: -1px;
 }
 
 nav ul {
@@ -544,7 +544,6 @@ input[type="number"] {
   text-decoration: none;
   cursor: pointer;
 }
-
 .amenities {
   text-align: center;
   padding: 20px;
@@ -556,10 +555,47 @@ input[type="number"] {
   color: #000000;
 }
 
+.amenities-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.amenities-list {
+  width: 20%;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.amenities-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.amenities-list li {
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding: 10px 0;
+  color: #000000;
+  padding: 10px 20px;
+
+}
+
+.amenities-list li.active {
+  background-color: #215B43;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+  font-family: "Poppins", sans-serif;}
+
 .carousel {
   position: relative;
-  width: 80%;
-  margin: auto;
+  width: 60%;
   overflow: hidden;
 }
 
@@ -574,6 +610,11 @@ input[type="number"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.amenities-name{
+  display: none;
 }
 
 .amenities-desktop-image {
@@ -595,7 +636,7 @@ input[type="number"] {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 20px;
   cursor: pointer;
   font-size: larger;
   font-weight: bold;
@@ -604,11 +645,14 @@ input[type="number"] {
 
 .carousel-control.prev {
   left: 0px;
+  display: none;
 }
 
 .carousel-control.next {
   right: 0px;
+  display: none;
 }
+
 
 .floor-plans {
   text-align: center;
@@ -827,7 +871,7 @@ footer {
 
   nav ul li a img {
     margin-top: 3%;
-    width: 160px;
+    width: 150px;
     height: 65px;
   }
 
@@ -959,6 +1003,32 @@ footer {
     display: block;
   }
 
+  /* .amenities-container {
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .amenities-list {
+    display: none;
+  }
+
+  .amenities-name{
+    display: block;
+    font-family: "poppins", sans-serif;
+    font-size: larger;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+
+  .carousel-control.prev {
+    display: block;
+  }
+  
+  .carousel-control.next {
+    display: block;
+  }
   .floor-plans-control{
     top: 58%;
   }
@@ -967,6 +1037,10 @@ footer {
   }
 
 }
+
+/* @media (max-width: 768px) {
+
+} */
 
 /* =================================================== Small mobile version ==================================== */
 

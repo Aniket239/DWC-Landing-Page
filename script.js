@@ -187,6 +187,8 @@ let currentSlide = 0;
 function showSlide(index) {
     const slides = document.querySelectorAll('.carousel-item');
     const totalSlides = slides.length;
+    const amenitiesListItems = document.querySelectorAll('.amenities-list li');
+    
     if (index >= totalSlides) {
         currentSlide = 0;
     } else if (index < 0) {
@@ -194,8 +196,17 @@ function showSlide(index) {
     } else {
         currentSlide = index;
     }
+    
     const offset = -currentSlide * 100;
     document.querySelector('.carousel-container').style.transform = `translateX(${offset}%)`;
+
+    amenitiesListItems.forEach((item, idx) => {
+        if (idx === currentSlide) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    });
 }
 
 function nextSlide() {
@@ -206,7 +217,17 @@ function prevSlide() {
     showSlide(currentSlide - 1);
 }
 
-setInterval(nextSlide, 5000); 
+document.addEventListener('DOMContentLoaded', () => {
+    const amenitiesListItems = document.querySelectorAll('.amenities-list li');
+    if (amenitiesListItems.length > 0) {
+        amenitiesListItems[0].classList.add('active');
+    }
+    showSlide(currentSlide); // Initial call to display the first slide
+});
+
+
+setInterval(nextSlide, 5000);
+
 
 
 // =========================================== Floor Plan =============================================
