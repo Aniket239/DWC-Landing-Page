@@ -106,27 +106,22 @@ function closeForm() {
     body.style.overflow = 'auto';
 }
 
-
 document.getElementById('nameInput').setCustomValidity('Please enter your full name');
 document.getElementById('phoneInput').setCustomValidity('Please enter a valid 10-Digit mobile number');
 document.getElementById('emailInput').setCustomValidity('');
 
 function clearValidityMessage(element) {
     element.setCustomValidity('');
-    console.log(element.value);
-    if (element.value !== '') {
+    const value = element.value.toString();
+    console.log(value);
+    
+    // Check if the value as a string is not an empty string or invalid intermediate states
+    if (value !== '' && value !== '-' && value !== '+' && value !== 'e' && value !== '-e' && value !== '+e') {
         element.classList.add('has-value');
+        console.log("has value activated");
     } else {
         element.classList.remove('has-value');
-    }
-}
-
-function validatePhone(element) {
-    console.log(element.value);
-    if (element.value !== '') {
-        element.classList.add('has-value');
-    } else {
-        element.classList.remove('has-value');
+        console.log("has value deactivated");
     }
 }
 
@@ -140,7 +135,6 @@ document.getElementById('phoneInput').addEventListener('input', function () {
         this.setCustomValidity('');
     }
 });
-
 
 // ================================= Gallery ========================================
 const tabs = document.getElementsByClassName('gallery-tab');
@@ -223,7 +217,6 @@ let masterPlanCurrent = 0;
 function masterfloorPlansShowSlide(masterPlanIndex) {
     const masterSlides = document.querySelectorAll('.master-floor-plans-item');
     const mastertotalSlides = masterSlides.length;
-    console.log(mastertotalSlides);
     if (masterPlanIndex >= mastertotalSlides) {
         masterPlanCurrent = 0;
     } else if (masterPlanIndex < 0) {
@@ -243,9 +236,9 @@ function masterFloorPlansprevSlide() {
     masterfloorPlansShowSlide(masterPlanCurrent - 1);
 }
 
-setInterval(masterFloorPlansNextSlide, 5000); 
+setInterval(masterFloorPlansNextSlide, 5000);
 
-// ============== foor plan ========================
+// ============== floor plan ========================
 let current = 0;
 
 function floorPlansShowSlide(index) {
@@ -254,21 +247,23 @@ function floorPlansShowSlide(index) {
     if (index >= totalSlides) {
         current = 0;
     } else if (index < 0) {
-        current = totalSlides - 1;
+        current = index;
     } else {
         current = index;
     }
     const offset = -current * 100;
     document.querySelector('.floor-plans-container').style.transform = `translateX(${offset}%)`;
 }
+
 function floorPlansnextSlide() {
     floorPlansShowSlide(current + 1);
 }
+
 function floorPlansprevSlide() {
     floorPlansShowSlide(current - 1);
 }
-setInterval(floorPlansnextSlide, 5000); 
 
+setInterval(floorPlansnextSlide, 5000);
 
 // ============================= Floor plan tabs ====================================
 
@@ -290,5 +285,6 @@ function floorPlanShowTab(tabIndex) {
     }
     floorPlansTabs[tabIndex - 1].classList.add('focus');
 }
+
 floorPlansTabs[0].classList.add('focus');
 floorPlanShowTab(1);

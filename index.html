@@ -86,7 +86,7 @@
             <br>
             <div class="group">
                 <input type="number" class="input" id="phoneInput" required pattern="[0-9]{10}"
-                    oninput="validatePhone(this); clearValidityMessage(this)">
+                    oninput="clearValidityMessage(this)">
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label class="form-label">Mobile</label>
@@ -94,7 +94,7 @@
             <br>
             <br>
             <div class="group">
-                <input required type="text" class="input" id="emailInput" oninput="clearValidityMessage(this)">
+                <input  type="text" class="input" id="emailInput" oninput="clearValidityMessage(this)">
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label class="form-label">Email</label>
@@ -342,12 +342,18 @@
                 <div class="floor-plans">
                     <div class="master-floor-plans-container">
                         <div class="master-floor-plans-item">
+                            <p class="unit-plan-size">Unit Plan - 2BHK</p>
+                            <button class="floor-plans-view-button" onclick="enquiryForm()">View Plan</button>
                             <img src="assets/DWC banner.webp" alt="Master Plan 1">
                         </div>
                         <div class="master-floor-plans-item">
+                            <p class="unit-plan-size">Unit Plan - 3BHK</p>
+                            <button class="floor-plans-view-button" onclick="enquiryForm()">View Plan</button>
                             <img src="assets/DWC banner.webp" alt="Master Plan 2">
                         </div>
                         <div class="master-floor-plans-item">
+                            <p class="unit-plan-size">Unit Plan - 2BHK</p>
+                            <button class="floor-plans-view-button" onclick="enquiryForm()">View Plan</button>
                             <img src="assets/DWC banner.webp" alt="Master Plan 3">
                         </div>
                         <!-- Add more items as needed -->
@@ -359,18 +365,29 @@
                         &#10095;
                     </button>
                 </div>
-                <!-- Repeat for other images as needed -->
+                <div class="thumbnail-strip">
+                    <img src="assets/DWC banner.webp" alt="Master Plan 1" onclick="masterfloorPlansShowSlide(0)">
+                    <img src="assets/DWC banner.webp" alt="Master Plan 2" onclick="masterfloorPlansShowSlide(1)">
+                    <img src="assets/DWC banner.webp" alt="Master Plan 3" onclick="masterfloorPlansShowSlide(2)">
+                    <!-- Add more thumbnails as needed -->
+                </div>
             </div>
             <div class="floor-plans-tab-content hidden">
                 <div class="floor-plans">
                     <div class="floor-plans-container">
                         <div class="floor-plans-item">
+                            <p class="unit-plan-size">Unit Plan - 2BHK</p>
+                            <button class="floor-plans-view-button" onclick="enquiryForm()">View Plan</button>
                             <img src="assets/DWC banner.webp" alt="Floor Plan 1">
                         </div>
                         <div class="floor-plans-item">
+                            <p class="unit-plan-size">Unit Plan - 2BHK</p>
+                            <button class="floor-plans-view-button" onclick="enquiryForm()">View Plan</button>
                             <img src="assets/DWC banner.webp" alt="Floor Plan 2">
                         </div>
                         <div class="floor-plans-item">
+                            <p class="unit-plan-size">Unit Plan - 2BHK</p>
+                            <button class="floor-plans-view-button" onclick="enquiryForm()">View Plan</button>
                             <img src="assets/DWC banner.webp" alt="Floor Plan 3">
                         </div>
                         <!-- Add more items as needed -->
@@ -382,8 +399,17 @@
                         &#10095;
                     </button>
                 </div>
+                <div class="thumbnail-strip">
+                    <img src="assets/DWC banner.webp" alt="Floor Plan 1" onclick="floorPlansShowSlide(0)">
+                    <img src="assets/DWC banner.webp" alt="Floor Plan 2" onclick="floorPlansShowSlide(1)">
+                    <img src="assets/DWC banner.webp" alt="Floor Plan 3" onclick="floorPlansShowSlide(2)">
+                    <!-- Add more thumbnails as needed -->
+                </div>
             </div>
         </div>
+        <button class="download-brochure" onclick="enquiryForm()">
+            Download Brochure >
+        </button>
     </section>
     <section class="location-map" id="location-map">
         <h1>Location</h1>
