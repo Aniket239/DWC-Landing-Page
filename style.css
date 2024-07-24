@@ -394,6 +394,7 @@ input[type="number"] {
   background-color: #215b43;
   color: white;
 }
+
 .gallery {
   background-color: white;
   display: flex;
@@ -415,10 +416,10 @@ input[type="number"] {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  overflow-x: auto; 
-  white-space: nowrap; 
+  overflow-x: auto;
+  white-space: nowrap;
   scrollbar-width: none;
-  -ms-overflow-style: none; 
+  -ms-overflow-style: none;
 }
 
 .gallery-tabs::-webkit-scrollbar {
@@ -431,12 +432,12 @@ input[type="number"] {
   border: none;
   background-color: #cecccc;
   font-family: "Poppins", sans-serif;
-  min-width: 25%; 
+  min-width: 25%;
   text-align: center;
   transition: all 0.3s;
   font-size: 17px;
   font-weight: 500;
-  display: inline-block; 
+  display: inline-block;
   margin-right: 3px;
 
 }
@@ -570,11 +571,21 @@ input[type="number"] {
 .carousel-item {
   min-width: 100%;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amenities-desktop-image {
+  display: block;
+}
+
+.amenities-mobile-image {
+  display: none;
 }
 
 .carousel-item img {
   width: 90%;
-  height: 70vh;
 }
 
 .carousel-control {
@@ -605,7 +616,10 @@ input[type="number"] {
   width: 90%;
   margin: 0 auto 30px;
   overflow: hidden;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .floor-plans h1 {
@@ -622,9 +636,9 @@ input[type="number"] {
   flex-direction: row;
   justify-content: center;
   overflow-x: auto;
-  white-space: nowrap; 
+  white-space: nowrap;
   scrollbar-width: none;
-  -ms-overflow-style: none;  
+  -ms-overflow-style: none;
 }
 
 .floor-plans-tabs::-webkit-scrollbar {
@@ -637,12 +651,12 @@ input[type="number"] {
   border: none;
   background-color: #cecccc;
   font-family: "Poppins", sans-serif;
-  min-width: 25%; 
+  min-width: 25%;
   text-align: center;
   transition: all 0.3s;
   font-size: 17px;
   font-weight: 500;
-  display: inline-block; 
+  display: inline-block;
   margin-right: 3px;
 }
 
@@ -655,7 +669,7 @@ input[type="number"] {
 .floor-plans-tab-content.active {
   opacity: 1;
   display: block;
-  width: 95%;
+  width: 80vw;
 }
 
 .floor-plans-tab-content.hidden {
@@ -663,25 +677,28 @@ input[type="number"] {
   opacity: 0;
 }
 
-.floor-plans-container , .master-floor-plans-container {
+.floor-plans-container,
+.master-floor-plans-container {
   display: flex;
   transition: transform 0.5s ease;
 }
 
 
-.floor-plans-item, .master-floor-plans-item {
-  position: relative; /* Add this line */
+.floor-plans-item,
+.master-floor-plans-item {
+  position: relative;
+  /* Add this line */
   min-width: 100%;
   box-sizing: border-box;
   border: 2px solid black;
   margin-top: 30px;
 }
 
-.unit-plan-size{
-  position: absolute; 
-  top: 0%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+.unit-plan-size {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #215B43;
   color: white;
   padding: 10px 20px;
@@ -691,15 +708,15 @@ input[type="number"] {
   text-align: center;
   outline: none;
   transition: background-color 0.3s ease;
-  z-index: 5; 
+  z-index: 5;
   font-family: "Poppins", sans-serif;
 }
 
 .floor-plans-view-button {
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #215B43;
   color: white;
   padding: 10px 20px;
@@ -711,18 +728,18 @@ input[type="number"] {
   text-align: center;
   outline: none;
   transition: background-color 0.3s ease;
-  z-index: 5; 
+  z-index: 5;
   font-family: "Poppins", sans-serif;
 }
 
 .floor-plans-view-button:hover {
-  background-color: #004221; 
+  background-color: #004221;
 }
 
 
-.floor-plans-item img, .master-floor-plans-item img {
+.floor-plans-item img,
+.master-floor-plans-item img {
   width: 90%;
-  height: 70vh;
   filter: blur(5px);
 }
 
@@ -766,9 +783,6 @@ input[type="number"] {
 .thumbnail-strip img:hover {
   border-color: #4CAF50;
 }
-
-
-
 
 .location-map {
   height: 100vh;
@@ -888,7 +902,7 @@ footer {
     font-size: 20px;
   }
 
-  main{
+  main {
     height: 98vh;
     background-image: url('assets/DWC\ banner\ mobile.jpg');
   }
@@ -915,7 +929,7 @@ footer {
     padding: 10px 0;
   }
 
-  .unit-details{
+  .unit-details {
     padding: 70px 0 60px 0;
   }
 
@@ -933,11 +947,22 @@ footer {
   .gallery-tab {
     font-size: 14px;
     padding: 8px;
-    min-width:auto;
+    min-width: auto;
     margin-right: 3px;
   }
 
-  .unit-plan-size{
+  .amenities-desktop-image {
+    display: none;
+  }
+
+  .amenities-mobile-image {
+    display: block;
+  }
+
+  .floor-plans-control{
+    top: 58%;
+  }
+  .unit-plan-size {
     padding: 2px 10px;
   }
 
@@ -947,7 +972,7 @@ footer {
 
 @media screen and (max-width: 480px) {
 
-  .mobile-nav{
+  .mobile-nav {
     height: 70vh;
     padding-top: 30px;
   }
