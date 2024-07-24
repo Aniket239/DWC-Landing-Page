@@ -333,6 +333,57 @@
     </section>
     <section class="floor-plans" id="floor-plans">
         <h1>Floor Plans</h1>
+        <div class="floor-plans-tabs">
+            <button class="floor-plans-tab" onclick="floorPlanShowTab(1)">Master Plan</button>
+            <button class="floor-plans-tab" onclick="floorPlanShowTab(2)">Floor Plan</button>
+        </div>
+        <div class="floor-plans-images">
+            <div class="floor-plans-tab-content">
+                <div class="floor-plans">
+                    <div class="master-floor-plans-container">
+                        <div class="master-floor-plans-item">
+                            <img src="assets/DWC banner.webp" alt="Master Plan 1">
+                        </div>
+                        <div class="master-floor-plans-item">
+                            <img src="assets/DWC banner.webp" alt="Master Plan 2">
+                        </div>
+                        <div class="master-floor-plans-item">
+                            <img src="assets/DWC banner.webp" alt="Master Plan 3">
+                        </div>
+                        <!-- Add more items as needed -->
+                    </div>
+                    <button class="floor-plans-control prev" onclick="masterFloorPlansprevSlide()">
+                        &#10094;
+                    </button>
+                    <button class="floor-plans-control next" onclick="masterFloorPlansprevSlide()">
+                        &#10095;
+                    </button>
+                </div>
+                <!-- Repeat for other images as needed -->
+            </div>
+            <div class="floor-plans-tab-content hidden">
+                <div class="floor-plans">
+                    <div class="floor-plans-container">
+                        <div class="floor-plans-item">
+                            <img src="assets/DWC banner.webp" alt="Floor Plan 1">
+                        </div>
+                        <div class="floor-plans-item">
+                            <img src="assets/DWC banner.webp" alt="Floor Plan 2">
+                        </div>
+                        <div class="floor-plans-item">
+                            <img src="assets/DWC banner.webp" alt="Floor Plan 3">
+                        </div>
+                        <!-- Add more items as needed -->
+                    </div>
+                    <button class="floor-plans-control prev" onclick="floorPlansprevSlide()">
+                        &#10094;
+                    </button>
+                    <button class="floor-plans-control next" onclick="floorPlansnextSlide()">
+                        &#10095;
+                    </button>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="location-map" id="location-map">
         <h1>Location</h1>

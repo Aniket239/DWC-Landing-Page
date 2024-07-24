@@ -6,6 +6,7 @@
 /* Track */
 ::-webkit-scrollbar {
   width: 10px;
+  border-left: 1px solid black;
 }
 
 /* Handle */
@@ -30,6 +31,7 @@ nav {
   background-color: white;
   /* background-color: rgba(255, 255, 255, 0.7); */
   /* backdrop-filter: blur(15px); */
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
   z-index: 100;
   top: 0;
 }
@@ -625,11 +627,116 @@ input[type="number"] {
 .carousel-control.next {
   right: 10px;
 }
+.floor-plans {
+  height: 100vh; 
+}
 
 .floor-plans {
-  height: 100vh;
-  background-color: #99703d;
+  text-align: center;
+  padding: 20px;
 }
+
+.floor-plans h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 34px;
+  color: #000000;
+}
+
+.floor-plans {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.floor-plans-container , .master-floor-plans-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.floor-plans-item ,.master-floor-plans-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.floor-plans-item img, .master-floor-plans-item img {
+  width: 90%;
+  height: 70vh;
+}
+
+.floor-plans-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.floor-plans-control.prev {
+  left: 10px;
+}
+
+.floor-plans-control.next {
+  right: 10px;
+}
+
+.floor-plans-tabs {
+  margin: 50px auto 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none;  /* Hide scrollbar in IE and Edge */
+}
+
+/* Hide scrollbar in WebKit-based browsers */
+.floor-plans-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+/* Style the tabs */
+.floor-plans-tab {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  background-color: #cecccc;
+  font-family: "Poppins", sans-serif;
+  min-width: 25%; /* Ensure minimum width */
+  text-align: center;
+  transition: all 0.3s;
+  font-size: 17px;
+  font-weight: 500;
+  display: inline-block; /* Keep tabs inline */
+  margin-right: 3px;
+}
+
+.floor-plans-tab:focus,
+.floor-plans-tab.focus {
+  background-color: #004221;
+  color: white;
+}
+
+.floor-plans-tab-content.active {
+  opacity: 1;
+  display: block;
+  width: 95%;
+}
+
+.floor-plans-tab-content.hidden {
+  display: none;
+  opacity: 0;
+}
+
 
 .location-map {
   height: 100vh;
@@ -741,13 +848,15 @@ footer {
     z-index: 100;
     background-color: white;
     width: 100vw;
-    margin-top: 50px;
+    margin-top: 48px;
   }
 
   .mobile-nav a {
     text-decoration: none;
     color: black;
     margin-bottom: 50px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
   }
 
   .project-about {
@@ -772,6 +881,10 @@ footer {
     padding: 10px 0;
   }
 
+  .unit-details{
+    padding: 70px 0 60px 0;
+  }
+
   .unit-details .unit-card {
     height: 30vh;
     width: 50vw;
@@ -794,7 +907,13 @@ footer {
 
 /* =================================================== Small mobile version ==================================== */
 
-@media screen and (min-width: 480px) {}
+@media screen and (max-width: 480px) {
+
+  .mobile-nav{
+    height: 70vh;
+    padding-top: 30px;
+  }
+}
 
 /* Custom breakpoints */
 /* @media (max-width: 480px) {
