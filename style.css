@@ -1017,7 +1017,8 @@ input[type="number"] {
 .legacy h1 {
   font-size: 36px;
   margin-bottom: 40px;
-  color: #333;
+  color: #000000;
+  /* font-family: "Roboto",sans-serif; */
 }
 
 .legacy-stats {
@@ -1025,6 +1026,7 @@ input[type="number"] {
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
+  font-family: "Poppins",sans-serif;
 }
 
 .stat {
@@ -1163,7 +1165,7 @@ footer {
   }
 
   main {
-    height: 98vh;
+    height: 95vh;
     background-image: url('assets/DWC\ banner\ mobile.jpg');
   }
 
@@ -1182,6 +1184,10 @@ footer {
     text-align: center;
     justify-content: flex-start;
     height: 20vh;
+  }
+  .project-about-icon img{
+    width: 80px;
+    height: 80px;
   }
 
   .unit-cards {
@@ -1293,6 +1299,8 @@ footer {
   .bank-logos img {
     flex: 1 1 calc(50% - 40px);
     max-width: 45%;
+    width: 80px;
+    height: 80px;
   }
 
   .stat {
