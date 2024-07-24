@@ -463,10 +463,47 @@
             </div>
         </div>
     </section>
+
     <section class="location-map" id="location-map">
         <h1>Location</h1>
-
+        <div class="location-container">
+            <div class="location-list">
+                <ul id="location-list">
+                    <li onclick="showLocation(0)">Mall</li>
+                    <li onclick="showLocation(1)">School</li>
+                    <li onclick="showLocation(2)">Hospital</li>
+                    <li onclick="showLocation(3)">Park</li>
+                    <li onclick="showLocation(4)">Restaurant</li>
+                    <li onclick="showLocation(5)">Metro Station</li>
+                </ul>
+            </div>
+            <div class="map-carousel">
+                <div class="map-container">
+                    <div class="map-item">
+                        <img src="assets/DWC banner.webp" alt="Mall Map">
+                    </div>
+                    <div class="map-item">
+                        <img src="assets/DWC banner.webp" alt="School Map">
+                    </div>
+                    <div class="map-item">
+                        <img src="assets/DWC banner.webp" alt="Hospital Map">
+                    </div>
+                    <div class="map-item">
+                        <img src="assets/DWC banner.webp" alt="Park Map">
+                    </div>
+                    <div class="map-item">
+                        <img src="assets/DWC banner.webp" alt="Restaurant Map">
+                    </div>
+                    <div class="map-item">
+                        <img src="assets/DWC banner.webp" alt="Metro Station Map">
+                    </div>
+                </div>
+                <button class="map-control prev" onclick="prevLocation()">&#10094;</button>
+                <button class="map-control next" onclick="nextLocation()">&#10095;</button>
+            </div>
+        </div>
     </section>
+    
     <section class="project-video">
         <h1>Project Video</h1>
     </section>

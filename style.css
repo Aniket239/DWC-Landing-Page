@@ -591,7 +591,8 @@ input[type="number"] {
   cursor: pointer;
   outline: none;
   transition: background-color 0.3s ease;
-  font-family: "Poppins", sans-serif;}
+  font-family: "Poppins", sans-serif;
+}
 
 .carousel {
   position: relative;
@@ -829,8 +830,100 @@ input[type="number"] {
 }
 
 .location-map {
-  height: 100vh;
-  background-color: #70993d;
+  text-align: center;
+  padding: 20px;
+}
+
+.location-map h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 34px;
+  color: #000000;
+}
+
+.location-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.location-list {
+  width: 20%;
+  margin-right: 20px;
+}
+
+.location-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.location-list li {
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding: 10px 20px;
+  color: #000000;
+  text-align: left;
+}
+
+.location-list li.active {
+  background-color: #215B43;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.map-carousel {
+  position: relative;
+  width: 60%;
+  overflow: hidden;
+}
+
+.map-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.map-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-item img {
+  width: 90%;
+}
+
+.map-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.map-control.prev {
+  left: 0px;
+  display: none;
+}
+
+.map-control.next {
+  right: 0px;
+  display: none;
 }
 
 .project-video {
@@ -1034,6 +1127,27 @@ footer {
   }
   .unit-plan-size {
     padding: 2px 10px;
+  }
+
+  .location-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .location-list {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .map-carousel {
+    width: 100%;
+  }
+  .map-control.prev {
+    display: block;
+  }
+  
+  .map-control.next {
+    display: block;
   }
 
 }

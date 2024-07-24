@@ -179,10 +179,10 @@ for (let container of imgContainers) {
     });
 }
 
-
 // ================================================ amenities ==============================
 
 let currentSlide = 0;
+let slideInterval;
 
 function showSlide(index) {
     const slides = document.querySelectorAll('.carousel-item');
@@ -210,11 +210,18 @@ function showSlide(index) {
 }
 
 function nextSlide() {
+    resetInterval();
     showSlide(currentSlide + 1);
 }
 
 function prevSlide() {
+    resetInterval();
     showSlide(currentSlide - 1);
+}
+
+function resetInterval() {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, 3000);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -223,17 +230,14 @@ document.addEventListener('DOMContentLoaded', () => {
         amenitiesListItems[0].classList.add('active');
     }
     showSlide(currentSlide); // Initial call to display the first slide
+    slideInterval = setInterval(nextSlide, 3000);
 });
-
-
-setInterval(nextSlide, 5000);
-
-
 
 // =========================================== Floor Plan =============================================
 
 // ========== master plan =========================
 let masterPlanCurrent = 0;
+let masterPlanInterval;
 
 function masterfloorPlansShowSlide(masterPlanIndex) {
     const masterSlides = document.querySelectorAll('.master-floor-plans-item');
@@ -250,17 +254,27 @@ function masterfloorPlansShowSlide(masterPlanIndex) {
 }
 
 function masterFloorPlansNextSlide() {
+    resetMasterPlanInterval();
     masterfloorPlansShowSlide(masterPlanCurrent + 1);
 }
 
 function masterFloorPlansprevSlide() {
+    resetMasterPlanInterval();
     masterfloorPlansShowSlide(masterPlanCurrent - 1);
 }
 
-setInterval(masterFloorPlansNextSlide, 5000);
+function resetMasterPlanInterval() {
+    clearInterval(masterPlanInterval);
+    masterPlanInterval = setInterval(masterFloorPlansNextSlide, 3000);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    masterPlanInterval = setInterval(masterFloorPlansNextSlide, 3000);
+});
 
 // ============== floor plan ========================
 let current = 0;
+let floorPlanInterval;
 
 function floorPlansShowSlide(index) {
     const slides = document.querySelectorAll('.floor-plans-item');
@@ -268,7 +282,7 @@ function floorPlansShowSlide(index) {
     if (index >= totalSlides) {
         current = 0;
     } else if (index < 0) {
-        current = index;
+        current = totalSlides - 1;
     } else {
         current = index;
     }
@@ -277,17 +291,25 @@ function floorPlansShowSlide(index) {
 }
 
 function floorPlansnextSlide() {
+    resetFloorPlanInterval();
     floorPlansShowSlide(current + 1);
 }
 
 function floorPlansprevSlide() {
+    resetFloorPlanInterval();
     floorPlansShowSlide(current - 1);
 }
 
-setInterval(floorPlansnextSlide, 5000);
+function resetFloorPlanInterval() {
+    clearInterval(floorPlanInterval);
+    floorPlanInterval = setInterval(floorPlansnextSlide, 3000);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    floorPlanInterval = setInterval(floorPlansnextSlide, 3000);
+});
 
 // ============================= Floor plan tabs ====================================
-
 const floorPlansTabs = document.getElementsByClassName('floor-plans-tab');
 const floorPlansTabContents = document.getElementsByClassName('floor-plans-tab-content');
 
@@ -309,3 +331,57 @@ function floorPlanShowTab(tabIndex) {
 
 floorPlansTabs[0].classList.add('focus');
 floorPlanShowTab(1);
+
+// ==================================== Location Map ===========================================
+
+let currentLocation = 0;
+let locationInterval;
+
+function showLocation(index) {
+    const locations = document.querySelectorAll('.map-item');
+    const totalLocations = locations.length;
+    const locationListItems = document.querySelectorAll('.location-list li');
+    
+    if (index >= totalLocations) {
+        currentLocation = 0;
+    } else if (index < 0) {
+        currentLocation = totalLocations - 1;
+    } else {
+        currentLocation = index;
+    }
+    
+    const offset = -currentLocation * 100;
+    document.querySelector('.map-container').style.transform = `translateX(${offset}%)`;
+
+    locationListItems.forEach((item, idx) => {
+        if (idx === currentLocation) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    });
+}
+
+function nextLocation() {
+    resetLocationInterval();
+    showLocation(currentLocation + 1);
+}
+
+function prevLocation() {
+    resetLocationInterval();
+    showLocation(currentLocation - 1);
+}
+
+function resetLocationInterval() {
+    clearInterval(locationInterval);
+    locationInterval = setInterval(nextLocation, 3000);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const locationListItems = document.querySelectorAll('.location-list li');
+    if (locationListItems.length > 0) {
+        locationListItems[0].classList.add('active');
+    }
+    showLocation(currentLocation); // Initial call to display the first slide
+    locationInterval = setInterval(nextLocation, 3000);
+});
