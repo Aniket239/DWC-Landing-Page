@@ -178,7 +178,6 @@ for (let container of imgContainers) {
         openModal(this);
     });
 }
-
 // ================================================ amenities ==============================
 
 let currentSlide = 0;
@@ -229,6 +228,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (amenitiesListItems.length > 0) {
         amenitiesListItems[0].classList.add('active');
     }
+    amenitiesListItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            resetInterval();
+            showSlide(index);
+        });
+    });
     showSlide(currentSlide); // Initial call to display the first slide
     slideInterval = setInterval(nextSlide, 3000);
 });
@@ -382,6 +387,25 @@ document.addEventListener('DOMContentLoaded', () => {
     if (locationListItems.length > 0) {
         locationListItems[0].classList.add('active');
     }
+    locationListItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            resetLocationInterval();
+            showLocation(index);
+        });
+    });
     showLocation(currentLocation); // Initial call to display the first slide
     locationInterval = setInterval(nextLocation, 3000);
 });
+
+
+// ============================ project video ===============================
+
+document.getElementById('video-thumbnail').addEventListener('click', function() {
+    var iframe = document.getElementById('video-iframe');
+    var src = iframe.src;
+    iframe.src = src + (src.includes('?') ? '&' : '?') + 'autoplay=1';
+    
+    document.getElementById('video-thumbnail').style.display = 'none';
+    document.getElementById('video-wrapper').style.display = 'block';
+});
+
