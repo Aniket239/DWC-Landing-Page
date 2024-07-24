@@ -544,6 +544,7 @@ input[type="number"] {
   text-decoration: none;
   cursor: pointer;
 }
+
 .amenities {
   text-align: center;
   padding: 20px;
@@ -614,7 +615,7 @@ input[type="number"] {
   flex-direction: column;
 }
 
-.amenities-name{
+.amenities-name {
   display: none;
 }
 
@@ -931,7 +932,7 @@ input[type="number"] {
   margin: 20px;
 }
 
-.project-video h1{
+.project-video h1 {
   font-family: "Roboto", sans-serif;
   font-size: 34px;
   margin-bottom: 20px;
@@ -946,7 +947,8 @@ input[type="number"] {
   overflow: hidden;
 }
 
-.video-wrapper, .video-thumbnail {
+.video-wrapper,
+.video-thumbnail {
   width: 100%;
   height: 100%;
   border-radius: 12px;
@@ -986,27 +988,67 @@ input[type="number"] {
   padding: 20px;
   text-align: center;
 }
+
 .home-loan h1 {
   margin: 20px;
   font-family: "Roboto", sans-serif;
   font-size: 34px;
 }
+
 .bank-logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px;
 }
+
 .bank-logos img {
-  width: 300px;
   height: auto;
-  flex: 1 1 100px;
-  max-width: 300px;
+  flex: 1 1 calc(25% - 40px);
+  max-width: 20%;
 }
 
 .legacy {
-  height: 100vh;
-  background-color: #993d3d;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+}
+
+.legacy h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.legacy-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.stat {
+  max-width: 25%;
+  text-align: center;
+  flex: 1 1 calc(25% - 40px);
+  /* For desktop */
+}
+
+.stat img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.stat p {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #555;
+}
+
+.stat strong {
+  font-size: 24px;
+  color: #000;
 }
 
 footer {
@@ -1022,9 +1064,18 @@ footer {
 
 @media (max-width: 768px) {
 
-  .about-the-project h1,.unit-details h1, .gallery h1, .amenities h1, .floor-plans h1, .location-map h1, .project-video h1, .home-loan h1, .legacy h1 {
+  .about-the-project h1,
+  .unit-details h1,
+  .gallery h1,
+  .amenities h1,
+  .floor-plans h1,
+  .location-map h1,
+  .project-video h1,
+  .home-loan h1,
+  .legacy h1 {
     font-size: 28px;
   }
+
   nav {
     width: 95vw;
     padding: 0 10px;
@@ -1177,7 +1228,7 @@ footer {
     display: none;
   }
 
-  .amenities-name{
+  .amenities-name {
     display: block;
     font-family: "poppins", sans-serif;
     font-size: larger;
@@ -1190,13 +1241,15 @@ footer {
   .carousel-control.prev {
     display: block;
   }
-  
+
   .carousel-control.next {
     display: block;
   }
-  .floor-plans-control{
+
+  .floor-plans-control {
     top: 58%;
   }
+
   .unit-plan-size {
     padding: 2px 10px;
   }
@@ -1214,10 +1267,11 @@ footer {
   .map-carousel {
     width: 100%;
   }
+
   .map-control.prev {
     display: block;
   }
-  
+
   .map-control.next {
     display: block;
   }
@@ -1226,21 +1280,26 @@ footer {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
-}
+  }
 
-.video-wrapper iframe {
+  .video-wrapper iframe {
     border-radius: 12px;
-}
+  }
 
-.video-thumbnail img {
+  .video-thumbnail img {
     border-radius: 12px;
-}
+  }
 
-.bank-logos img {
-  width: 80px;
-  flex: 1 1 80px;
-  max-width: 80px;
-}
+  .bank-logos img {
+    flex: 1 1 calc(50% - 40px);
+    max-width: 45%;
+  }
+
+  .stat {
+    max-width: 50%;
+    flex: 1 1 calc(50% - 40px);
+    /* For mobile */
+  }
 
 }
 
