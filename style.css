@@ -888,6 +888,11 @@ footer {
     font-size: 20px;
   }
 
+  main{
+    height: 98vh;
+    background-image: url('assets/DWC\ banner\ mobile.jpg');
+  }
+
   .project-about {
     width: 90vw;
   }
