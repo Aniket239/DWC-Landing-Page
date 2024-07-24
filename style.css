@@ -132,6 +132,7 @@ main {
 }
 
 .download-brochure {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -602,9 +603,9 @@ input[type="number"] {
   text-align: center;
   position: relative;
   width: 90%;
-  margin: auto;
+  margin: 0 auto 30px;
   overflow: hidden;
-  /* height: 90vh; */
+  
 }
 
 .floor-plans h1 {
