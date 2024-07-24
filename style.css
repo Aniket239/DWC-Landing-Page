@@ -3,18 +3,15 @@
   padding: 0;
 }
 
-/* Track */
 ::-webkit-scrollbar {
   width: 10px;
   border-left: 1px solid black;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #004221;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: black;
 }
@@ -29,9 +26,6 @@ nav {
   align-items: center;
   padding: 0 30px;
   background-color: white;
-  /* background-color: rgba(255, 255, 255, 0.7); */
-  /* backdrop-filter: blur(15px); */
-  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
   z-index: 100;
   top: 0;
 }
@@ -48,23 +42,17 @@ nav ul li {
   margin-right: 50px;
   opacity: 0;
   transform: translateY(-30px);
-  /* Start the items 30px above their final position */
   transition: opacity 0.5s, transform 0.5s;
 }
 
 #nav-links li:nth-child(1) {
   transition-delay: 0.1s;
-  /* Delay for the first item */
 }
 
 #nav-links li:nth-child(2) {
   transition-delay: 0.2s;
-  /* Delay for the second item */
 }
 
-/* Add similar transition-delay properties for the rest of the list items */
-
-/* Animate the list items when they become visible */
 #nav-links li.animate {
   opacity: 1;
   transform: translateY(0);
@@ -102,15 +90,12 @@ main {
   flex-direction: column;
 }
 
-/* Define the animation effect for the project overview section */
 #about-the-project {
   opacity: 0;
   transform: translateY(180px);
-  /* Start the section 30px below its final position */
   transition: opacity 1.5s, transform 1.5s;
 }
 
-/* Animate the project overview section when it becomes visible */
 #about-the-project.animate {
   opacity: 1;
   transform: translateY(0);
@@ -194,9 +179,7 @@ main {
 
 .material-symbols-outlined {
   position: absolute;
-  /* Adjust as needed for vertical position */
   right: 40px;
-  /* Adjust as needed for horizontal position */
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
   cursor: pointer;
 }
@@ -331,7 +314,6 @@ input[type="submit"]:hover {
   background-color: #173d2d;
 }
 
-/* Hide the up and down arrows for number input field */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -353,7 +335,6 @@ input[type="number"] {
   font-family: "Roboto", sans-serif;
   font-size: 34px;
   color: black;
-  /* Golden heading color */
 }
 
 .unit-cards {
@@ -368,7 +349,6 @@ input[type="number"] {
   height: 50vh;
   width: 25vw;
   box-shadow: 0 8px 16px rgba(33, 91, 67, 0.3);
-  /* Shadow effect on hover */
   border-radius: 20px;
   padding: 20px;
   display: flex;
@@ -380,16 +360,13 @@ input[type="number"] {
 
 .unit-details .unit-card:hover {
   box-shadow: 0 8px 16px rgba(33, 91, 67, 0.4);
-  /* Shadow effect on hover */
   transform: scale(1.05);
-  /* Scale up on hover */
 }
 
 .unit-details .unit-card h3 {
   font-family: "Roboto", sans-serif;
   font-size: 26px;
   color: #215b43;
-  /* Golden text color */
 }
 
 .unit-details .unit-card p {
@@ -401,10 +378,8 @@ input[type="number"] {
   padding: 10px 20px;
   margin-top: 15px;
   border: 2px solid #215b43;
-  /* Golden border color for the button */
   background-color: white;
   color: #215b43;
-  /* Golden text color */
   cursor: pointer;
   border-radius: 40px 40px 40px 40px;
   transition: all 0.3s;
@@ -414,7 +389,6 @@ input[type="number"] {
 
 .unit-details .unit-card button.view-details:hover {
   background-color: #215b43;
-  /* Color change on button hover */
   color: white;
 }
 .gallery {
@@ -438,30 +412,28 @@ input[type="number"] {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Prevent wrapping */
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
-  -ms-overflow-style: none;  /* Hide scrollbar in IE and Edge */
+  overflow-x: auto; 
+  white-space: nowrap; 
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
 }
 
-/* Hide scrollbar in WebKit-based browsers */
 .gallery-tabs::-webkit-scrollbar {
   display: none;
 }
 
-/* Style the tabs */
 .gallery-tab {
   cursor: pointer;
   padding: 10px;
   border: none;
   background-color: #cecccc;
   font-family: "Poppins", sans-serif;
-  min-width: 25%; /* Ensure minimum width */
+  min-width: 25%; 
   text-align: center;
   transition: all 0.3s;
   font-size: 17px;
   font-weight: 500;
-  display: inline-block; /* Keep tabs inline */
+  display: inline-block; 
   margin-right: 3px;
 
 }
@@ -472,7 +444,6 @@ input[type="number"] {
   color: white;
 }
 
-/* Hide all tab contents by default */
 .gallery-tab-content {
   display: none;
   transition: opacity 0.5s ease-in-out;
@@ -490,7 +461,6 @@ input[type="number"] {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
-/* Show the active tab content */
 .gallery-tab-content.active {
   opacity: 1;
   display: grid;
@@ -533,7 +503,6 @@ input[type="number"] {
   opacity: 0;
 }
 
-/* Modal for zoom effect */
 .modal {
   display: none;
   position: fixed;
@@ -693,30 +662,28 @@ input[type="number"] {
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Prevent wrapping */
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
-  -ms-overflow-style: none;  /* Hide scrollbar in IE and Edge */
+  overflow-x: auto;
+  white-space: nowrap; 
+  scrollbar-width: none;
+  -ms-overflow-style: none;  
 }
 
-/* Hide scrollbar in WebKit-based browsers */
 .floor-plans-tabs::-webkit-scrollbar {
   display: none;
 }
 
-/* Style the tabs */
 .floor-plans-tab {
   cursor: pointer;
   padding: 10px;
   border: none;
   background-color: #cecccc;
   font-family: "Poppins", sans-serif;
-  min-width: 25%; /* Ensure minimum width */
+  min-width: 25%; 
   text-align: center;
   transition: all 0.3s;
   font-size: 17px;
   font-weight: 500;
-  display: inline-block; /* Keep tabs inline */
+  display: inline-block; 
   margin-right: 3px;
 }
 
@@ -802,9 +769,7 @@ footer {
   }
 
   .hamburger svg {
-    /* The size of the SVG defines the overall size */
     height: 3em;
-    /* Define the transition for transforming the SVG */
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -815,7 +780,6 @@ footer {
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 3;
-    /* Define the transition for transforming the Stroke */
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
       stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
   }
