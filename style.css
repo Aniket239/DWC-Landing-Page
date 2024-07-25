@@ -62,8 +62,8 @@ nav ul li a {
   text-decoration: none;
   color: #333;
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  font-family: "Jost", sans-serif;
+  font-weight: 550;
 }
 
 nav ul li a img {
@@ -102,8 +102,9 @@ main {
 }
 
 .about-the-project h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 34px;
+  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 38px;
 }
 
 .project-about {
@@ -112,7 +113,7 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  font-family: "Poppins", sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 .project-about-icons {
@@ -198,11 +199,11 @@ main {
   background: #ffffff;
   border-radius: 0px;
   border: 2px solid #173d2d;
-  font-family: "Poppins", sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 .form-heading {
-  font-family: "Roboto", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   color: #333;
 }
@@ -307,7 +308,7 @@ input[type="submit"] {
   color: white;
   border: none;
   cursor: pointer;
-  font-family: "Poppins", sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 15px;
   padding: 10px 30px;
@@ -335,8 +336,9 @@ input[type="number"] {
 }
 
 .unit-details h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 34px;
+  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 38px;
   color: black;
 }
 
@@ -367,13 +369,13 @@ input[type="number"] {
 }
 
 .unit-details .unit-card h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 26px;
   color: #215b43;
 }
 
 .unit-details .unit-card p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 20px;
 }
 
@@ -386,7 +388,7 @@ input[type="number"] {
   cursor: pointer;
   border-radius: 40px 40px 40px 40px;
   transition: all 0.3s;
-  font-family: "Poppins", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 16px;
 }
 
@@ -405,8 +407,9 @@ input[type="number"] {
 }
 
 .gallery h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 34px;
+  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 38px;
   color: black;
 }
 
@@ -431,7 +434,7 @@ input[type="number"] {
   padding: 10px;
   border: none;
   background-color: #cecccc;
-  font-family: "Poppins", sans-serif;
+  font-family: "Jost", sans-serif;
   min-width: 25%;
   text-align: center;
   transition: all 0.3s;
@@ -551,8 +554,8 @@ input[type="number"] {
 }
 
 .amenities h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 34px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 38px;
   color: #000000;
 }
 
@@ -575,12 +578,11 @@ input[type="number"] {
 
 .amenities-list li {
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 18px;
   padding: 10px 0;
   color: #000000;
   padding: 10px 20px;
-
 }
 
 .amenities-list li.active {
@@ -588,11 +590,11 @@ input[type="number"] {
   color: white;
   padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
   outline: none;
   transition: background-color 0.3s ease;
-  font-family: "Poppins", sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 .carousel {
@@ -613,6 +615,7 @@ input[type="number"] {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
 
 .amenities-name {
@@ -647,12 +650,10 @@ input[type="number"] {
 
 .carousel-control.prev {
   left: 0px;
-  display: none;
 }
 
 .carousel-control.next {
   right: 0px;
-  display: none;
 }
 
 
@@ -669,8 +670,9 @@ input[type="number"] {
 }
 
 .floor-plans h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 34px;
+  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 38px;
   color: #000000;
   margin-top: 60px;
 }
@@ -696,7 +698,7 @@ input[type="number"] {
   padding: 10px;
   border: none;
   background-color: #cecccc;
-  font-family: "Poppins", sans-serif;
+  font-family: "Jost", sans-serif;
   min-width: 25%;
   text-align: center;
   transition: all 0.3s;
@@ -715,7 +717,7 @@ input[type="number"] {
 .floor-plans-tab-content.active {
   opacity: 1;
   display: block;
-  width: 80vw;
+  width: 70vw;
 }
 
 .floor-plans-tab-content.hidden {
@@ -755,7 +757,7 @@ input[type="number"] {
   outline: none;
   transition: background-color 0.3s ease;
   z-index: 5;
-  font-family: "Poppins", sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 .floor-plans-view-button {
@@ -775,7 +777,7 @@ input[type="number"] {
   outline: none;
   transition: background-color 0.3s ease;
   z-index: 5;
-  font-family: "Poppins", sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 .floor-plans-view-button:hover {
@@ -836,8 +838,9 @@ input[type="number"] {
 }
 
 .location-map h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 34px;
+  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 38px;
   color: #000000;
 }
 
@@ -860,7 +863,7 @@ input[type="number"] {
 
 .location-list li {
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 18px;
   padding: 10px 20px;
   color: #000000;
@@ -872,11 +875,11 @@ input[type="number"] {
   color: white;
   padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
   outline: none;
   transition: background-color 0.3s ease;
-  font-family: "Poppins", sans-serif;
+  font-family: "Jost", sans-serif;
 
 }
 
@@ -933,8 +936,9 @@ input[type="number"] {
 }
 
 .project-video h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 34px;
+  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 38px;
   margin-bottom: 20px;
 }
 
@@ -990,9 +994,10 @@ input[type="number"] {
 }
 
 .home-loan h1 {
+  font-family: "Josefin Sans", sans-serif;
   margin: 20px;
-  font-family: "Roboto", sans-serif;
-  font-size: 34px;
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 38px;
 }
 
 .bank-logos {
@@ -1015,7 +1020,8 @@ input[type="number"] {
 }
 
 .legacy h1 {
-  font-size: 36px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 38px;
   margin-bottom: 40px;
   color: #000000;
   /* font-family: "Roboto",sans-serif; */
@@ -1026,7 +1032,7 @@ input[type="number"] {
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  font-family: "Poppins",sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 .stat {
@@ -1055,11 +1061,60 @@ input[type="number"] {
 
 footer {
   bottom: 0;
-  height: 30vh;
   background-color: #004221;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 30px 0 0 0 ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-direction: row;
+  width: 80%;
+  padding: 0 0 20px 0;
+  position: relative; /* Ensure the pseudo-element is positioned relative to this element */
+}
+
+footer div::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 15%; /* Center the border by adjusting the left position */
+  width: 70%; /* Set the desired width */
+  border-bottom: 2px solid white; /* Border properties */
+}
+
+
+footer h3{
+  font-family: "Josefin Sans", sans-serif;
+  margin: 20px 0 5px;
+}
+footer p{
+  font-family: "Jost", sans-serif;
+  padding: 5px 0;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+.developer-office{
+  text-align: left;
+}
+.developer-office img{
+  width: 15%;
+  padding: 5px;
+  background-color: white;
+}
+
+.site-address{
+  text-align: left;
+
 }
 
 /* ==================================================== Mobile version ========================================= */
@@ -1075,7 +1130,7 @@ footer {
   .project-video h1,
   .home-loan h1,
   .legacy h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   nav {
@@ -1144,7 +1199,7 @@ footer {
   }
 
   .mobile-nav {
-    height: 60vh;
+    height: 50vh;
     display: none;
     justify-content: center;
     align-items: center;
@@ -1159,13 +1214,14 @@ footer {
   .mobile-nav a {
     text-decoration: none;
     color: black;
-    margin-bottom: 50px;
-    font-family: "Roboto", sans-serif;
+    margin-bottom: 40px;
+    font-family: "Jost", sans-serif;
     font-size: 20px;
+    font-weight: 600;
   }
 
   main {
-    height: 95vh;
+    height: 92vh;
     background-image: url('assets/DWC\ banner\ mobile.jpg');
   }
 
@@ -1236,7 +1292,7 @@ footer {
 
   .amenities-name {
     display: block;
-    font-family: "poppins", sans-serif;
+    font-family: "Jost", sans-serif;
     font-size: larger;
   }
 
@@ -1309,6 +1365,22 @@ footer {
     /* For mobile */
   }
 
+  footer div {
+    /* display: flex; */
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 0;
+  }
+  footer section{
+    width: 90%;
+    margin-bottom: 5%;
+  }
+
+  .developer-office img{
+    width: 50%;
+  }
+
 }
 
 /* =================================================== Small mobile version ==================================== */
@@ -1316,7 +1388,7 @@ footer {
 @media screen and (max-width: 480px) {
 
   .mobile-nav {
-    height: 70vh;
+    height: 50vh;
     padding-top: 30px;
   }
 }
