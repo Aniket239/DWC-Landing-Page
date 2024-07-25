@@ -83,11 +83,15 @@ main {
   background-size: 100% 100%;
   margin-top: 20px;
 }
-
 .about-the-project {
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: left;
+}
+
+.about-the-project .heading {
+  width: 71%;
 }
 
 #about-the-project {
@@ -105,6 +109,22 @@ main {
   font-family: "Josefin Sans", sans-serif;
   /* font-family: "Roboto", sans-serif; */
   font-size: 38px;
+  position: relative; /* Ensure the pseudo-element is positioned relative to the h1 */
+  display: inline-block;
+}
+
+.about-the-project h1::after {
+  content: "";
+  display: inline-block;
+  margin-left: 10px; /* Adjust this value to control the space between the text and the line */
+  height: 3px; /* Adjust this value to change the thickness of the line */
+  width: 80px; /* Adjust this value to change the length of the line */
+  background-color: black; /* Adjust this value to change the color of the line */
+  vertical-align: middle;
+}
+
+.heading-line{
+  border-bottom: 3px solid black;
 }
 
 .project-about {
@@ -113,7 +133,12 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  font-size: large;
   font-family: "Jost", sans-serif;
+}
+
+.project-about p{
+  text-align: left;
 }
 
 .project-about-icons {
@@ -130,6 +155,11 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0 50px 50px 50px;
+}
+
+.project-description{
+  font-size: x-large;
+  text-align: left;
 }
 
 .download-brochure {
@@ -1166,6 +1196,14 @@ footer a {
   .legacy h1 {
     font-size: 30px;
   }
+  
+  .about-the-project h1::after {
+    display: none;
+  }
+
+  .about-the-project .heading{
+    width: auto;
+  }
 
   nav {
     width: 95vw;
@@ -1265,7 +1303,7 @@ footer a {
 
   .project-about p {
     width: 90%;
-    text-align: center;
+    text-align: left;
   }
 
   .project-about-icon {
@@ -1279,6 +1317,13 @@ footer a {
   .project-about-icon img {
     width: 80px;
     height: 80px;
+  }
+  .project-about-icon p{
+    text-align: center;
+  }
+
+  .project-about h2{
+    font-size: 21px;
   }
 
   .unit-cards {
