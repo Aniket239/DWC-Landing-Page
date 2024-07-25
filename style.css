@@ -1085,8 +1085,8 @@ footer div::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 15%; /* Center the border by adjusting the left position */
-  width: 70%; /* Set the desired width */
+  left: 10%; /* Center the border by adjusting the left position */
+  width: 80%; /* Set the desired width */
   border-bottom: 2px solid white; /* Border properties */
 }
 
@@ -1199,7 +1199,7 @@ footer a{
   }
 
   .mobile-nav {
-    height: 50vh;
+    height: 55vh;
     display: none;
     justify-content: center;
     align-items: center;
@@ -1221,7 +1221,7 @@ footer a{
   }
 
   main {
-    height: 92vh;
+    height: 94vh;
     background-image: url('assets/DWC\ banner\ mobile.jpg');
   }
 
@@ -1385,11 +1385,15 @@ footer a{
 
 /* =================================================== Small mobile version ==================================== */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 380px) {
 
   .mobile-nav {
-    height: 50vh;
+    height: 70vh;
     padding-top: 30px;
+    margin-top: 42px;
+  }
+  main{
+    margin-top: 30px;
   }
 }
 

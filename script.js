@@ -42,9 +42,22 @@ function openMenu() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    const logo = document.getElementById('nav-links')
     const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
     const mobileNav = document.querySelector('.mobile-nav')
     var checkbox = document.getElementById('hamburger-checkbox');
+    logo.addEventListener('click',function(){
+        mobileNav.style.display = 'none';
+        checkbox.checked = false;
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        const offset = 70; 
+        window.scrollTo({
+            top: targetSection.offsetTop - offset,
+            behavior: 'smooth'
+        });
+    })
     mobileNavLinks.forEach(link => {
         link.addEventListener('click', function (e) {
             mobileNav.style.display = 'none';
