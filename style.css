@@ -411,7 +411,7 @@ input[type="number"] {
 
 .unit-details .unit-card h3 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 26px;
+  font-size: 30px;
   color: #215b43;
 }
 
@@ -430,7 +430,7 @@ input[type="number"] {
   border-radius: 40px 40px 40px 40px;
   transition: all 0.3s;
   font-family: "Jost", sans-serif;
-  font-size: 16px;
+  font-size: 22px;
 }
 
 .unit-details .unit-card button.view-details:hover {
