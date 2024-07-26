@@ -1062,7 +1062,6 @@ input[type="number"] {
 .home-loan h1 {
   font-family: "Josefin Sans", sans-serif;
   margin: 20px;
-  /* font-family: "Roboto", sans-serif; */
   font-size: 38px;
 }
 
@@ -1074,10 +1073,23 @@ input[type="number"] {
 }
 
 .bank-logos img {
+  width: auto;
+  height: 10vh;
+  max-width: 20%;
+  flex: 1 1 calc(25% - 40px);
+  aspect-ratio: 1/1; /* Ensures images maintain the same aspect ratio */
+  mix-blend-mode: multiply;
+  object-fit: contain; /* Ensures the entire image fits within the container without being stretched */
+}
+
+
+/* .bank-logos img {
   height: auto;
   flex: 1 1 calc(25% - 40px);
   max-width: 20%;
-}
+  height: 10vh;
+  mix-blend-mode: multiply;
+} */
 
 .legacy {
   text-align: center;
