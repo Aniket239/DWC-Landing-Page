@@ -127,6 +127,7 @@ document.getElementById('nameInput').setCustomValidity('Please enter your full n
 document.getElementById('phoneInput').setCustomValidity('Please enter a valid 10-Digit mobile number');
 document.getElementById('emailInput').setCustomValidity('');
 
+
 function clearValidityMessage(element) {
     element.setCustomValidity('');
     const value = element.value.toString();
@@ -152,6 +153,7 @@ document.getElementById('phoneInput').addEventListener('input', function () {
         this.setCustomValidity('');
     }
 });
+
 
 window.addEventListener('scroll', function() {
     var scrollAmount = window.scrollY;

@@ -339,6 +339,53 @@ main {
     background: transparent;
   }
 }
+.terms-and-condition-container {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+
+.terms-and-condition {
+  display: none; /* Hide the default checkbox */
+}
+
+.terms-and-condition + label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 30px; /* Adjust padding to ensure space for the checkbox */
+  font-size: 15px;
+  color: #000000;
+  user-select: none;
+}
+
+.terms-and-condition + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border: 2px solid #004221;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.terms-and-condition:checked + label:before {
+  background-color: #004221;
+}
+
+.terms-and-condition:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 47%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 4px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+}
 
 input[type="submit"] {
   background-color: #215b43;
@@ -598,6 +645,7 @@ input[type="number"] {
   font-family: "Josefin Sans", sans-serif;
   font-size: 38px;
   color: #000000;
+  margin-bottom: 10px;
 }
 
 .amenities-container {
@@ -640,8 +688,9 @@ input[type="number"] {
 
 .carousel {
   position: relative;
-  width: 60%;
+  width: 55%;
   overflow: hidden;
+  margin: auto 0;
 }
 
 .carousel-container {
