@@ -1069,11 +1069,12 @@ input[type="number"] {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px;
+  gap: 50px;
+  width: 90%;
+  margin: 40px auto;
 }
 
 .bank-logos img {
-  width: auto;
   height: 10vh;
   max-width: 20%;
   flex: 1 1 calc(25% - 40px);
@@ -1081,15 +1082,6 @@ input[type="number"] {
   mix-blend-mode: multiply;
   object-fit: contain; /* Ensures the entire image fits within the container without being stretched */
 }
-
-
-/* .bank-logos img {
-  height: auto;
-  flex: 1 1 calc(25% - 40px);
-  max-width: 20%;
-  height: 10vh;
-  mix-blend-mode: multiply;
-} */
 
 .legacy {
   text-align: center;
@@ -1291,6 +1283,10 @@ footer a {
     padding: 7%;
     width: 70%;
   }
+  #close-button {
+    top: 25px;
+    right: 25px;
+  }
 
   .mobile-nav {
     height: 55vh;
@@ -1352,7 +1348,6 @@ footer a {
     width: 100%;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: large;
     font-family: "jost", sans-serif;
     display: flex;
     justify-content: flex-start;
@@ -1573,6 +1568,10 @@ footer a {
     height: 70vh;
     padding-top: 30px;
     margin-top: 42px;
+  }
+
+  .bottom-nav div a div {
+    height: 4vh;
   }
 
   main {
