@@ -106,17 +106,21 @@ function enquiryForm() {
     const body = document.getElementsByTagName('body')[0];
     formContainer.style.display = 'grid'; 
     body.style.overflow = 'hidden';
+    formContainer.dataset.closed = 'false'; // Reset the closed flag when opening the form
 }
+
 const downloadBrochureBtn = document.querySelector('.download-brochure');
 downloadBrochureBtn.addEventListener('click', enquiryForm);
 
 const closeButton = document.getElementById('close-button');
 closeButton.addEventListener('click', closeForm);
+
 function closeForm() {
     const formContainer = document.getElementById('form-container');
     const body = document.getElementsByTagName('body')[0];
     formContainer.style.display = 'none'; 
     body.style.overflow = 'auto';
+    formContainer.dataset.closed = 'true'; // Set the closed flag when closing the form
 }
 
 document.getElementById('nameInput').setCustomValidity('Please enter your full name');
@@ -148,6 +152,20 @@ document.getElementById('phoneInput').addEventListener('input', function () {
         this.setCustomValidity('');
     }
 });
+
+window.addEventListener('scroll', function() {
+    var scrollAmount = window.scrollY;
+    const formContainer = document.getElementById('form-container');
+    const body = document.getElementsByTagName('body')[0];
+    if (scrollAmount > 900 && formContainer.dataset.closed !== 'true') {
+        formContainer.style.display = 'grid'; 
+        body.style.overflow = 'hidden';
+    } else if (formContainer.dataset.closed !== 'true') {
+        formContainer.style.display = 'none'; 
+        body.style.overflow = 'auto';
+    }
+});
+
 
 // ================================= Gallery ========================================
 const tabs = document.getElementsByClassName('gallery-tab');
