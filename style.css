@@ -1530,6 +1530,10 @@ footer a {
     /* For mobile */
   }
 
+  footer{
+    margin-bottom: 6vh;
+  }
+
   footer div {
     /* display: flex; */
     justify-content: center;
