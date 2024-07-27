@@ -76,6 +76,10 @@ nav ul li a img {
   display: none;
 }
 
+.mobile-nav{
+  display: none;
+}
+
 main {
   background-image: url("assets/DWC\ banner.webp");
   height: 100vh;
@@ -202,6 +206,30 @@ main {
   box-shadow: none;
 }
 
+/* Add this to your existing CSS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+
 .form-container {
   position: fixed;
   top: 0;
@@ -211,11 +239,19 @@ main {
   display: none;
   place-items: center;
   backdrop-filter: blur(5px);
-  /* filter: blur(5px); */
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 50;
   overflow: auto;
 }
+
+.form-container.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.form-container.fade-out {
+  animation: fadeOut 0.5s ease-in-out;
+}
+
 
 .form-container .material-symbols-outlined {
   position: absolute;
@@ -235,7 +271,7 @@ main {
   padding: 60px;
   background: #ffffff;
   border-radius: 0px;
-  border: 2px solid #173d2d;
+  border: none;
   font-family: "Jost", sans-serif;
 }
 
@@ -420,7 +456,7 @@ input[type="number"] {
 }
 
 .side-nav {
-  display: flex;
+  display: flex; /* Change to flex by default for animation purposes */
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
@@ -429,14 +465,21 @@ input[type="number"] {
   top: 50%;
   transform: translateY(-50%);
   z-index: 50;
-  height: 50vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-.call-whatsapp{
-  background-color: white;
-  padding: 10px 5px;
-  border-radius: 10px 0 0 10px;
+.side-nav.show {
+  opacity: 1;
+  visibility: visible;
 }
+
+.side-nav-hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
 
 .side-nav-call {
   text-decoration: none;
@@ -446,7 +489,13 @@ input[type="number"] {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  background-color: white;
+  padding: 6px 15px;
+  border-radius: 50px 0 0 50px;
+  height: 54px; /* Set a fixed height */
+  overflow: hidden; /* Ensure the content doesn't overflow */
 }
+
 
 .side-nav-call .material-symbols-outlined {
   font-variation-settings:
@@ -454,12 +503,24 @@ input[type="number"] {
     'wght' 400,
     'GRAD' 10,
     'opsz' 48;
-    font-size: 45px;
-    color: #004221;
+  font-size: 45px;
+  color: #004221;
 }
 
-.side-nav-call p{
-  display: none;
+.side-nav-call p {
+  display: block;
+  opacity: 0;
+  max-width: 0;
+  font-size: larger;
+  font-family: "Josefin Sans", sans-serif;
+  transition: all  0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.side-nav-call p.revealed {
+  max-width: 200px; /* Adjust this value as needed */
+  opacity: 1;
+  height: 15px;
 }
 
 .side-nav-call-icon {
@@ -473,8 +534,16 @@ input[type="number"] {
   transform: rotate(60deg);
 }
 
+.side-nav-whatsapp {
+  cursor: pointer;
+  background-color: white;
+  margin-top: 15px;
+  padding: 0 11px;
+  border-radius: 50px 0 0 50px;
+}
+
 .side-nav-whatsapp-icon {
-  background: url('assets/whatsapp\ gif.gif');
+  background: url('assets/whatsapp gif.gif');
   height: 50px;
   width: 50px;
   background-size: contain;
@@ -490,20 +559,35 @@ input[type="number"] {
   /* Rotating the button sideways */
 }
 
+@keyframes glow {
+  0% {
+    box-shadow: none; /* Initial box-shadow */
+  }
+  50% {
+    box-shadow: 0 0 0 5px #004221; /* Intermediate square glow effect */
+  }
+  100% {
+    box-shadow:none; /* Intermediate square glow effect */
+  }
+}
+
 .side-nav-enquiry button {
   padding: 8px 18px;
   background-color: #004221;
   border: none;
   color: white;
-  font-size: 26px;
+  font-size: 30px;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  animation: glow 2s infinite; /* Apply the glow animation */
 }
 
-.side-nav-enquiry button:hover{
+.side-nav-enquiry button:hover {
   background-color: #000000;
+  animation: none; /* Turn off the glow animation on hover */
 }
+
 
 .unit-details {
   display: flex;
@@ -517,6 +601,7 @@ input[type="number"] {
   /* font-family: "Roboto", sans-serif; */
   font-size: 38px;
   color: black;
+  margin: 0 0 40px;
 }
 
 .unit-cards {
@@ -1101,6 +1186,10 @@ input[type="number"] {
   text-align: right;
 }
 
+.location-dots-mobile{
+  display: none;
+}
+
 .location-time {
   width: 25%;
   text-align: right;
@@ -1134,7 +1223,7 @@ input[type="number"] {
 
 .project-video {
   text-align: center;
-  margin: 20px;
+  margin: 60px 20px;
 }
 
 .project-video h1 {
@@ -1203,22 +1292,29 @@ input[type="number"] {
 
 .bank-logos {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
-  gap: 50px;
   width: 90%;
   margin: 40px auto;
 }
 
+.bank-logos div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  gap: 170px;
+}
+
 .bank-logos img {
   height: 10vh;
-  max-width: 20%;
+  max-width: 12%;
   flex: 1 1 calc(25% - 40px);
   aspect-ratio: 1/1;
-  /* Ensures images maintain the same aspect ratio */
   mix-blend-mode: multiply;
   object-fit: contain;
-  /* Ensures the entire image fits within the container without being stretched */
 }
 
 .legacy {
@@ -1356,78 +1452,66 @@ footer a {
   .about-the-project .heading {
     width: auto;
   }
-
   nav {
     width: 95vw;
     padding: 0 10px;
-  }
+}
 
-  .nav-items {
+.nav-items {
     display: none;
-  }
+}
 
-  nav ul li a img {
+nav ul li a img {
     margin-top: 3%;
     width: 150px;
     height: 65px;
-  }
+}
 
-  .nav-items-hamburger {
+.nav-items-hamburger {
     display: block;
-  }
+}
 
-  .nav-items-hamburger li {
+.nav-items-hamburger li {
     margin: 0;
-  }
+}
 
-  .hamburger {
+.hamburger {
     cursor: pointer;
-  }
+}
 
-  .hamburger input {
+.hamburger input {
     display: none;
-  }
+}
 
-  .hamburger svg {
+.hamburger svg {
     height: 3em;
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
 
-
-  .line {
+.line {
     fill: none;
     stroke: rgb(0, 0, 0);
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 3;
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  .line-top-bottom {
+.line-top-bottom {
     stroke-dasharray: 12 63;
-  }
+}
 
-  .hamburger input:checked+svg {
+.hamburger input:checked+svg {
     transform: rotate(-45deg);
-  }
+}
 
-  .hamburger input:checked+svg .line-top-bottom {
+.hamburger input:checked+svg .line-top-bottom {
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
-  }
+}
 
-  .enquiry-form {
-    padding: 7%;
-    width: 70%;
-  }
-
-  #close-button {
-    top: 25px;
-    right: 25px;
-  }
-
-  .mobile-nav {
+.mobile-nav {
     height: 55vh;
     display: none;
     justify-content: center;
@@ -1438,15 +1522,82 @@ footer a {
     background-color: white;
     width: 100vw;
     margin-top: 48px;
-  }
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
 
-  .mobile-nav a {
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.mobile-nav ul{
+  list-style:none;
+}
+
+.mobile-nav li {
+    opacity: 0;
+    animation: slideIn 0.5s ease-in-out forwards;
+    margin-bottom: 20px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.mobile-nav a {
     text-decoration: none;
     color: black;
     margin-bottom: 40px;
     font-family: "Jost", sans-serif;
     font-size: 20px;
     font-weight: 600;
+}
+
+.mobile-nav a.active {
+    color: #215B43;
+}
+
+.mobile-nav li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.mobile-nav li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.mobile-nav li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.mobile-nav li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.mobile-nav li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.mobile-nav li:nth-child(6) {
+    animation-delay: 0.6s;
+}
+  .enquiry-form {
+    padding: 7%;
+    width: 70%;
+  }
+
+  #close-button {
+    top: 25px;
+    right: 25px;
   }
 
   .bottom-nav {
@@ -1461,6 +1612,19 @@ footer a {
     background-color: #ffffff;
     z-index: 100;
     border-top: 2px solid #004221;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+
+  .bottom-nav.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .bottom-nav-hide {
+    opacity: 0;
+    visibility: hidden;
   }
 
   .bottom-nav div {
@@ -1525,7 +1689,7 @@ footer a {
 
 
   main {
-    height: 87vh;
+    height: 94vh;
     background-image: url('assets/DWC\ banner\ mobile.jpg');
   }
 
@@ -1536,6 +1700,10 @@ footer a {
   .project-about p {
     width: 90%;
     text-align: left;
+  }
+
+  .project-description{
+    font-size: large;
   }
 
   .project-about-icon {
@@ -1566,6 +1734,10 @@ footer a {
 
   .unit-details {
     padding: 70px 0 60px 0;
+  }
+
+  .unit-details h1{
+  margin: 0;
   }
 
   .unit-details .unit-card {
@@ -1636,6 +1808,20 @@ footer a {
     width: 100%;
   }
 
+  .location-name {
+    width: 70%;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .location-dots{
+    display: none;
+  }
+
+  .location-dots-mobile{
+    display: block;
+  }
+
   .map-carousel {
     margin-top: 20px;
     width: 90%;
@@ -1672,6 +1858,11 @@ footer a {
     max-width: 45%;
     width: 80px;
     height: 80px;
+  }
+
+  .bank-logos div{
+    gap: 40px;
+    margin-bottom: 34px;
   }
 
   .stat {

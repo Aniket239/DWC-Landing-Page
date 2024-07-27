@@ -1,3 +1,49 @@
+// ================================================ side nav ================================================
+
+var sideNavCall = document.querySelector('.side-nav-call');
+var phoneNumber = document.getElementById('side-nav-phone-number');
+
+sideNavCall.addEventListener('mouseover', function () {
+    phoneNumber.classList.add('revealed');
+});
+
+sideNavCall.addEventListener('mouseout', function () {
+    phoneNumber.classList.remove('revealed');
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const sideNavbar = document.querySelector('.side-nav');
+
+    window.addEventListener('scroll', function () {
+        var scrollAmount = window.scrollY;
+        if (scrollAmount > 300) {
+            sideNavbar.classList.add('show');
+            sideNavbar.classList.remove('side-nav-hide');
+        } else {
+            sideNavbar.classList.remove('show');
+            sideNavbar.classList.add('side-nav-hide');
+        }
+    });
+});
+
+
+//============================================== bottom-nav================================
+
+document.addEventListener('DOMContentLoaded', function () {
+    const bottom = document.querySelector('.bottom-nav');
+
+    window.addEventListener('scroll', function () {
+        var scrollAmount = window.scrollY;
+        if (scrollAmount > 300) {
+            bottom.classList.add('show');
+            bottom.classList.remove('bottom-nav-hide');
+        } else {
+            bottom.classList.remove('show');
+            bottom.classList.add('bottom-nav-hide');
+        }
+    });
+});
+
 
 // ===================================== Add shadow in nav ================================
 const nav = document.querySelector('nav');
@@ -28,52 +74,75 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-
 function openMenu() {
     var checkbox = document.getElementById('hamburger-checkbox');
-    const mobileNav = document.querySelector('.mobile-nav')
+    const mobileNav = document.querySelector('.mobile-nav');
     if (checkbox.checked) {
-        console.log('The checkbox is checked');
         mobileNav.style.display = 'flex';
     } else {
-        console.log('The checkbox is not checked');
         mobileNav.style.display = 'none';
     }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    const logo = document.getElementById('nav-links')
+    const navLinks = document.querySelectorAll('#nav-links a');
     const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
-    const mobileNav = document.querySelector('.mobile-nav')
+    const mobileNav = document.querySelector('.mobile-nav');
     var checkbox = document.getElementById('hamburger-checkbox');
-    logo.addEventListener('click',function(){
-        mobileNav.style.display = 'none';
-        checkbox.checked = false;
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
-        const offset = 70; 
-        window.scrollTo({
-            top: targetSection.offsetTop - offset,
-            behavior: 'smooth'
-        });
-    })
-    mobileNavLinks.forEach(link => {
+
+    navLinks.forEach(link => {
         link.addEventListener('click', function (e) {
+            e.preventDefault();
             mobileNav.style.display = 'none';
             checkbox.checked = false;
-            e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
-            const offset = 70; 
+            const offset = 70;
             window.scrollTo({
                 top: targetSection.offsetTop - offset,
                 behavior: 'smooth'
             });
+            setActiveSection(targetId);
+        });
+    });
+
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            mobileNav.style.display = 'none';
+            checkbox.checked = false;
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            const offset = 70;
+            window.scrollTo({
+                top: targetSection.offsetTop - offset,
+                behavior: 'smooth'
+            });
+            setActiveSection(targetId);
+        });
+    });
+
+    function setActiveSection(sectionId) {
+        mobileNavLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === sectionId) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', function () {
+        let fromTop = window.scrollY + 80;
+        mobileNavLinks.forEach(link => {
+            let section = document.getElementById(link.getAttribute('href').substring(1));
+            if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
         });
     });
 });
-
 // ================================================== nav items animation =========================================================
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -104,7 +173,9 @@ observer.observe(aboutProjectSection);
 function enquiryForm() {
     const formContainer = document.getElementById('form-container');
     const body = document.getElementsByTagName('body')[0];
-    formContainer.style.display = 'grid'; 
+    formContainer.style.display = 'grid';
+    formContainer.classList.add('fade-in');
+    formContainer.classList.remove('fade-out');
     body.style.overflow = 'hidden';
     formContainer.dataset.closed = 'false'; // Reset the closed flag when opening the form
 }
@@ -118,7 +189,15 @@ closeButton.addEventListener('click', closeForm);
 function closeForm() {
     const formContainer = document.getElementById('form-container');
     const body = document.getElementsByTagName('body')[0];
-    formContainer.style.display = 'none'; 
+    formContainer.classList.remove('fade-in');
+    formContainer.classList.add('fade-out');
+    
+    formContainer.addEventListener('animationend', function handleAnimationEnd() {
+        formContainer.style.display = 'none';
+        formContainer.classList.remove('fade-out');
+        formContainer.removeEventListener('animationend', handleAnimationEnd);
+    });
+    
     body.style.overflow = 'auto';
     formContainer.dataset.closed = 'true'; // Set the closed flag when closing the form
 }
@@ -132,7 +211,7 @@ function clearValidityMessage(element) {
     element.setCustomValidity('');
     const value = element.value.toString();
     console.log(value);
-    
+
     // Check if the value as a string is not an empty string or invalid intermediate states
     if (value !== '' && value !== '-' && value !== '+' && value !== 'e' && value !== '-e' && value !== '+e') {
         element.classList.add('has-value');
@@ -155,19 +234,20 @@ document.getElementById('phoneInput').addEventListener('input', function () {
 });
 
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     var scrollAmount = window.scrollY;
     const formContainer = document.getElementById('form-container');
     const body = document.getElementsByTagName('body')[0];
     if (scrollAmount > 900 && formContainer.dataset.closed !== 'true') {
-        formContainer.style.display = 'grid'; 
+        formContainer.style.display = 'grid';
+        formContainer.classList.add('fade-in');
         body.style.overflow = 'hidden';
     } else if (formContainer.dataset.closed !== 'true') {
-        formContainer.style.display = 'none'; 
+        formContainer.style.display = 'none';
+        formContainer.classList.remove('fade-in');
         body.style.overflow = 'auto';
     }
 });
-
 
 
 // ================================= Gallery ========================================
@@ -221,7 +301,7 @@ function showSlide(index) {
     const slides = document.querySelectorAll('.carousel-item');
     const totalSlides = slides.length;
     const amenitiesListItems = document.querySelectorAll('.amenities-list li');
-    
+
     if (index >= totalSlides) {
         currentSlide = 0;
     } else if (index < 0) {
@@ -229,7 +309,7 @@ function showSlide(index) {
     } else {
         currentSlide = index;
     }
-    
+
     const offset = -currentSlide * 100;
     document.querySelector('.carousel-container').style.transform = `translateX(${offset}%)`;
 
@@ -380,7 +460,7 @@ function showLocation(index) {
     const locations = document.querySelectorAll('.map-item');
     const totalLocations = locations.length;
     const locationListItems = document.querySelectorAll('.location-list li');
-    
+
     if (index >= totalLocations) {
         currentLocation = 0;
     } else if (index < 0) {
@@ -388,7 +468,7 @@ function showLocation(index) {
     } else {
         currentLocation = index;
     }
-    
+
     const offset = -currentLocation * 100;
     document.querySelector('.map-container').style.transform = `translateX(${offset}%)`;
 
@@ -434,11 +514,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ============================ project video ===============================
 
-document.getElementById('video-thumbnail').addEventListener('click', function() {
+document.getElementById('video-thumbnail').addEventListener('click', function () {
     var iframe = document.getElementById('video-iframe');
     var src = iframe.src;
     iframe.src = src + (src.includes('?') ? '&' : '?') + 'autoplay=1';
-    
+
     document.getElementById('video-thumbnail').style.display = 'none';
     document.getElementById('video-wrapper').style.display = 'block';
 });

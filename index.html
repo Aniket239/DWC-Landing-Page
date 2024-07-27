@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -57,9 +58,7 @@
                 <label class="hamburger">
                     <input type="checkbox" onclick="openMenu()" id="hamburger-checkbox">
                     <svg viewBox="0 0 32 32">
-                        <path class="line line-top-bottom"
-                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
-                        </path>
+                        <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
                         <path class="line" d="M7 16 27 16"></path>
                     </svg>
                 </label>
@@ -67,12 +66,14 @@
         </ul>
     </nav>
     <div class="mobile-nav">
-        <a id="mobile-nav-item" href="#about-the-project">About</a>
-        <a id="mobile-nav-item" href="#gallery">Gallery</a>
-        <a id="mobile-nav-item" href="#amenities">Amenities</a>
-        <a id="mobile-nav-item" href="#floor-plans">Floor Plans</a>
-        <a id="mobile-nav-item" href="#location-map">Location Map</a>
-        <a id="mobile-nav-item" href="#home-loan">Home Loan</a>
+        <ul>
+            <li><a href="#about-the-project">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#floor-plans">Floor Plans</a></li>
+            <li><a href="#location-map">Location Map</a></li>
+            <li><a href="#home-loan">Home Loan</a></li>
+        </ul>
     </div>
     <main id="main"></main>
     <div class="form-container" id="form-container">
@@ -116,12 +117,11 @@
     </div>
 
     <section class="side-nav">
-        <div class="call-whatsapp">
             <div class="side-nav-call">
                 <span class="material-symbols-outlined">
                     call
                 </span>
-                <p>+91 9681 911 911</p>
+                <p id="side-nav-phone-number">+91 9681 911 911</p>
             </div>
             <div class="side-nav-whatsapp">
                 <a href="https://wa.me/919681911911?text=I%20want%20to%20know%20more%20about%20Dream%20World%20City"
@@ -129,7 +129,6 @@
                     <div class="side-nav-whatsapp-icon"></div>
                 </a>
             </div>
-        </div>
         <div class="side-nav-enquiry">
             <button onclick="enquiryForm()">
                 Enquire Now
@@ -201,8 +200,6 @@
     </section>
     <section class="unit-details">
         <h1>Configurations</h1>
-        <br>
-        <br>
         <br>
         <div class="unit-cards">
             <div class="unit-card">
@@ -553,52 +550,62 @@
                             </li>
                             <li>
                                 <div class="location-name">Pailan International School</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">1 min</div>
                             </li>
                             <li>
                                 <div class="location-name">Vivekananda Mission School</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">5 min</div>
                             </li>
                             <li>
                                 <div class="location-name">Gurukul Vidhya Mandir</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">5 min</div>
                             </li>
                             <li>
                                 <div class="location-name">Calcutta Business School</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">15 min</div>
                             </li>
                             <li>
                                 <div class="location-name">Globsyn</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">20 min</div>
                             </li>
                             <li>
                                 <div class="location-name">Mount Litera School</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">15 min</div>
                             </li>
                             <li>
                                 <div class="location-name">M P Birla</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">20 min</div>
                             </li>
                             <li>
                                 <div class="location-name">DPS Joka</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">20 min</div>
                             </li>
                             <li>
                                 <div class="location-name">D. A. V. Public School</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">20 min</div>
                             </li>
                             <li>
                                 <div class="location-name">Kendriya Vidyalaya</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">10 min</div>
                             </li>
                         </ul>
@@ -609,48 +616,57 @@
                                 <h2>Hospital</h2>
                             </li>
                             <li>
-                                <div class="location-name"> Bharat Sevasram Sangha Hospital</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-name"> Bharat Sevasram Sangha</div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">5 min</div>
                             </li>
                             <li>
                                 <div class="location-name"> ESI - 2.5</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">12 min</div>
                             </li>
                             <li>
                                 <div class="location-name"> Thakurpukur Cancer Hospital</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">12 min</div>
                             </li>
                             <li>
                                 <div class="location-name"> Vidhyasagar State General Hospital</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">20 min</div>
                             </li>
                             <li>
                                 <div class="location-name"> Narayan Hospital</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">20 min</div>
                             </li>
                             <li>
                                 <div class="location-name"> BP Poddar </div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">30 min</div>
                             </li>
                             <li>
                                 <div class="location-name"> BM Birla </div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">30 min</div>
                             </li>
                             <li>
                                 <div class="location-name"> CMRI </div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">30 min</div>
                             </li>
                             <li>
                                 <div class="location-name"> Woodland</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">30 min</div>
                             </li>
 
@@ -708,42 +724,50 @@
                             </li>
                             <li>
                                 <div class="location-name"> Joka Metro</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">10 min</div>
                             </li>
                             <li>
                                 <div class="location-name"> Tollygunge Metro</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">25 min</div>
                             </li>
                             <li>
                                 <div class="location-name"> Taralala</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">20 min</div>
                             </li>
                             <li>
                                 <div class="location-name"> Esplanade</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">40 min</div>
                             </li>
                             <li>
                                 <div class="location-name"> Park Street</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">40 min</div>
                             </li>
                             <li>
                                 <div class="location-name"> Dalhousie</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">40 min</div>
                             </li>
                             <li>
                                 <div class="location-name"> Camac Street</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">40 min</div>
                             </li>
                             <li>
                                 <div class="location-name"> Sector V</div>
-                                <div class="location-dots"> .......... </div>
+                                <div class="location-dots">..........</div>
+                                <div class="location-dots-mobile">.....</div>
                                 <div class="location-time">50 min</div>
                             </li>
                         </ul>
@@ -774,14 +798,17 @@
     <section class="home-loan" id="home-loan">
         <h1>Home Loan Available From</h1>
         <div class="bank-logos">
-            <img src="assets/bank/HDFC logo.svg" alt="Bank 1">
-            <img src="assets/bank/DHFL Logo.png" alt="Bank 2">
-            <img src="assets/bank/icici bank logo.png" alt="Bank 3">
-            <img src="assets/bank/IDBI Logo.png" alt="Bank 4">
-            <img src="assets/bank/LIC HFL Logo.png" alt="Bank 5">
-            <img src="assets/bank/Pnb Hfl logo.png" alt="Bank 6">
-            <img src="assets/bank/Tata Capital logo.png" alt="Bank 7">
-            <img src="assets/bank/PNB Logo.png" alt="Bank 8">
+            <div>
+                <img src="assets/bank/HDFC logo.svg" alt="Bank 1">
+                <img src="assets/bank/DHFL Logo.png" alt="Bank 2">
+                <img src="assets/bank/icici bank logo.png" alt="Bank 3">
+                <img src="assets/bank/IDBI Logo.png" alt="Bank 4">
+            </div>
+            <div><img src="assets/bank/LIC HFL Logo.png" alt="Bank 5">
+                <img src="assets/bank/Pnb Hfl logo.png" alt="Bank 6">
+                <img src="assets/bank/Tata Capital logo.png" alt="Bank 7">
+                <img src="assets/bank/PNB Logo.png" alt="Bank 8">
+            </div>
         </div>
     </section>
     <section class="legacy">
