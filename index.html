@@ -88,7 +88,7 @@
                 <input type="text" class="input" id="nameInput" required oninput="clearValidityMessage(this)">
                 <span class="highlight"></span>
                 <span class="bar"></span>
-                <label class="form-label">Name</label>
+                <label class="form-label">Name*</label>
             </div>
             <br>
             <br>
@@ -97,7 +97,7 @@
                     oninput="clearValidityMessage(this)">
                 <span class="highlight"></span>
                 <span class="bar"></span>
-                <label class="form-label">Mobile</label>
+                <label class="form-label">Phone Number*</label>
             </div>
             <br>
             <br>
@@ -105,7 +105,7 @@
                 <input type="text" class="input" id="emailInput" oninput="clearValidityMessage(this)">
                 <span class="highlight"></span>
                 <span class="bar"></span>
-                <label class="form-label">Email</label>
+                <label class="form-label">Email Address</label>
             </div>
             <br>
             <br>
@@ -189,9 +189,10 @@
                     <p class="project-icon-text">29 Lacs Onwards*</p>
                 </div>
             </div>
-            <p class="project-description">Dream World City in Joka is KOLKATA'S FIRST GLOBAL TOWNSHIP project by The
-                Jain Group, designed to offer a modern and luxurious living experience amidst the tranquilly of nature.
-                Move in today for luxury living and 40+ world-class amenities!</p>
+            <p class="project-description">Dream World City in Joka is Kolkata's first global township project by The
+                Jain Group, designed to offer a modern and luxurious living experience amidst the tranquility of nature.
+                The project is spread across 20 acres of land and has 70% open space. Move in today for luxury living
+                and 40+ world-class amenities!</p>
             <br>
             <br>
             <h2>Pickup and Drop Facility Available</h2><br>
@@ -266,7 +267,7 @@
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
-                    
+
                 </div>
                 <div>
                     <div class="img-container">
@@ -390,7 +391,7 @@
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
-                    
+
                 </div>
                 <div>
                     <div class="img-container">
@@ -486,7 +487,7 @@
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
-                    
+
                 </div>
                 <div>
                     <div class="img-container">
@@ -582,7 +583,7 @@
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
-                    
+
                 </div>
                 <div>
                     <div class="img-container">
@@ -639,18 +640,68 @@
     <section class="amenities" id="amenities">
         <h1>Amenities</h1>
         <div class="amenities-container">
+            <div class="amenities-description">
+                <p class="amenities-description-desktop">Discover an unparalleled lifestyle at Dream World City in Joka,
+                    where every amenity elevates your
+                    living experience. Enjoy a central lawn for gatherings, a supermarket, pharmacy, and bank/ATM
+                    center. Unwind at Club Hollywood, stay fit at the health club with a gym and yoga room, or relax in
+                    the air-conditioned movie theatre and coffee shop. Stroll through vast landscaped gardens, water
+                    bodies, and fountains. For recreation, find cricket, football, basketball, badminton, and volleyball
+                    courts, as well as indoor games like pool, table tennis, and more. Some secrets of this luxurious
+                    haven are best experienced firsthand.</p>
+                <p class="amenities-description-mobile">
+                    Experience luxury at Dream World City, Joka, with 40+ world-class amenities. Enjoy a central lawn,
+                    supermarket, Club Hollywood, gym, yoga room, air-conditioned theatre, coffee shop, landscaped
+                    gardens, and sports courts. Uncover more secrets firsthand.</p>
+                <button class="download-brochure" onclick="enquiryForm()">
+                    Download Brochure
+                </button>
+
+            </div>
             <div class="amenities-list">
                 <ul id="amenities-list">
-                    <li onclick="showSlide(0)">Swimming Pool</li>
-                    <li onclick="showSlide(1)">Convenience Store</li>
-                    <li onclick="showSlide(2)">Gymnasium</li>
-                    <li onclick="showSlide(3)">Mini Theatre</li>
-                    <li onclick="showSlide(4)">Jacuzzi</li>
-                    <li onclick="showSlide(5)">Barbecue Corner</li>
-                    <li onclick="showSlide(6)">Indoor Games</li>
-                    <li onclick="showSlide(7)">Cricket Field</li>
-                    <li onclick="showSlide(8)">ATM</li>
-                    <li onclick="showSlide(9)">Children Park</li>
+                    <li onclick="showSlide(0)"><span class="material-symbols-outlined">
+                            pool
+                        </span>Swimming Pool</li>
+                    <li onclick="showSlide(1)"><span class="material-symbols-outlined">
+                            store
+                        </span>Convenience Store</li>
+                    <li onclick="showSlide(2)"><span class="material-symbols-outlined">
+                            exercise
+                        </span>Gymnasium</li>
+                    <li onclick="showSlide(3)"><span class="material-symbols-outlined">
+                            movie
+                        </span>Mini Theatre</li>
+                    <li onclick="showSlide(4)"><span class="material-symbols-outlined">
+                            spa
+                        </span>Jacuzzi</li>
+                    <li onclick="showSlide(5)"><span class="material-symbols-outlined">
+                            outdoor_grill
+                        </span>Barbecue Corner</li>
+                    <li onclick="showSlide(6)"><span class="material-symbols-outlined">
+                            sports_tennis
+                        </span>Indoor Games</li>
+                    <li onclick="showSlide(7)"><span class="material-symbols-outlined">
+                            sports_cricket
+                        </span>Cricket Field</li>
+                    <li onclick="showSlide(8)"><span class="material-symbols-outlined">
+                            credit_card
+                        </span>ATM</li>
+                    <li onclick="showSlide(9)"><span class="material-symbols-outlined">
+                            sports_kabaddi
+                        </span>Children Park</li>
+                    <li onclick="showSlide(10)"><span class="material-symbols-outlined">
+                            elderly
+                        </span>Senior Citizen Corner</li>
+                    <li onclick="showSlide(11)"><span class="material-symbols-outlined">
+                            directions_run
+                        </span>Jogging & Cycling Track</li>
+                    <li onclick="showSlide(12)"><span class="material-symbols-outlined">
+                            self_improvement
+                        </span>Yoga</li>
+                    <li onclick="showSlide(13)"><span class="material-symbols-outlined">
+                            chair
+                        </span>Ac Banquet</li>
                 </ul>
             </div>
             <div class="carousel">
@@ -660,7 +711,9 @@
                             alt="Swimming Pool">
                         <img class="amenities-mobile-image"
                             src="assets/amenities/amenities mobile/swimming pool mobile.webp" alt="Swimming Pool">
-                        <p class="amenities-name">Swimming Pool</p>
+                        <p class="amenities-name"><span class="material-symbols-outlined">
+                                pool
+                            </span>Swimming Pool</p>
                     </div>
                     <div class="carousel-item">
                         <img class="amenities-desktop-image"
@@ -668,63 +721,117 @@
                         <img class="amenities-mobile-image"
                             src="assets/amenities/amenities mobile/convinience store mobile.webp"
                             alt="Convenience Store">
-                        <p class="amenities-name">Convenience Store</p>
+                        <p class="amenities-name"><span class="material-symbols-outlined">
+                                store
+                            </span>Convenience Store</p>
                     </div>
                     <div class="carousel-item">
                         <img class="amenities-desktop-image" src="assets/amenities/amenities desktop/Gymnasium.webp"
                             alt="Gymnasium">
                         <img class="amenities-mobile-image" src="assets/amenities/amenities mobile/Gym mobile.webp"
                             alt="Gymnasium">
-                        <p class="amenities-name">Gymnasium</p>
+                        <p class="amenities-name"><span class="material-symbols-outlined">
+                                exercise
+                            </span>Gymnasium</p>
                     </div>
                     <div class="carousel-item">
                         <img class="amenities-desktop-image" src="assets/amenities/amenities desktop/Mini Theatre.webp"
                             alt="Mini Theatre">
                         <img class="amenities-mobile-image"
                             src="assets/amenities/amenities mobile/Mini theater mobile.webp" alt="Mini Theatre">
-                        <p class="amenities-name">Mini Theatre</p>
+                        <p class="amenities-name"><span class="material-symbols-outlined">
+                                movie
+                            </span>Mini Theatre</p>
                     </div>
                     <div class="carousel-item">
                         <img class="amenities-desktop-image" src="assets/amenities/amenities desktop/jacuzzi.jpg"
                             alt="Jacuzzi">
                         <img class="amenities-mobile-image" src="assets/amenities/amenities mobile/jacuzzi mobile.webp"
                             alt="Jacuzzi">
-                        <p class="amenities-name">Jacuzzi</p>
+                        <p class="amenities-name"><span class="material-symbols-outlined">
+                                spa
+                            </span>Jacuzzi</p>
                     </div>
                     <div class="carousel-item">
                         <img class="amenities-desktop-image"
                             src="assets/amenities/amenities desktop/Barbecue Corner.webp" alt="Barbecue Corner">
                         <img class="amenities-mobile-image"
                             src="assets/amenities/amenities mobile/barbecue corner mobile.webp" alt="Barbecue Corner">
-                        <p class="amenities-name">Barbecue Corner</p>
+                        <p class="amenities-name"><span class="material-symbols-outlined">
+                                outdoor_grill
+                            </span>Barbecue Corner</p>
                     </div>
                     <div class="carousel-item">
                         <img class="amenities-desktop-image" src="assets/amenities/amenities desktop/Indoor Games.webp"
                             alt="Indoor Games">
                         <img class="amenities-mobile-image"
                             src="assets/amenities/amenities mobile/indoor games mobile.webp" alt="Indoor Games">
-                        <p class="amenities-name">Indoor Games</p>
+                        <p class="amenities-name"><span class="material-symbols-outlined">
+                                sports_tennis
+                            </span>Indoor Games</p>
                     </div>
                     <div class="carousel-item">
                         <img class="amenities-desktop-image" src="assets/amenities/amenities desktop/cricket field.webp"
                             alt="Cricket Field">
                         <img class="amenities-mobile-image" src="assets/amenities/amenities mobile/cricket mobile.webp"
                             alt="Cricket Field">
-                        <p class="amenities-name">Cricket Field</p>
+                        <p class="amenities-name"><span class="material-symbols-outlined">
+                                sports_cricket
+                            </span>Cricket Field</p>
                     </div>
                     <div class="carousel-item">
                         <img class="amenities-desktop-image" src="assets/amenities/amenities desktop/ATM.webp"
                             alt="ATM">
                         <img class="amenities-mobile-image" src="assets/amenities/amenities mobile/ATM mobile.webp"
                             alt="ATM">
-                        <p class="amenities-name">ATM</p>
+                        <p class="amenities-name"><span class="material-symbols-outlined">
+                                credit_card
+                            </span>ATM</p>
                     </div>
                     <div class="carousel-item">
                         <img class="amenities-desktop-image" src="assets/amenities/amenities desktop/Children Park.webp"
                             alt="Children Park">
                         <img class="amenities-mobile-image"
                             src="assets/amenities/amenities mobile/Children park mobile.webp" alt="Children Park">
-                        <p class="amenities-name">Children Park</p>
+                        <p class="amenities-name"><span class="material-symbols-outlined">
+                                sports_kabaddi
+                            </span>Children Park</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="amenities-desktop-image"
+                            src="assets/amenities/amenities desktop/senior citizen corner.jpg" alt="Children Park">
+                        <img class="amenities-mobile-image"
+                            src="assets/amenities/amenities mobile/Children park mobile.webp" alt="Children Park">
+                        <p class="amenities-name"><span class="material-symbols-outlined">
+                                elderly
+                            </span>Senior Citizen Corner</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="amenities-desktop-image" src="assets/amenities/amenities desktop/Jogging track.jpg"
+                            alt="Children Park">
+                        <img class="amenities-mobile-image"
+                            src="assets/amenities/amenities mobile/Children park mobile.webp" alt="Children Park">
+                        <p class="amenities-name"><span class="material-symbols-outlined">
+                                directions_run
+                            </span>Jogging & Cycling Track</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="amenities-desktop-image" src="assets/amenities/amenities desktop/Yoga.jpg"
+                            alt="Children Park">
+                        <img class="amenities-mobile-image"
+                            src="assets/amenities/amenities mobile/Children park mobile.webp" alt="Children Park">
+                        <p class="amenities-name"><span class="material-symbols-outlined">
+                                self_improvement
+                            </span>Yoga</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="amenities-desktop-image" src="assets/amenities/amenities desktop/Ac banquet.jpg"
+                            alt="Children Park">
+                        <img class="amenities-mobile-image"
+                            src="assets/amenities/amenities mobile/Children park mobile.webp" alt="Children Park">
+                        <p class="amenities-name"><span class="material-symbols-outlined">
+                                chair
+                            </span>Ac Banquet</p>
                     </div>
                     <!-- Add more items as needed -->
                 </div>
@@ -822,11 +929,21 @@
         <div class="location-container">
             <div class="location-list">
                 <ul id="location-list">
-                    <li onclick="showLocation(0)">School</li>
-                    <li onclick="showLocation(1)">Hospital</li>
-                    <li onclick="showLocation(2)">Fine Dining</li>
-                    <li onclick="showLocation(3)">Daily Market & Shopping Mall</li>
-                    <li onclick="showLocation(4)">Connectivity</li>
+                    <li onclick="showLocation(0)"><span class="material-symbols-outlined">
+                            school
+                        </span>School</li>
+                    <li onclick="showLocation(1)"><span class="material-symbols-outlined">
+                            healing
+                        </span>Hospital</li>
+                    <li onclick="showLocation(2)"><span class="material-symbols-outlined">
+                            dinner_dining
+                        </span>Fine Dining</li>
+                    <li onclick="showLocation(3)"><span class="material-symbols-outlined">
+                            shopping_bag
+                        </span>Daily Market & Shopping Mall</li>
+                    <li onclick="showLocation(4)"><span class="material-symbols-outlined">
+                            directions_railway_2
+                        </span>Connectivity</li>
                 </ul>
             </div>
             <div class="map-carousel">
