@@ -217,7 +217,7 @@ main {
   overflow: auto;
 }
 
-.material-symbols-outlined {
+.form-container .material-symbols-outlined {
   position: absolute;
   right: 40px;
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
@@ -339,6 +339,7 @@ main {
     background: transparent;
   }
 }
+
 .terms-and-condition-container {
   display: flex;
   align-items: center;
@@ -346,19 +347,21 @@ main {
 }
 
 .terms-and-condition {
-  display: none; /* Hide the default checkbox */
+  display: none;
+  /* Hide the default checkbox */
 }
 
-.terms-and-condition + label {
+.terms-and-condition+label {
   position: relative;
   cursor: pointer;
-  padding-left: 30px; /* Adjust padding to ensure space for the checkbox */
+  padding-left: 30px;
+  /* Adjust padding to ensure space for the checkbox */
   font-size: 15px;
   color: #000000;
   user-select: none;
 }
 
-.terms-and-condition + label:before {
+.terms-and-condition+label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -371,11 +374,11 @@ main {
   background-color: white;
 }
 
-.terms-and-condition:checked + label:before {
+.terms-and-condition:checked+label:before {
   background-color: #004221;
 }
 
-.terms-and-condition:checked + label:after {
+.terms-and-condition:checked+label:after {
   content: "";
   position: absolute;
   left: 7px;
@@ -414,6 +417,92 @@ input[type="number"] {
 
 .bottom-nav {
   display: none;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+  height: 50vh;
+}
+
+.call-whatsapp{
+  background-color: white;
+  padding: 10px 5px;
+  border-radius: 10px 0 0 10px;
+}
+
+.side-nav-call {
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.side-nav-call .material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 10,
+    'opsz' 48;
+    font-size: 45px;
+    color: #004221;
+}
+
+.side-nav-call p{
+  display: none;
+}
+
+.side-nav-call-icon {
+  background: url('assets/call.gif');
+  height: 40px;
+  width: 54px;
+  position: relative;
+  right: -10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(60deg);
+}
+
+.side-nav-whatsapp-icon {
+  background: url('assets/whatsapp\ gif.gif');
+  height: 50px;
+  width: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 10px 0;
+}
+
+.side-nav-enquiry {
+  margin: 50% 0;
+  position: relative;
+  right: -70px;
+  transform: rotate(90deg);
+  /* Rotating the button sideways */
+}
+
+.side-nav-enquiry button {
+  padding: 8px 18px;
+  background-color: #004221;
+  border: none;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.side-nav-enquiry button:hover{
+  background-color: #000000;
 }
 
 .unit-details {
@@ -552,9 +641,6 @@ input[type="number"] {
   width: 90%;
 }
 
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-}
 
 .gallery-tab-content.active {
   opacity: 1;
@@ -1128,9 +1214,11 @@ input[type="number"] {
   height: 10vh;
   max-width: 20%;
   flex: 1 1 calc(25% - 40px);
-  aspect-ratio: 1/1; /* Ensures images maintain the same aspect ratio */
+  aspect-ratio: 1/1;
+  /* Ensures images maintain the same aspect ratio */
   mix-blend-mode: multiply;
-  object-fit: contain; /* Ensures the entire image fits within the container without being stretched */
+  object-fit: contain;
+  /* Ensures the entire image fits within the container without being stretched */
 }
 
 .legacy {
@@ -1333,6 +1421,7 @@ footer a {
     padding: 7%;
     width: 70%;
   }
+
   #close-button {
     top: 25px;
     right: 25px;
@@ -1384,7 +1473,7 @@ footer a {
   }
 
   .bottom-nav div a div {
-    background-image: url('assets/call.gif');
+    background-image: url('assets/bottom\ call.gif');
     width: 35px;
     height: 3vh;
     background-repeat: no-repeat;
@@ -1406,7 +1495,7 @@ footer a {
     border-right: 3px solid #004221;
   }
 
-  .bottom-nav div button div{
+  .bottom-nav div button div {
     background-image: url('assets/enquiry.gif');
     width: 35px;
     height: 3vh;
@@ -1415,7 +1504,7 @@ footer a {
     border-radius: 50%;
     border-right: 2px solid white;
     background-color: white;
-  } 
+  }
 
   .bottom-nav div button {
     width: 100%;
@@ -1428,6 +1517,10 @@ footer a {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+  }
+
+  .side-nav {
+    display: none;
   }
 
 
@@ -1587,7 +1680,7 @@ footer a {
     /* For mobile */
   }
 
-  footer{
+  footer {
     margin-bottom: 6vh;
   }
 

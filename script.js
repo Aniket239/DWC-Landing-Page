@@ -169,6 +169,7 @@ window.addEventListener('scroll', function() {
 });
 
 
+
 // ================================= Gallery ========================================
 const tabs = document.getElementsByClassName('gallery-tab');
 const tabContents = document.getElementsByClassName('gallery-tab-content');
