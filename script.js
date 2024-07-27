@@ -79,10 +79,23 @@ function openMenu() {
     const mobileNav = document.querySelector('.mobile-nav');
     if (checkbox.checked) {
         mobileNav.style.display = 'flex';
+        mobileNav.style.animationName = 'fadeIn';
     } else {
-        mobileNav.style.display = 'none';
+        mobileNav.style.animationName = 'fadeOut';
+        setTimeout(() => {
+            mobileNav.style.display = 'none';
+        }, 500);  // Delay hiding the menu to allow the animation to complete
     }
 }
+
+const mobileNavListItems = document.querySelectorAll('.mobile-nav li');
+mobileNavListItems.forEach(item => {
+    item.addEventListener('click', function () {
+        var checkbox = document.getElementById('hamburger-checkbox');
+        checkbox.checked = false;
+        openMenu();
+    });
+});
 
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('#nav-links a');
