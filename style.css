@@ -730,14 +730,14 @@ input[type="number"] {
 .gallery-tab-content.active {
   opacity: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));
+  gap: 2%;
   width: 95%;
 }
 
 .img-container {
   position: relative;
-  margin: 5px;
+  margin: 5px 0 7%;
   cursor: pointer;
   border: 1px solid black;
   border-radius: 15px;
@@ -787,7 +787,6 @@ input[type="number"] {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
 }
 
 .close {
@@ -1512,7 +1511,7 @@ nav ul li a img {
 }
 
 .mobile-nav {
-    height: 55vh;
+    height: 60vh;
     display: none;
     justify-content: center;
     align-items: center;
@@ -1520,8 +1519,11 @@ nav ul li a img {
     position: fixed;
     z-index: 100;
     background-color: white;
+    border-bottom: 4px solid #004221;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 451px 0 rgba(0, 0, 0, 0.7);
     width: 100vw;
-    margin-top: 48px;
+    margin-top: 45px;
     animation: fadeIn 0.5s ease-in-out forwards;
 }
 
@@ -1552,7 +1554,7 @@ nav ul li a img {
 .mobile-nav li {
     opacity: 0;
     animation: slideIn 0.5s ease-in-out forwards;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 @keyframes slideIn {
@@ -1572,10 +1574,21 @@ nav ul li a img {
     font-family: "Jost", sans-serif;
     font-size: 20px;
     font-weight: 600;
+    padding: 10px 15px;
 }
 
 .mobile-nav a.active {
-    color: #215B43;
+  color: #004221;
+  padding: 10px 15px;
+  font-size: x-large;
+  position: relative; /* Needed for the pseudo-element positioning */
+}
+
+.mobile-nav a.active::before {
+  content: "🍃"; /* Leaf symbol */
+  position: absolute;
+  left: -15px; /* Adjust the distance as needed */
+  color: #004221; /* Same color as the active text */
 }
 
 .mobile-nav li:nth-child(1) {
@@ -1694,11 +1707,18 @@ nav ul li a img {
     flex-direction: row;
   }
 
-  .side-nav {
+  .side-nav-call {
     display: none;
   }
 
+  .side-nav-enquiry{
+    display: none;
+  }
 
+  .side-nav-whatsapp-icon{
+    height: 41px;
+    width: 40px;
+  }
   main {
     height: 94vh;
     background-image: url('assets/DWC\ banner\ mobile.jpg');
@@ -1758,7 +1778,7 @@ nav ul li a img {
   }
 
   .gallery-tab-content.active {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
 
   }
 
@@ -1912,7 +1932,7 @@ nav ul li a img {
   .mobile-nav {
     height: 70vh;
     padding-top: 30px;
-    margin-top: 42px;
+    margin-top: 35px;
   }
 
   .bottom-nav div a div {

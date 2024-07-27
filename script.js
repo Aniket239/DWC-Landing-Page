@@ -88,14 +88,6 @@ function openMenu() {
     }
 }
 
-const mobileNavListItems = document.querySelectorAll('.mobile-nav li');
-mobileNavListItems.forEach(item => {
-    item.addEventListener('click', function () {
-        var checkbox = document.getElementById('hamburger-checkbox');
-        checkbox.checked = false;
-        openMenu();
-    });
-});
 
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('#nav-links a');
@@ -261,6 +253,17 @@ window.addEventListener('scroll', function () {
         body.style.overflow = 'auto';
     }
 });
+
+// ================================================ form submission =============================================
+
+function formSubmit(e){
+    const name = document.getElementById('nameInput').value;
+    const phone = document.getElementById('phoneInput').value;
+    const email = document.getElementById('emailInput').value;
+    console.log("name"+ ' '+name + ' ' + "phone"+ ' '+phone + ' ' + "email"+ ' '+email);
+    e.preventDefault();
+    window.location.href = `http://127.0.0.1:5500/thankYou.html?name=${name}&phone=${phone}&email=${email}`;
+}
 
 
 // ================================= Gallery ========================================

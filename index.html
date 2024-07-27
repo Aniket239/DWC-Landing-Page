@@ -58,7 +58,9 @@
                 <label class="hamburger">
                     <input type="checkbox" onclick="openMenu()" id="hamburger-checkbox">
                     <svg viewBox="0 0 32 32">
-                        <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                        <path class="line line-top-bottom"
+                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                        </path>
                         <path class="line" d="M7 16 27 16"></path>
                     </svg>
                 </label>
@@ -76,7 +78,7 @@
         </ul>
     </div>
     <main id="main"></main>
-    <div class="form-container" id="form-container">
+    <div class="form-container" id="form-container" onsubmit="formSubmit(event)">
         <form action class="enquiry-form">
             <span class="material-symbols-outlined" id="close-button">close</span>
             <h2 class="form-heading">Enquire Now</h2>
@@ -112,23 +114,23 @@
                 <label for="terms-and-condition">I agree to be contacted by the Jain Group on the above supplied phone
                     number and email address.*</label>
             </div>
-            <input type="submit" onclick="checkValidity()">
+            <input type="submit">
         </form>
     </div>
 
     <section class="side-nav">
-            <div class="side-nav-call">
-                <span class="material-symbols-outlined">
-                    call
-                </span>
-                <p id="side-nav-phone-number">+91 9681 911 911</p>
-            </div>
-            <div class="side-nav-whatsapp">
-                <a href="https://wa.me/919681911911?text=I%20want%20to%20know%20more%20about%20Dream%20World%20City"
-                    target="_blank">
-                    <div class="side-nav-whatsapp-icon"></div>
-                </a>
-            </div>
+        <div class="side-nav-call">
+            <span class="material-symbols-outlined">
+                call
+            </span>
+            <p id="side-nav-phone-number">+91 9681 911 911</p>
+        </div>
+        <div class="side-nav-whatsapp">
+            <a href="https://wa.me/919681911911?text=I%20want%20to%20know%20more%20about%20Dream%20World%20City"
+                target="_blank">
+                <div class="side-nav-whatsapp-icon"></div>
+            </a>
+        </div>
         <div class="side-nav-enquiry">
             <button onclick="enquiryForm()">
                 Enquire Now
@@ -238,110 +240,396 @@
         </div>
         <div class="gallery-images">
             <div class="gallery-tab-content">
-                <div class="img-container">
-                    <img src="assets/DWC logo.png" alt="Image 1">
-                    <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                    </span>
+                <div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    
                 </div>
-                <div class="img-container">
-                    <img src="assets/DWC banner.webp" alt="Image 2">
-                    <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                    </span>
+                <div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
                 </div>
-                <div class="img-container">
-                    <img src="assets/DWC logo.png" alt="Image 3">
-                    <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                    </span>
+                <div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
                 </div>
-                <div class="img-container">
-                    <img src="assets/DWC logo.png" alt="Image 1">
-                    <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                    </span>
-                </div>
-                <div class="img-container">
-                    <img src="assets/DWC banner.webp" alt="Image 2">
-                    <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                    </span>
-                </div>
-                <div class="img-container">
-                    <img src="assets/DWC logo.png" alt="Image 3">
-                    <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                    </span>
-                </div>
-                <div class="img-container">
-                    <img src="assets/DWC logo.png" alt="Image 1">
-                    <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                    </span>
-                </div>
-                <div class="img-container">
-                    <img src="assets/DWC banner.webp" alt="Image 2">
-                    <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                    </span>
-                </div>
-                <div class="img-container">
-                    <img src="assets/DWC logo.png" alt="Image 3">
-                    <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                    </span>
+                <div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
                 </div>
                 <!-- Repeat for other images as needed -->
             </div>
             <div class="gallery-tab-content">
-                <div class="img-container">
-                    <img src="assets/DWC logo.png" alt="Image 1">
-                    <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                    </span>
+                <div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
                 </div>
-                <div class="img-container">
-                    <img src="assets/DWC banner.webp" alt="Image 2">
-                    <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                    </span>
+                <div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    
                 </div>
-                <div class="img-container">
-                    <img src="assets/DWC logo.png" alt="Image 3">
-                    <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                    </span>
+                <div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
                 </div>
-                <!-- Repeat for other images as needed -->
+                <div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                </div>
             </div>
             <div class="gallery-tab-content">
-                <div class="img-container">
-                    <img src="assets/DWC logo.png" alt="Image 1">
-                    <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                    </span>
+                <div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
                 </div>
-                <div class="img-container">
-                    <img src="assets/DWC banner.webp" alt="Image 2">
-                    <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                    </span>
+                <div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    
                 </div>
-                <div class="img-container">
-                    <img src="assets/DWC logo.png" alt="Image 3">
-                    <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                    </span>
+                <div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
                 </div>
-                <!-- Repeat for other images as needed -->
+                <div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                </div>
             </div>
             <div class="gallery-tab-content">
-                <div class="img-container">
-                    <img src="assets/DWC logo.png" alt="Image 1">
-                    <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                    </span>
+                <div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
                 </div>
-                <div class="img-container">
-                    <img src="assets/DWC banner.webp" alt="Image 2">
-                    <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                    </span>
+                <div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    
                 </div>
-                <div class="img-container">
-                    <img src="assets/DWC logo.png" alt="Image 3">
-                    <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                    </span>
+                <div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
                 </div>
-                <!-- Repeat for other images as needed -->
+                <div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC banner.webp" alt="Image 2">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/DWC logo.png" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                </div>
             </div>
-            <!-- Repeat gallery-tab-content for other tabs as needed -->
         </div>
-        <!-- Modal for zoom effect -->
         <div id="modal" class="modal" onclick="closeModal()">
             <span class="close">&times;</span>
             <img class="modal-content" id="modal-image">
