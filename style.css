@@ -1253,53 +1253,53 @@ input[type="number"] {
 }
 
 
-  .map {
-    position: relative;
-    width: 100%;
-  }
+.map {
+  position: relative;
+  width: 100%;
+}
 
 
-  .map img {
-    width: 70%;
-    margin: auto;
-  }
+.map img {
+  width: 70%;
+  margin: auto;
+}
 
-  .map-text{
-    position: absolute;
-    bottom: 10px;
-    left: 16%;
-    background-color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-    /* Ensure buttons are on top of the image */
-  }
+.map-text {
+  position: absolute;
+  bottom: 10px;
+  left: 16%;
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  /* Ensure buttons are on top of the image */
+}
 
-  .google-map-text {
-    position: absolute;
-    bottom: 12px;
-    left: 10%;
-    background-color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-    /* Ensure buttons are on top of the image */
+.google-map-text {
+  position: absolute;
+  bottom: 12px;
+  left: 10%;
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  /* Ensure buttons are on top of the image */
+}
 
-  }
+.map-text:hover,
+.google-map-text:hover {
+  background-color: #f0f0f0;
+}
 
-  .map-text:hover,
-  .google-map-text:hover {
-    background-color: #f0f0f0;
-  }
-  .location-map iframe {
-    margin: 20px auto;
-  }
+.location-map iframe {
+  margin: 20px auto;
+}
 
 .location-container {
   display: flex;
@@ -1857,7 +1857,8 @@ footer a {
     bottom: 0;
     width: 92vw;
     backdrop-filter: blur(10px);
-    background-color: #ffffff;
+    background-color: #004221;
+    color: white;
     z-index: 100;
     border-top: 2px solid #004221;
     opacity: 1;
@@ -1885,13 +1886,14 @@ footer a {
   }
 
   .bottom-nav div a div {
-    background-image: url('assets/bottom\ call.gif');
-    width: 35px;
-    height: 3vh;
+    background-image: url('assets/Phone\ ring.gif');
+    width: 30px;
+    height: 30px;
     background-repeat: no-repeat;
     background-size: contain;
-    border-right: 2px solid white;
-    background-color: white;
+    /* border-right: 2px solid white; */
+    background-color: inherit;
+    margin-right: 5px;
   }
 
   .bottom-nav div a {
@@ -1903,25 +1905,27 @@ footer a {
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    border-right: 3px solid #004221;
+    border-right: 3px solid #ffffff;
+    color: white;
   }
 
   .bottom-nav div button div {
-    background-image: url('assets/enquiry.gif');
-    width: 35px;
-    height: 3vh;
+    background-image: url('assets/Arrow\ icon\ 1.gif');
+    width: 30px;
+    height: 30px;
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 50%;
-    border-right: 2px solid white;
-    background-color: white;
+    /* border-right: 2px solid white; */
+    background-color: inherit;
+    margin-right: 5px;
   }
 
   .bottom-nav div button {
     width: 100%;
     background-color: transparent;
     border: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: large;
     font-family: "Jost", sans-serif;
     display: flex;
@@ -2177,10 +2181,24 @@ footer a {
     margin: auto;
   }
 
-  .map-text,
+  .map-text {
+    position: absolute;
+    bottom: 2.2%;
+    left: 0%;
+    background-color: #004221;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    /* Ensure buttons are on top of the image */
+  }
+
   .google-map-text {
     position: absolute;
-    bottom: 3px;
+    bottom: 0%;
     left: 0%;
     background-color: #004221;
     color: white;
@@ -2197,6 +2215,7 @@ footer a {
   .google-map-text:hover {
     background-color: #f0f0f0;
   }
+
   .location-map iframe {
     margin: 20px auto;
     width: 100%;
