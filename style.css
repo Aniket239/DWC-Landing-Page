@@ -96,7 +96,7 @@ main {
   background-color: white;
 }
 .about-the-project .heading {
-  width: 71%;
+  width: 90%;
 }
 
 #about-the-project {
@@ -134,24 +134,30 @@ main {
 }
 
 .project-about {
-  width: 70vw;
+  width: 90vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  font-size: large;
   font-family: "Jost", sans-serif;
 }
 
 .project-about p {
   text-align: left;
 }
+.project-about .hera-number{
+ display: none;
+}
 
+.hera-number-desktop{
+  width: 100%;
+}
 .project-about-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  width: 100%;
   /* flex-wrap: wrap; */
 }
 
@@ -846,7 +852,7 @@ input[type="number"] {
   /* Adjust this value to control the space between the text and the line */
   height: 3px;
   /* Adjust this value to change the thickness of the line */
-  width: 17%;
+  width: 50%;
   /* Adjust this value to change the length of the line */
   background-color: black;
   /* Adjust this value to change the color of the line */
@@ -854,7 +860,7 @@ input[type="number"] {
 }
 
 .amenities-description {
-  width: 26.5%;
+  /* width: 26.5%; */
   font-family: "Jost", sans-serif;
   padding: 0 3.5%;
   display: flex;
@@ -874,12 +880,12 @@ input[type="number"] {
 }
 
 .amenities-description .download-brochure {
-  margin: 0 0 0 2%;
+  margin: 0 0 30px 3%;
 }
 
 .amenities-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: flex-start;
 }
 
@@ -925,7 +931,7 @@ input[type="number"] {
 
 .carousel {
   position: relative;
-  width: 40%;
+  width: 60%;
   overflow: hidden;
   margin: auto 0;
 }
@@ -1041,7 +1047,7 @@ input[type="number"] {
   display: inline-block;
   margin-left: 10px;
   height: 3px;
-  width: 58%;
+  width: 65%;
   background-color: black;
   vertical-align: middle;
 }
@@ -1664,15 +1670,6 @@ footer a {
     font-size: 30px;
   }
 
-  .about-the-project h1 {
-    margin: 0 0 0 4%;
-  }
-
-  .about-the-project .heading {
-    width: 95%;
-    margin: 0 0 0 5%;
-  }
-
   nav {
     width: 95vw;
     padding: 0 10px;
@@ -1962,9 +1959,43 @@ footer a {
     width: 90vw;
   }
 
+  .about-the-project h1 {
+    margin: 0 0 0 2%;
+  }
+
+  .about-the-project h1::after{
+    width: 25%;
+  }
+
+  .about-the-project .heading {
+    width: 95%;
+    margin: 0 0 0 5%;
+  }
+
   .project-about p {
-    width: 90%;
+    width: 95%;
     text-align: left;
+  }
+
+  .project-about .hera-number{
+    width: 95%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .project-about .hera-number p{
+    width: auto;
+  }
+
+  .hera-number-desktop{
+    display: none;
+  }
+
+  .hera-number>p{
+    margin-right: 5px;
   }
 
   .project-description {
@@ -2034,6 +2065,10 @@ footer a {
   .amenities-description {
     width: 90%;
     margin-bottom: 20px;
+  }
+
+  .amenities-description p{
+    font-size: 17px;
   }
 
   .amenities-description .download-brochure {
@@ -2335,7 +2370,9 @@ footer a {
   main {
     margin-top: 30px;
   }
-
+  .about-the-project h1::after{
+    width: 20%;
+  }
   .project-about-icon {
     height: 25vh;
   }
