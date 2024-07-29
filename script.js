@@ -262,7 +262,7 @@ function formSubmit(e){
     const email = document.getElementById('emailInput').value;
     console.log("name"+ ' '+name + ' ' + "phone"+ ' '+phone + ' ' + "email"+ ' '+email);
     e.preventDefault();
-    window.location.href = `http://127.0.0.1:5500/thankYou.html?name=${name}&phone=${phone}&email=${email}`;
+    window.location.href = `aniket239.github.io/thankYou.html?name=${name}&phone=${phone}&email=${email}`;
 }
 
 
