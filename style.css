@@ -462,7 +462,7 @@ input[type="number"] {
   align-items: flex-end;
   position: fixed;
   right: 0;
-  top: 50%;
+  /* top: 50%; */
   transform: translateY(-50%);
   z-index: 50;
   opacity: 0;
@@ -473,6 +473,7 @@ input[type="number"] {
 .side-nav.show {
   opacity: 1;
   visibility: visible;
+  top: 500px;
 }
 
 .side-nav-hide {
@@ -1733,8 +1734,8 @@ footer a {
     background-color: #ffffff;
     z-index: 100;
     border-top: 2px solid #004221;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    /* visibility: hidden; */
     transition: opacity 0.5s ease, visibility 0.5s ease;
   }
 
@@ -1818,7 +1819,7 @@ footer a {
   }
 
   main {
-    height: 94vh;
+    height: 88vh;
     background-image: url('assets/DWC\ banner\ mobile.jpg');
   }
 

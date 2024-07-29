@@ -29,20 +29,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //============================================== bottom-nav================================
 
-document.addEventListener('DOMContentLoaded', function () {
-    const bottom = document.querySelector('.bottom-nav');
+// document.addEventListener('DOMContentLoaded', function () {
+//     const bottom = document.querySelector('.bottom-nav');
 
-    window.addEventListener('scroll', function () {
-        var scrollAmount = window.scrollY;
-        if (scrollAmount > 300) {
-            bottom.classList.add('show');
-            bottom.classList.remove('bottom-nav-hide');
-        } else {
-            bottom.classList.remove('show');
-            bottom.classList.add('bottom-nav-hide');
-        }
-    });
-});
+//     window.addEventListener('scroll', function () {
+//         var scrollAmount = window.scrollY;
+//         if (scrollAmount > 300) {
+//             bottom.classList.add('show');
+//             bottom.classList.remove('bottom-nav-hide');
+//         } else {
+//             bottom.classList.remove('show');
+//             bottom.classList.add('bottom-nav-hide');
+//         }
+//     });
+// });
 
 
 // ===================================== Add shadow in nav ================================
