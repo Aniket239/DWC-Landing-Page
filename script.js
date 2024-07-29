@@ -476,6 +476,21 @@ floorPlanShowTab(1);
 
 // ==================================== Location Map ===========================================
 
+document.getElementById('view-map-btn').addEventListener('click', function() {
+    document.getElementById('map-image').style.display = 'none';
+    document.getElementById('google-map').style.display = 'block';
+    document.getElementById('view-map-btn').style.display = 'none';
+    document.getElementById('go-back-btn').style.display = 'block';
+});
+
+document.getElementById('go-back-btn').addEventListener('click', function() {
+    document.getElementById('map-image').style.display = 'block';
+    document.getElementById('google-map').style.display = 'none';
+    document.getElementById('view-map-btn').style.display = 'block';
+    document.getElementById('go-back-btn').style.display = 'none';
+});
+
+
 let currentLocation = 0;
 let locationInterval;
 
