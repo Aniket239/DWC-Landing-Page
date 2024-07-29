@@ -842,63 +842,34 @@
     </section>
 
     <section class="floor-plans" id="floor-plans">
-        <h1>Floor Plans</h1>
+        <h1>Architectural Plans</h1>
         <div class="floor-plans-tabs">
-            <button class="floor-plans-tab" onclick="floorPlanShowTab(1)">Master Plan</button>
-            <button class="floor-plans-tab" onclick="floorPlanShowTab(2)">Floor Plan</button>
+            <button class="floor-plans-tab" onclick="floorPlanShowTab(1)">Floor Plan</button>
+            <button class="floor-plans-tab" onclick="floorPlanShowTab(2)">Master Plan</button>
         </div>
         <div class="floor-plans-images">
             <div class="floor-plans-tab-content">
                 <div class="floor-plans">
-                    <div class="master-floor-plans-container">
-                        <div class="master-floor-plans-item">
-                            <p class="unit-plan-size">Unit Plan - 2BHK</p>
-                            <button class="floor-plans-view-button" onclick="enquiryForm()">View Plan</button>
-                            <img src="assets/DWC banner.webp" alt="Master Plan 1">
-                        </div>
-                        <div class="master-floor-plans-item">
-                            <p class="unit-plan-size">Unit Plan - 3BHK</p>
-                            <button class="floor-plans-view-button" onclick="enquiryForm()">View Plan</button>
-                            <img src="assets/DWC banner.webp" alt="Master Plan 2">
-                        </div>
-                        <div class="master-floor-plans-item">
-                            <p class="unit-plan-size">Unit Plan - 2BHK</p>
-                            <button class="floor-plans-view-button" onclick="enquiryForm()">View Plan</button>
-                            <img src="assets/DWC banner.webp" alt="Master Plan 3">
-                        </div>
-                        <!-- Add more items as needed -->
-                    </div>
-                    <button class="floor-plans-control prev" onclick="masterFloorPlansprevSlide()">
-                        &#10094;
-                    </button>
-                    <button class="floor-plans-control next" onclick="masterFloorPlansNextSlide()">
-                        &#10095;
-                    </button>
-                </div>
-                <div class="thumbnail-strip">
-                    <img src="assets/DWC banner.webp" alt="Master Plan 1" onclick="masterfloorPlansShowSlide(0)">
-                    <img src="assets/DWC banner.webp" alt="Master Plan 2" onclick="masterfloorPlansShowSlide(1)">
-                    <img src="assets/DWC banner.webp" alt="Master Plan 3" onclick="masterfloorPlansShowSlide(2)">
-                    <!-- Add more thumbnails as needed -->
-                </div>
-            </div>
-            <div class="floor-plans-tab-content hidden">
-                <div class="floor-plans">
                     <div class="floor-plans-container">
                         <div class="floor-plans-item">
-                            <p class="unit-plan-size">Unit Plan - 2BHK</p>
+                            <p class="unit-plan-size">London(Pre 1) Floor:1-9</p>
                             <button class="floor-plans-view-button" onclick="enquiryForm()">View Plan</button>
-                            <img src="assets/DWC banner.webp" alt="Floor Plan 1">
+                            <img src="assets/Floor and Master plans/Floor Plan London-02.jpg" alt="Floor Plan 1">
                         </div>
                         <div class="floor-plans-item">
-                            <p class="unit-plan-size">Unit Plan - 2BHK</p>
+                            <p class="unit-plan-size">London(Pre 2) Floor:1-9</p>
                             <button class="floor-plans-view-button" onclick="enquiryForm()">View Plan</button>
-                            <img src="assets/DWC banner.webp" alt="Floor Plan 2">
+                            <img src="assets/Floor and Master plans/Floor Plan London-1.jpg" alt="Floor Plan 2">
                         </div>
                         <div class="floor-plans-item">
-                            <p class="unit-plan-size">Unit Plan - 2BHK</p>
+                            <p class="unit-plan-size">Paris Block: 1-1, 1-2</p>
                             <button class="floor-plans-view-button" onclick="enquiryForm()">View Plan</button>
-                            <img src="assets/DWC banner.webp" alt="Floor Plan 3">
+                            <img src="assets/Floor and Master plans/paris Floor Plan Paris-01.jpg" alt="Floor Plan 3">
+                        </div>
+                        <div class="floor-plans-item">
+                            <p class="unit-plan-size">Paris Block: 2-1, 2-2</p>
+                            <button class="floor-plans-view-button" onclick="enquiryForm()">View Plan</button>
+                            <img src="assets/Floor and Master plans/paris Floor Plan Paris-02.jpg" alt="Floor Plan 3">
                         </div>
                         <!-- Add more items as needed -->
                     </div>
@@ -910,9 +881,38 @@
                     </button>
                 </div>
                 <div class="thumbnail-strip">
-                    <img src="assets/DWC banner.webp" alt="Floor Plan 1" onclick="floorPlansShowSlide(0)">
-                    <img src="assets/DWC banner.webp" alt="Floor Plan 2" onclick="floorPlansShowSlide(1)">
-                    <img src="assets/DWC banner.webp" alt="Floor Plan 3" onclick="floorPlansShowSlide(2)">
+                    <img src="assets/Floor and Master plans/Floor Plan London-1.jpg" alt="Floor Plan 1" onclick="floorPlansShowSlide(0)">
+                    <img src="assets/Floor and Master plans/Floor Plan London-02.jpg" alt="Floor Plan 2" onclick="floorPlansShowSlide(1)">
+                    <img src="assets/Floor and Master plans/paris Floor Plan Paris-01.jpg" alt="Floor Plan 3" onclick="floorPlansShowSlide(2)">
+                    <img src="assets/Floor and Master plans/paris Floor Plan Paris-02.jpg" alt="Floor Plan 3" onclick="floorPlansShowSlide(3)">
+                    <!-- Add more thumbnails as needed -->
+                </div>
+            </div>
+            <div class="floor-plans-tab-content hidden">
+                <div class="floor-plans">
+                    <div class="master-floor-plans-container">
+                        <div class="master-floor-plans-item">
+                            <p class="unit-plan-size">London Cluster</p>
+                            <button class="floor-plans-view-button" onclick="enquiryForm()">View Plan</button>
+                            <img src="assets/Floor and Master plans/master Plan London-01.jpg" alt="Master Plan 1">
+                        </div>
+                        <div class="master-floor-plans-item">
+                            <p class="unit-plan-size">Paris Cluster</p>
+                            <button class="floor-plans-view-button" onclick="enquiryForm()">View Plan</button>
+                            <img src="assets/Floor and Master plans/paris master plan.jpg" alt="Master Plan 2">
+                        </div>
+                        <!-- Add more items as needed -->
+                    </div>
+                    <button class="floor-plans-control prev" id="master-plan-control" onclick="masterFloorPlansprevSlide()">
+                        &#10094;
+                    </button>
+                    <button class="floor-plans-control next" id="master-plan-control" onclick="masterFloorPlansNextSlide()">
+                        &#10095;
+                    </button>
+                </div>
+                <div class="thumbnail-strip" id="master-plan-strip">
+                    <img src="assets/Floor and Master plans/master Plan London-01.jpg" alt="Master Plan 1" onclick="masterfloorPlansShowSlide(0)">
+                    <img src="assets/Floor and Master plans/paris master plan.jpg" alt="Master Plan 2" onclick="masterfloorPlansShowSlide(1)">
                     <!-- Add more thumbnails as needed -->
                 </div>
             </div>

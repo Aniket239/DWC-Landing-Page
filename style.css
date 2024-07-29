@@ -1021,7 +1021,7 @@ input[type="number"] {
 
 .floor-plans-tab {
   cursor: pointer;
-  padding: 10px;
+  padding: 7px 15px;
   border: none;
   background-color: #cecccc;
   font-family: "Jost", sans-serif;
@@ -1066,6 +1066,9 @@ input[type="number"] {
   box-sizing: border-box;
   border: 2px solid black;
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .unit-plan-size {
@@ -1952,12 +1955,40 @@ footer a {
     display: block;
   }
 
+  .floor-plans{
+    width: 100%;
+  }
+
+  .floor-plans-tab-content.active {
+    width: 90vw;
+  }
   .floor-plans-control {
     top: 58%;
   }
 
+  .floor-plans-item img , .master-floor-plans-item img{
+    width: 100%;
+  }
+
+  #master-plan-control{
+    display: none;
+  }
+
+  #master-plan-strip{
+    display: none;
+  }
+
+  .master-floor-plans-container{
+    flex-direction: column;
+  }
+
   .unit-plan-size {
     padding: 2px 10px;
+    width: 50vw;
+  }
+
+  .thumbnail-strip img{
+    width: 50px;
   }
 
   .location-container {
@@ -2083,7 +2114,7 @@ footer a {
   }
 
   .unit-plan-size {
-    width: 35vw;
+    width: 50vw;
   }
 
 }

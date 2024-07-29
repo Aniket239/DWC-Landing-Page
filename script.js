@@ -371,9 +371,14 @@ document.addEventListener('DOMContentLoaded', () => {
 // =========================================== Floor Plan =============================================
 
 // ========== master plan =========================
+
+var screenWidth = screen.width;
+console.log(`screen size: ${screenWidth}`);
 let masterPlanCurrent = 0;
 let masterPlanInterval;
 
+if( screenWidth> 768)
+{
 function masterfloorPlansShowSlide(masterPlanIndex) {
     const masterSlides = document.querySelectorAll('.master-floor-plans-item');
     const mastertotalSlides = masterSlides.length;
@@ -406,6 +411,8 @@ function resetMasterPlanInterval() {
 document.addEventListener('DOMContentLoaded', () => {
     masterPlanInterval = setInterval(masterFloorPlansNextSlide, 3000);
 });
+
+}
 
 // ============== floor plan ========================
 let current = 0;
