@@ -93,9 +93,8 @@ main {
   align-items: center;
   flex-direction: column;
   text-align: left;
-  background-color: #F5F5DC;
+  background-color: white;
 }
-
 .about-the-project .heading {
   width: 71%;
 }
@@ -188,6 +187,7 @@ main {
   border-color: rgba(255, 255, 255, 0.333);
   border-radius: 40px 40px 40px 40px;
   padding: 16px 24px 16px 28px;
+  margin-bottom: 30px;
   transform: translate(0px, 0px) rotate(0deg);
   transition: 0.2s;
   box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
@@ -609,14 +609,15 @@ input[type="number"] {
   padding: 150px 0;
   align-items: center;
   flex-direction: column;
-  background-color: #F5F5DC;
+  background-color: #004221;
 }
+
 
 .unit-details h1 {
   font-family: "Josefin Sans", sans-serif;
   /* font-family: "Roboto", sans-serif; */
   font-size: 38px;
-  color: black;
+  color: rgb(255, 255, 255);
   margin: 0 0 40px;
 }
 
@@ -677,7 +678,7 @@ input[type="number"] {
 }
 
 .gallery {
-  background-color: #F5F5DC;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -690,6 +691,7 @@ input[type="number"] {
   /* font-family: "Roboto", sans-serif; */
   font-size: 38px;
   color: black;
+  margin-top: 30px;
 }
 
 .gallery-tabs {
@@ -1266,9 +1268,10 @@ input[type="number"] {
 
 .map-text {
   position: absolute;
-  bottom: 10px;
-  left: 16%;
-  background-color: #fff;
+  bottom: 0px;
+  left: 15%;
+  background-color: #004221;
+  color: white;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -1280,9 +1283,10 @@ input[type="number"] {
 
 .google-map-text {
   position: absolute;
-  bottom: 12px;
-  left: 10%;
-  background-color: #fff;
+  bottom: 0px;
+  left: 5%;
+  background-color: #004221;
+  color: white;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -1294,7 +1298,7 @@ input[type="number"] {
 
 .map-text:hover,
 .google-map-text:hover {
-  background-color: #f0f0f0;
+    background-color: #00160b;
 }
 
 .location-map iframe {
@@ -1424,7 +1428,8 @@ input[type="number"] {
 
 .project-video {
   text-align: center;
-  margin: 60px 20px;
+  padding: 60px 20px;
+  background-color: #004221;
 }
 
 .project-video h1 {
@@ -1432,6 +1437,7 @@ input[type="number"] {
   /* font-family: "Roboto", sans-serif; */
   font-size: 38px;
   margin-bottom: 20px;
+  color: white;
 }
 
 .video-container {
@@ -1857,10 +1863,10 @@ footer a {
     bottom: 0;
     width: 92vw;
     backdrop-filter: blur(10px);
+    border-top: 3px solid white;
     background-color: #004221;
     color: white;
     z-index: 100;
-    border-top: 2px solid #004221;
     opacity: 1;
     /* visibility: hidden; */
     transition: opacity 0.5s ease, visibility 0.5s ease;
@@ -2005,7 +2011,7 @@ footer a {
 
   .unit-details .unit-card {
     height: 30vh;
-    width: 50vw;
+    width: 60vw;
     margin-bottom: 20px;
   }
 
