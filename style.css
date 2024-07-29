@@ -462,7 +462,7 @@ input[type="number"] {
   align-items: flex-end;
   position: fixed;
   right: 0;
-  /* top: 50%; */
+  top: 390px;
   transform: translateY(-50%);
   z-index: 50;
   opacity: 0;
@@ -473,7 +473,6 @@ input[type="number"] {
 .side-nav.show {
   opacity: 1;
   visibility: visible;
-  top: 390px;
 }
 
 .side-nav-hide {
@@ -982,11 +981,23 @@ input[type="number"] {
   right: 0px;
 }
 
+.floor-plans-section{
+  text-align: right;
+  position: relative;
+  width: 80%;
+  margin: 0 auto 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  min-height: 89vh;
+}
 
 .floor-plans {
   text-align: right;
   position: relative;
-  min-width: 90%;
+  width: 70%;
   margin: 0 auto 30px;
   overflow: hidden;
   display: flex;
@@ -995,7 +1006,19 @@ input[type="number"] {
   flex-direction: row;
 }
 
-.floor-plans h1{
+.master-floor-plans {
+  text-align: right;
+  position: relative;
+  width: 90%;
+  margin: 0 auto 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.floor-plans-section h1{
   font-family: "Josefin Sans", sans-serif;
   /* font-family: "Roboto", sans-serif; */
   font-size: 38px;
@@ -1005,20 +1028,17 @@ input[type="number"] {
 
 .floor-plans-heading-desktop {
   font-family: "Josefin Sans", sans-serif;
-  /* font-family: "Roboto", sans-serif; */
   font-size: 38px;
   color: #000000;
   margin-top: 60px;
-  margin-left: 7.5%;
-  text-align: left;
-}
+  padding: 0 0 0 8%;}
 
 .floor-plans-heading-desktop::after{
   content: "";
   display: inline-block;
   margin-left: 10px;
   height: 3px;
-  width: 60%;
+  width: 58%;
   background-color: black;
   vertical-align: middle;
 }
@@ -1068,15 +1088,37 @@ input[type="number"] {
   color: white;
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.floor-plans-tab-content {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
 .floor-plans-tab-content.active {
-  opacity: 1;
   display: block;
-  width: 50vw;
+  width: 55vw;
+  opacity: 1;
+  animation: fadeIn 0.5s;
 }
 
 .floor-plans-tab-content.hidden {
-  display: none;
   opacity: 0;
+  display: none;
+  animation: fadeOut 0.5s;
+}
+
+.floor-plans-images{
+  min-width: 69%;
 }
 
 .floor-plans-container,
@@ -1084,7 +1126,6 @@ input[type="number"] {
   display: flex;
   transition: transform 0.5s ease;
 }
-
 
 .floor-plans-item,
 .master-floor-plans-item {
@@ -1555,7 +1596,7 @@ footer a {
   .unit-details h1,
   .gallery h1,
   .amenities h1,
-  .floor-plans h1,
+  .floor-plans-section h1,
   .location-map h1,
   .project-video h1,
   .home-loan h1,
@@ -1982,6 +2023,15 @@ footer a {
     display: block;
   }
 
+  .floor-plans-section{
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 83vh;
+    }
+
   .floor-plans{
     text-align: center;
     width: 100%;
@@ -1989,11 +2039,11 @@ footer a {
     align-items: center;
   }
 
-  .floor-plans h1{
+  .floor-plans-section h1{
     margin-right: 0;
   }
 
-  .floor-plans h1::before{
+  .floor-plans-section h1::before{
     display: none;
   }
 
@@ -2023,6 +2073,13 @@ footer a {
 
   .floor-plans-item img , .master-floor-plans-item img{
     width: 100%;
+  }
+
+  .master-floor-plans{
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 
   #master-plan-control{
