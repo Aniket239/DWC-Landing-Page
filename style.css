@@ -473,7 +473,7 @@ input[type="number"] {
 .side-nav.show {
   opacity: 1;
   visibility: visible;
-  top: 500px;
+  top: 390px;
 }
 
 .side-nav-hide {
@@ -984,18 +984,18 @@ input[type="number"] {
 
 
 .floor-plans {
-  text-align: center;
+  text-align: right;
   position: relative;
-  width: 90%;
+  min-width: 90%;
   margin: 0 auto 30px;
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
 }
 
-.floor-plans h1 {
+.floor-plans h1{
   font-family: "Josefin Sans", sans-serif;
   /* font-family: "Roboto", sans-serif; */
   font-size: 38px;
@@ -1003,11 +1003,39 @@ input[type="number"] {
   margin-top: 60px;
 }
 
+.floor-plans-heading-desktop {
+  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 38px;
+  color: #000000;
+  margin-top: 60px;
+  margin-left: 7.5%;
+  text-align: left;
+}
+
+.floor-plans-heading-desktop::after{
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+  height: 3px;
+  width: 60%;
+  background-color: black;
+  vertical-align: middle;
+}
+
+.floor-plans-heading-desktop{
+  display: block;
+}
+
+.floor-plans-heading-mobile{
+  display: none;
+}
+
 .floor-plans-tabs {
-  margin: 20px auto 0 auto;
+  margin: auto 30px;
   display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   overflow-x: auto;
   white-space: nowrap;
@@ -1021,17 +1049,17 @@ input[type="number"] {
 
 .floor-plans-tab {
   cursor: pointer;
-  padding: 7px 15px;
+  padding: 19px 54px;
   border: none;
   background-color: #cecccc;
   font-family: "Jost", sans-serif;
-  min-width: 25%;
+  width: 100%;
   text-align: center;
   transition: all 0.3s;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
   display: inline-block;
-  margin-right: 3px;
+  margin:10px 3px;
 }
 
 .floor-plans-tab:focus,
@@ -1043,7 +1071,7 @@ input[type="number"] {
 .floor-plans-tab-content.active {
   opacity: 1;
   display: block;
-  width: 70vw;
+  width: 50vw;
 }
 
 .floor-plans-tab-content.hidden {
@@ -1149,7 +1177,7 @@ input[type="number"] {
 }
 
 .thumbnail-strip img {
-  width: 100px;
+  width: 70px;
   height: auto;
   margin: 0 10px;
   cursor: pointer;
@@ -1767,7 +1795,6 @@ footer a {
     height: 3vh;
     background-repeat: no-repeat;
     background-size: contain;
-    border-radius: 50%;
     border-right: 2px solid white;
     background-color: white;
   }
@@ -1956,7 +1983,35 @@ footer a {
   }
 
   .floor-plans{
+    text-align: center;
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .floor-plans h1{
+    margin-right: 0;
+  }
+
+  .floor-plans h1::before{
+    display: none;
+  }
+
+  .floor-plans-heading-desktop{
+    display: none;
+  }
+  .floor-plans-heading-mobile{
+    display: block;
+  }
+
+  .floor-plans-tabs{
+  margin: 20px auto 0 auto;
+  flex-direction: row;
+  }
+
+  .floor-plans-tab{
+    width: auto;
+    padding: 8px 20px;
   }
 
   .floor-plans-tab-content.active {
