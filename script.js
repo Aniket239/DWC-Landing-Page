@@ -196,13 +196,13 @@ function closeForm() {
     const body = document.getElementsByTagName('body')[0];
     formContainer.classList.remove('fade-in');
     formContainer.classList.add('fade-out');
-    
+
     formContainer.addEventListener('animationend', function handleAnimationEnd() {
         formContainer.style.display = 'none';
         formContainer.classList.remove('fade-out');
         formContainer.removeEventListener('animationend', handleAnimationEnd);
     });
-    
+
     body.style.overflow = 'auto';
     formContainer.dataset.closed = 'true'; // Set the closed flag when closing the form
 }
@@ -256,11 +256,11 @@ window.addEventListener('scroll', function () {
 
 // ================================================ form submission =============================================
 
-function formSubmit(e){
+function formSubmit(e) {
     const name = document.getElementById('nameInput').value;
     const phone = document.getElementById('phoneInput').value;
     const email = document.getElementById('emailInput').value;
-    console.log("name"+ ' '+name + ' ' + "phone"+ ' '+phone + ' ' + "email"+ ' '+email);
+    console.log("name" + ' ' + name + ' ' + "phone" + ' ' + phone + ' ' + "email" + ' ' + email);
     e.preventDefault();
     window.location.href = `aniket239.github.io/thankYou.html?name=${name}&phone=${phone}&email=${email}`;
 }
@@ -377,40 +377,39 @@ console.log(`screen size: ${screenWidth}`);
 let masterPlanCurrent = 0;
 let masterPlanInterval;
 
-if( screenWidth> 768)
-{
-function masterfloorPlansShowSlide(masterPlanIndex) {
-    const masterSlides = document.querySelectorAll('.master-floor-plans-item');
-    const mastertotalSlides = masterSlides.length;
-    if (masterPlanIndex >= mastertotalSlides) {
-        masterPlanCurrent = 0;
-    } else if (masterPlanIndex < 0) {
-        masterPlanCurrent = mastertotalSlides - 1;
-    } else {
-        masterPlanCurrent = masterPlanIndex;
+if (screenWidth > 768) {
+    function masterfloorPlansShowSlide(masterPlanIndex) {
+        const masterSlides = document.querySelectorAll('.master-floor-plans-item');
+        const mastertotalSlides = masterSlides.length;
+        if (masterPlanIndex >= mastertotalSlides) {
+            masterPlanCurrent = 0;
+        } else if (masterPlanIndex < 0) {
+            masterPlanCurrent = mastertotalSlides - 1;
+        } else {
+            masterPlanCurrent = masterPlanIndex;
+        }
+        const masterPlanOffset = -masterPlanCurrent * 100;
+        document.querySelector('.master-floor-plans-container').style.transform = `translateX(${masterPlanOffset}%)`;
     }
-    const masterPlanOffset = -masterPlanCurrent * 100;
-    document.querySelector('.master-floor-plans-container').style.transform = `translateX(${masterPlanOffset}%)`;
-}
 
-function masterFloorPlansNextSlide() {
-    resetMasterPlanInterval();
-    masterfloorPlansShowSlide(masterPlanCurrent + 1);
-}
+    function masterFloorPlansNextSlide() {
+        resetMasterPlanInterval();
+        masterfloorPlansShowSlide(masterPlanCurrent + 1);
+    }
 
-function masterFloorPlansprevSlide() {
-    resetMasterPlanInterval();
-    masterfloorPlansShowSlide(masterPlanCurrent - 1);
-}
+    function masterFloorPlansprevSlide() {
+        resetMasterPlanInterval();
+        masterfloorPlansShowSlide(masterPlanCurrent - 1);
+    }
 
-function resetMasterPlanInterval() {
-    clearInterval(masterPlanInterval);
-    masterPlanInterval = setInterval(masterFloorPlansNextSlide, 3000);
-}
+    function resetMasterPlanInterval() {
+        clearInterval(masterPlanInterval);
+        masterPlanInterval = setInterval(masterFloorPlansNextSlide, 3000);
+    }
 
-document.addEventListener('DOMContentLoaded', () => {
-    masterPlanInterval = setInterval(masterFloorPlansNextSlide, 3000);
-});
+    document.addEventListener('DOMContentLoaded', () => {
+        masterPlanInterval = setInterval(masterFloorPlansNextSlide, 3000);
+    });
 
 }
 
@@ -475,20 +474,73 @@ floorPlansTabs[0].classList.add('focus');
 floorPlanShowTab(1);
 
 // ==================================== Location Map ===========================================
+var mapLoaded = false;
+var loadingMap = false;
 
-document.getElementById('view-map-btn').addEventListener('click', function() {
-    document.getElementById('map-image').style.display = 'none';
-    document.getElementById('google-map').style.display = 'block';
-    document.getElementById('view-map-btn').style.display = 'none';
-    document.getElementById('go-back-btn').style.display = 'block';
+document.getElementById('view-map-btn').addEventListener('click', function () {
+    var skeletonLoader = document.getElementById('skeleton-loader');
+
+    if (screenWidth > 768) {
+        document.getElementById('map-image-desktop').classList.add('hidden');
+        setTimeout(() => {
+            document.getElementById('map-image-desktop').style.display = 'none';
+            document.getElementById('google-map').style.display = 'block';
+            document.getElementById('google-map').classList.remove('hidden');
+            document.getElementById('view-map-btn').style.display = 'none';
+            document.getElementById('go-back-btn').style.display = 'block';
+        }, 500);
+    } else {
+        document.getElementById('map-image-mobile').classList.add('hidden');
+        setTimeout(() => {
+            document.getElementById('map-image-mobile').style.display = 'none';
+            document.getElementById('google-map').style.display = 'block';
+            document.getElementById('google-map').classList.remove('hidden');
+            document.getElementById('view-map-btn').style.display = 'none';
+            document.getElementById('go-back-btn').style.display = 'block';
+        }, 500);
+    }
+    if (!mapLoaded && !loadingMap) {
+        skeletonLoader.style.display = 'block';
+        loadingMap = true;
+    }
+    
+    document.getElementById('google-map').addEventListener('load', function () {
+        skeletonLoader.style.display = 'none';
+        mapLoaded = true;
+        loadingMap = false;
+    });
 });
 
-document.getElementById('go-back-btn').addEventListener('click', function() {
-    document.getElementById('map-image').style.display = 'block';
-    document.getElementById('google-map').style.display = 'none';
-    document.getElementById('view-map-btn').style.display = 'block';
-    document.getElementById('go-back-btn').style.display = 'none';
+document.getElementById('go-back-btn').addEventListener('click', function () {
+    var skeletonLoader = document.getElementById('skeleton-loader');
+    
+    if (screenWidth > 768) {
+        document.getElementById('google-map').classList.add('hidden');
+        setTimeout(() => {
+            document.getElementById('google-map').style.display = 'none';
+            document.getElementById('map-image-desktop').style.display = 'block';
+            document.getElementById('map-image-desktop').classList.remove('hidden');
+            document.getElementById('view-map-btn').style.display = 'block';
+            document.getElementById('go-back-btn').style.display = 'none';
+        }, 500);
+    } else {
+        document.getElementById('google-map').classList.add('hidden');
+        setTimeout(() => {
+            document.getElementById('google-map').style.display = 'none';
+            document.getElementById('map-image-mobile').style.display = 'block';
+            document.getElementById('map-image-mobile').classList.remove('hidden');
+            document.getElementById('view-map-btn').style.display = 'block';
+            document.getElementById('go-back-btn').style.display = 'none';
+        }, 500);
+    }
+
+    if (loadingMap) {
+        skeletonLoader.style.display = 'none';
+        loadingMap = false;
+    }
 });
+
+
 
 
 let currentLocation = 0;

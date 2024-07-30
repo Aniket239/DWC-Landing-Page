@@ -95,6 +95,7 @@ main {
   text-align: left;
   background-color: white;
 }
+
 .about-the-project .heading {
   width: 90%;
 }
@@ -145,13 +146,15 @@ main {
 .project-about p {
   text-align: left;
 }
-.project-about .hera-number{
- display: none;
+
+.project-about .hera-number {
+  display: none;
 }
 
-.hera-number-desktop{
+.hera-number-desktop {
   width: 100%;
 }
+
 .project-about-icons {
   display: flex;
   justify-content: space-around;
@@ -1260,16 +1263,33 @@ input[type="number"] {
   color: #000000;
 }
 
-
 .map {
   position: relative;
   width: 100%;
 }
 
-
 .map img {
   width: 70%;
-  margin: auto;
+  margin: 20px auto;
+}
+
+.map img,
+.map iframe {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.map img.hidden,
+.map iframe.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.map-desktop {
+  display: block;
+}
+
+.map-mobile {
+  display: none;
 }
 
 .map-text {
@@ -1284,7 +1304,6 @@ input[type="number"] {
   font-size: 16px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 10;
-  /* Ensure buttons are on top of the image */
 }
 
 .google-map-text {
@@ -1299,12 +1318,53 @@ input[type="number"] {
   font-size: 16px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 10;
-  /* Ensure buttons are on top of the image */
 }
 
 .map-text:hover,
 .google-map-text:hover {
-    background-color: #00160b;
+  background-color: #00160b;
+}
+
+.skeleton-loader {
+  display: none;
+  width: 90%;
+  height: 500px;
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  margin: 20px auto;
+  z-index: 5;
+  opacity: 0.7;
+  border-radius: 8px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #e0e0e0;
+    transform: scale(1);
+  }
+
+  25% {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+  }
+
+  50% {
+    background-color: #e8e8e8;
+    transform: scale(1);
+  }
+
+  75% {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+  }
+
+  100% {
+    background-color: #e0e0e0;
+    transform: scale(1);
+  }
 }
 
 .location-map iframe {
@@ -1913,7 +1973,7 @@ footer a {
   }
 
   .bottom-nav div button div {
-    background-image: url('assets/Arrow\ icon\ 1.gif');
+    background-image: url('assets/enquiry.gif');
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
@@ -1963,7 +2023,7 @@ footer a {
     margin: 0 0 0 2%;
   }
 
-  .about-the-project h1::after{
+  .about-the-project h1::after {
     width: 25%;
   }
 
@@ -1977,7 +2037,7 @@ footer a {
     text-align: left;
   }
 
-  .project-about .hera-number{
+  .project-about .hera-number {
     width: 95%;
     text-align: left;
     display: flex;
@@ -1986,15 +2046,15 @@ footer a {
     align-items: center;
   }
 
-  .project-about .hera-number p{
+  .project-about .hera-number p {
     width: auto;
   }
 
-  .hera-number-desktop{
+  .hera-number-desktop {
     display: none;
   }
 
-  .hera-number>p{
+  .hera-number>p {
     margin-right: 5px;
   }
 
@@ -2067,7 +2127,7 @@ footer a {
     margin-bottom: 20px;
   }
 
-  .amenities-description p{
+  .amenities-description p {
     font-size: 17px;
   }
 
@@ -2219,17 +2279,26 @@ footer a {
 
   .map img {
     width: 100%;
-    margin: auto;
+    /* margin: auto; */
   }
+
+  .map-desktop {
+    display: none;
+  }
+
+  .map-mobile {
+    display: block;
+  }
+
 
   .map-text {
     position: absolute;
-    bottom: 2.2%;
+    bottom: 0;
     left: 0%;
     background-color: #004221;
     color: white;
     border: none;
-    padding: 5px 10px;
+    padding: 7px 16px;
     cursor: pointer;
     font-size: 16px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -2255,6 +2324,11 @@ footer a {
   .map-text:hover,
   .google-map-text:hover {
     background-color: #f0f0f0;
+  }
+
+  .skeleton-loader {
+    left: 0%;
+    width: 100%;
   }
 
   .location-map iframe {
@@ -2370,9 +2444,11 @@ footer a {
   main {
     margin-top: 30px;
   }
-  .about-the-project h1::after{
+
+  .about-the-project h1::after {
     width: 20%;
   }
+
   .project-about-icon {
     height: 25vh;
   }
