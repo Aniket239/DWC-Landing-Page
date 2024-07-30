@@ -691,8 +691,8 @@ input[type="number"] {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 60px;
-  min-height: 50vh;
+  margin-bottom: 40px;
+  min-height: 48vh;
 }
 
 .gallery h1 {
@@ -806,7 +806,7 @@ input[type="number"] {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.9);
 }
@@ -814,7 +814,9 @@ input[type="number"] {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
 }
 
 .close {
@@ -2116,6 +2118,10 @@ footer a {
     padding: 8px;
     min-width: auto;
     margin-right: 3px;
+  }
+
+  .modal-content{
+    width: 95%;
   }
 
   .amenities-container {
