@@ -578,6 +578,11 @@ input[type="number"] {
   border-radius: 50%;
 }
 
+
+.side-nav-download-brochure {
+  display: none;
+}
+
 .side-nav-enquiry {
   margin: 50% 0;
   position: relative;
@@ -760,10 +765,11 @@ input[type="number"] {
   width: 90%;
 }
 
-.gallery-mobile-images{
+.gallery-mobile-images {
   display: none;
 }
-.gallery-desktop-images{
+
+.gallery-desktop-images {
   display: block;
 }
 
@@ -1819,7 +1825,7 @@ footer a {
     width: 100vw;
     margin-top: 45px;
     animation: fadeIn 0.5s ease-in-out forwards;
-}
+  }
 
 
   @keyframes fadeIn {
@@ -2017,6 +2023,47 @@ footer a {
     display: none;
   }
 
+  .side-nav-download-brochure {
+    display: block;
+    margin: 50% 0;
+    position: relative;
+    right: -90px;
+    transform: rotate(-90deg);
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow: none;
+    }
+
+    50% {
+      box-shadow: 0 0 0 5px #004221;
+    }
+
+    100% {
+      box-shadow: none;
+    }
+  }
+
+  .side-nav-download-brochure button {
+    padding: 8px 18px;
+    background-color: #004221;
+    border: none;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    animation: glow 2s infinite;
+    /* Apply the glow animation */
+  }
+
+  .side-nav-download-brochure button:hover {
+    background-color: #000000;
+    animation: none;
+    /* Turn off the glow animation on hover */
+  }
+
   .side-nav-whatsapp-icon {
     height: 40px;
     width: 40px;
@@ -2126,17 +2173,20 @@ footer a {
   .gallery-tab {
     font-size: 14px;
     padding: 8px;
-    min-width: 33%;;
+    min-width: 33%;
+    ;
     margin-right: 3px;
   }
 
-  .gallery-mobile-images{
+  .gallery-mobile-images {
     display: block;
   }
-  .gallery-desktop-images{
+
+  .gallery-desktop-images {
     display: none;
   }
-  .modal-content{
+
+  .modal-content {
     width: 95%;
   }
 
