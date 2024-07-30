@@ -12,24 +12,38 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
     <title>Thank You</title>
     <style>
-        body {
-            background-image: url('assets/dwc background.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            font-family: "jost", sans-serif;
-            text-align: center;
-            padding: 0 20px;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: #333;
-            animation: fadeIn 1.5s ease-in-out;
-            overflow: hidden;
-        }
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/thankyou background.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5; /* Adjust the opacity to lighten the background */
+    z-index: -1;
+}
+
+body {
+    background-color: #E2EBE6;
+    font-family: "jost", sans-serif;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    animation: fadeIn 1.5s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
 
         @keyframes fadeIn {
             from {
@@ -41,7 +55,7 @@
             }
         }
 
-        nav{
+        nav {
             width: 97vw;
             height: 60px;
             top: 0;
@@ -60,13 +74,16 @@
             margin: 0;
         }
 
-        nav ul li .dwc-logo{
+        nav ul li .dwc-logo {
             aspect-ratio: 1/1;
             width: 160px;
             height: 60px;
+            mix-blend-mode: multiply;
+            background-color: transparent;
+            /* filter: brightness(0) invert(1); */
         }
 
-        nav ul li .jaingroup-logo{
+        nav ul li .jaingroup-logo {
             aspect-ratio: 1/1;
             width: 160px;
             height: 50px;
@@ -80,7 +97,7 @@
         h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
-            color: #2c3e50;
+            color: #000000;
             text-transform: uppercase;
             letter-spacing: 2px;
             animation: fadeIn 1s ease-in-out, slideIn 1s ease-in-out;
@@ -88,7 +105,7 @@
 
         h2 {
             font-size: 2em;
-            color: #2c3e50;
+            color: #000000;
             letter-spacing: 1px;
             margin: 0;
             animation: fadeIn 1.2s ease-in-out, slideIn 1.2s ease-in-out;
@@ -102,7 +119,7 @@
         h3 {
             font-size: 3.2em;
             margin: 0 7px 0 0;
-            color: #2c3e50;
+            color: #000000;
             letter-spacing: 1px;
             animation: fadeIn 1.2s ease-in-out, slideIn 1.2s ease-in-out;
         }
@@ -127,7 +144,7 @@
             font-size: 1.5em;
             line-height: 1.6;
             margin-bottom: 20px;
-            color: #34495e;
+            color: #000000;
             animation: fadeIn 1s ease-in-out, slideIn 1s ease-in-out;
         }
 
@@ -145,7 +162,7 @@
             display: inline-block;
             margin-top: 20px;
             padding: 20px 40px 15px;
-            background-color: #15663e;
+            background-color: #016935;
             color: white;
             text-decoration: none;
             border-radius: 25px;
@@ -194,9 +211,10 @@
         }
 
         @media (max-width: 768px) {
-            nav{
+            nav {
                 padding: 5px 20px;
             }
+
             .thank-you {
                 font-size: 3.4rem;
             }
@@ -209,7 +227,7 @@
                 font-size: 1.7em;
             }
 
-            .body-text{
+            .body-text {
                 max-width: 80%;
             }
 
@@ -222,16 +240,19 @@
                 padding: 15px 35px 10px;
             }
         }
+
         @media (max-width: 380px) {
-            nav{
+            nav {
                 background-color: white;
             }
-            body{
+
+            body {
                 height: auto;
                 overflow: auto;
                 margin-top: 80px;
             }
-            footer{
+
+            footer {
                 position: relative;
             }
         }
@@ -250,7 +271,8 @@
         <h3>For your interest in </h3>
         <h3> Dream World City!</h3>
     </div>
-    <p class="body-text">Dear, <strong> <span id="name"></span></strong> We will be in touch with you shortly on your provided mobile
+    <p class="body-text">Dear, <strong> <span id="name"></span></strong> We will be in touch with you shortly on your
+        provided mobile
         number <strong>+91<span id="phone"></span></strong> to discuss your preferences and requirements.</p>
     <a href="index.html" class="btn-home">Return to Homepage</a>
     <br><br>

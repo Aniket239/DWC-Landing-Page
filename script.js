@@ -175,9 +175,27 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(aboutProjectSection);
 
 // ============================================== form ============================================
-function enquiryForm() {
+function enquiryForm(value) {
     const formContainer = document.getElementById('form-container');
     const body = document.getElementsByTagName('body')[0];
+    const form = document.querySelector('.enquiry-form');
+
+    // Remove any existing hidden input
+    const existingHiddenInput = form.querySelector('input[type="hidden"]');
+    if (existingHiddenInput) {
+        existingHiddenInput.remove();
+    }
+
+    console.log(`Form origin: ${value}`);
+
+    // Create and add the hidden input
+    const hiddenInput = document.createElement('input');
+    hiddenInput.type = 'hidden';
+    hiddenInput.name = 'enquiry_type';
+    hiddenInput.id = 'enquiryType';
+    hiddenInput.value = value;
+    form.appendChild(hiddenInput);
+
     formContainer.style.display = 'grid';
     formContainer.classList.add('fade-in');
     formContainer.classList.remove('fade-out');
@@ -185,8 +203,8 @@ function enquiryForm() {
     formContainer.dataset.closed = 'false'; // Reset the closed flag when opening the form
 }
 
-const downloadBrochureBtn = document.querySelector('.download-brochure');
-downloadBrochureBtn.addEventListener('click', enquiryForm);
+// const downloadBrochureBtn = document.querySelector('.download-brochure');
+// downloadBrochureBtn.addEventListener('click', enquiryForm);
 
 const closeButton = document.getElementById('close-button');
 closeButton.addEventListener('click', closeForm);
@@ -257,12 +275,16 @@ window.addEventListener('scroll', function () {
 // ================================================ form submission =============================================
 
 function formSubmit(e) {
+    e.preventDefault();
+
     const name = document.getElementById('nameInput').value;
     const phone = document.getElementById('phoneInput').value;
     const email = document.getElementById('emailInput').value;
-    console.log("name" + ' ' + name + ' ' + "phone" + ' ' + phone + ' ' + "email" + ' ' + email);
-    e.preventDefault();
-    window.location.href = `aniket239.github.io/thankYou.html?name=${name}&phone=${phone}&email=${email}`;
+    const enquiryType = document.getElementById('enquiryType').value;
+
+    console.log("name: " + name + ", phone: " + phone + ", email: " + email + ", enquiryType: " + enquiryType);
+
+    window.location.href = `thankYou.html?name=${name}&phone=${phone}&email=${email}&enquiryType=${enquiryType}`;
 }
 
 
