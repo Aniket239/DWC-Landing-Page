@@ -1670,7 +1670,7 @@ footer div {
   justify-content: space-evenly;
   align-items: flex-end;
   flex-direction: row;
-  width: 80%;
+  width: 95%;
   padding: 0 0 20px 0;
   position: relative;
   /* Ensure the pseudo-element is positioned relative to this element */
@@ -1680,12 +1680,8 @@ footer div::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 10%;
-  /* Center the border by adjusting the left position */
-  width: 80%;
-  /* Set the desired width */
+  width: 100%;
   border-bottom: 2px solid white;
-  /* Border properties */
 }
 
 
@@ -1696,7 +1692,6 @@ footer h3 {
 
 footer p {
   font-family: "Jost", sans-serif;
-  padding: 5px 0 10px;
 }
 
 footer a {
@@ -2431,7 +2426,7 @@ footer a {
   }
 
   footer {
-    margin-bottom: 6vh;
+    padding-bottom: 7vh;
   }
 
   footer div {
@@ -2448,7 +2443,7 @@ footer a {
   }
 
   .developer-office img {
-    width: 50%;
+    width: 40%;
   }
 
 }
