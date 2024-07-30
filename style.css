@@ -1874,7 +1874,7 @@ footer a {
   .mobile-nav a.active {
     color: #004221;
     padding: 10px 15px;
-    font-size: x-large;
+    font-size: 27px;
     position: relative;
     /* Needed for the pseudo-element positioning */
   }
