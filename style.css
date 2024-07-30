@@ -1799,7 +1799,7 @@ footer a {
     flex-direction: column;
     position: fixed;
     z-index: 100;
-    background-image: url('assets/paper\ texture\ nav.jpg');
+    background-image: url('assets/paper\ texture\ nav.webp');
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 4px solid #004221;
@@ -1858,7 +1858,7 @@ footer a {
     color: black;
     margin-bottom: 40px;
     font-family: "Jost", sans-serif;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600;
     padding: 10px 15px;
   }
@@ -2013,7 +2013,7 @@ footer a {
 
   main {
     height: 88vh;
-    background-image: url('assets/DWC\ banner\ mobile.jpg');
+    background-image: url('assets/DWC\ banner\ mobile.webp');
   }
 
   .project-about {
