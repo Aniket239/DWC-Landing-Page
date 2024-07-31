@@ -32,7 +32,7 @@ nav {
   align-items: center;
   padding: 0 30px;
   background-color: white;
-  z-index: 100;
+  z-index: 150;
   top: -1px;
 }
 
@@ -143,14 +143,19 @@ main {
 .project-about {
   width: 90vw;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: row-reverse;
   font-family: "Jost", sans-serif;
 }
 
 .project-about p {
   text-align: left;
+}
+
+.about-the-project-description-container{
+  width: 60%;
+  margin-left: 6px;
 }
 
 .project-about .hera-number {
@@ -166,8 +171,8 @@ main {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  width: 100%;
-  /* flex-wrap: wrap; */
+  width: 30%;
+  flex-wrap: wrap;
 }
 
 .project-about-icon {
@@ -175,7 +180,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 50px 50px 50px;
+  margin: 10px;
 }
 
 .project-description {
@@ -188,7 +193,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  /* margin: auto; */
   gap: 10px;
   font-family: inherit;
   font-size: 17px;
@@ -254,7 +259,7 @@ main {
   place-items: center;
   backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 70;
+  z-index: 140;
   overflow: auto;
 }
 
@@ -479,12 +484,13 @@ input[type="number"] {
   align-items: flex-end;
   position: fixed;
   right: 0;
-  top: 390px;
+  top: 320px;
   transform: translateY(-50%);
   z-index: 50;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease, visibility 0.5s ease;
+  width: 78px;
 }
 
 .side-nav.show {
@@ -539,6 +545,7 @@ input[type="number"] {
   transition: all 0.5s ease-in-out;
   overflow: hidden;
   padding: 10px 10px 0 10px;
+  width: 170px;
   height: 30px;
   transform: translateX(256px);
   z-index: 0;
@@ -586,9 +593,9 @@ input[type="number"] {
 }
 
 .side-nav-enquiry {
-  margin: 50% 0;
+  margin: 105px 0 0 0;
   position: relative;
-  right: -70px;
+  right: -78px;
   transform: rotate(-90deg);
 }
 
@@ -616,6 +623,7 @@ input[type="number"] {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   animation: glow 2s infinite;
+  width: 215px;
   /* Apply the glow animation */
 }
 
@@ -997,14 +1005,22 @@ input[type="number"] {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #004221;
   color: white;
-  border: none;
-  padding: 20px;
+  border: 3px solid white;
+  /* padding: 20px; */
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
   cursor: pointer;
   font-size: larger;
   font-weight: bold;
   z-index: 10;
+  transition: all 0.1s ease-in-out;
+}
+
+.carousel-control:hover{
+  background-color: #02753c;
 }
 
 .carousel-control.prev {
@@ -1236,24 +1252,25 @@ input[type="number"] {
 
 .floor-plans-control {
   position: absolute;
-  top: 50%;
+  top: 52%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #004221;
   color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+  border: 3px solid white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;  cursor: pointer;
   font-size: larger;
   font-weight: bold;
-  z-index: 10;
+  z-index: 20;
 }
 
 .floor-plans-control.prev {
-  left: 0px;
+  left: -2px;
 }
 
 .floor-plans-control.next {
-  right: 0px;
+  right: -2px;
 }
 
 .thumbnail-strip {
@@ -1318,7 +1335,7 @@ input[type="number"] {
 
 .map-text {
   position: absolute;
-  bottom: 0px;
+  bottom: -40px;
   left: 15%;
   background-color: #004221;
   color: white;
@@ -1332,7 +1349,7 @@ input[type="number"] {
 
 .google-map-text {
   position: absolute;
-  bottom: 0px;
+  bottom: -40px;
   left: 5%;
   background-color: #004221;
   color: white;
@@ -1403,7 +1420,7 @@ input[type="number"] {
 }
 
 .location-list {
-  width: 20%;
+  width: 27%;
   margin: 20px;
 }
 
@@ -1570,9 +1587,9 @@ input[type="number"] {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 48px;
+  font-size: 100px;
   color: white;
-  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 10px black;
   pointer-events: none;
 }
 
@@ -1713,7 +1730,7 @@ footer a {
 }
 
 .developer-office img {
-  width: 15%;
+  width: 12%;
   padding: 5px;
   background-color: white;
 }
@@ -2017,6 +2034,10 @@ footer a {
     flex-direction: row;
   }
 
+  .side-nav{
+    width: 30px;
+  }
+
   .side-nav-call {
     display: none;
   }
@@ -2027,9 +2048,9 @@ footer a {
 
   .side-nav-download-brochure {
     display: block;
-    margin: 50% 0;
+    margin: 120px 0 0 0;
     position: relative;
-    right: -90px;
+    right: -100px;
     transform: rotate(-90deg);
   }
 
@@ -2057,6 +2078,7 @@ footer a {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     animation: glow 2s infinite;
+    width: 250px;
     /* Apply the glow animation */
   }
 
@@ -2078,6 +2100,7 @@ footer a {
 
   .project-about {
     width: 90vw;
+    flex-direction: column;
   }
 
   .about-the-project h1 {
@@ -2119,12 +2142,21 @@ footer a {
     margin-right: 5px;
   }
 
+  .about-the-project-description-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .project-description {
     font-size: large;
   }
 
   .project-about-icons {
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .project-about-icon {
@@ -2304,7 +2336,7 @@ footer a {
   }
 
   .floor-plans-control {
-    top: 58%;
+    top: 53%;
   }
 
   .floor-plans-item img,
@@ -2366,33 +2398,12 @@ footer a {
 
 
   .map-text {
-    position: absolute;
-    bottom: 0;
-    left: 0%;
-    background-color: #004221;
-    color: white;
-    border: none;
-    padding: 7px 16px;
-    cursor: pointer;
-    font-size: 16px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-    /* Ensure buttons are on top of the image */
+    bottom: -33px;
   }
 
   .google-map-text {
-    position: absolute;
-    bottom: 0%;
+    bottom: -33px;
     left: 0%;
-    background-color: #004221;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 16px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-    /* Ensure buttons are on top of the image */
   }
 
   .map-text:hover,
@@ -2444,6 +2455,10 @@ footer a {
 
   .map-control.next {
     display: block;
+  }
+
+  .play-button{
+    font-size: 70px;
   }
 
   .video-container {
