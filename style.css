@@ -171,7 +171,7 @@ main {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  width: 30%;
+  width: 40%;
   flex-wrap: wrap;
 }
 
@@ -181,6 +181,10 @@ main {
   justify-content: center;
   align-items: center;
   margin: 10px;
+}
+
+.project-about-icons p{
+  font-size: 20px;
 }
 
 .project-description {
@@ -1009,8 +1013,8 @@ input[type="number"] {
   color: white;
   border: 3px solid white;
   /* padding: 20px; */
-  height: 50px;
-  width: 50px;
+  height: 65px;
+  width: 65px;
   border-radius: 50%;
   cursor: pointer;
   font-size: larger;
@@ -1257,8 +1261,8 @@ input[type="number"] {
   background-color: #004221;
   color: white;
   border: 3px solid white;
-  height: 50px;
-  width: 50px;
+  height: 65px;
+  width: 65px;
   border-radius: 50%;  cursor: pointer;
   font-size: larger;
   font-weight: bold;
@@ -2166,6 +2170,10 @@ footer a {
     justify-content: flex-start;
     height: 20vh;
   }
+  .project-about-icons p{
+    font-size: 17px;
+  }
+  
 
   .project-about-icon img {
     width: 80px;
