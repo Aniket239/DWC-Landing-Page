@@ -2098,8 +2098,9 @@ footer a {
   }
 
   main {
-    height: 88vh;
+    height: 84vh;
     background-image: url('assets/DWC\ banner\ mobile.webp');
+    margin-top: 60px;
   }
 
   .project-about {
@@ -2558,7 +2559,7 @@ footer a {
   }
 
   main {
-    margin-top: 30px;
+    margin-top: 60px;
   }
 
   .about-the-project h1::after {
