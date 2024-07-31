@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
     <link
@@ -181,6 +183,29 @@
             transform: scale(1.1);
         }
 
+        .back-button {
+            margin-top: 20px;
+            color: #000000;
+            font-size: 23px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            display: none;
+        }
+
+        .back-button:hover{
+            color: #016935;
+        }
+
+        .back-button .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24;
+                /* margin-bottom: 3px; */
+        }
+
         @keyframes pulse {
             0% {
                 transform: scale(1);
@@ -199,7 +224,6 @@
             width: 100%;
             margin-top: 40px;
             font-size: 0.9em;
-            color: #999;
             animation: fadeIn 2s ease-in-out;
             position: fixed;
             bottom: 0;
@@ -209,6 +233,7 @@
 
         footer p {
             width: 100%;
+            color: #3b3b3b;
         }
 
         @media (max-width: 768px) {
@@ -240,6 +265,14 @@
                 font-size: 1em;
                 padding: 15px 35px 10px;
             }
+            .back-button .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24;
+                margin-bottom: 1px;
+        }
         }
 
         @media (max-width: 380px) {
@@ -276,14 +309,16 @@
         provided mobile
         number <strong>+91<span id="phone"></span></strong> to discuss your preferences and requirements.</p>
     <p><span id="brochure"></span></p>
-        <a href="index.html" class="btn-home">Return to Homepage</a>
+    <a href="index.html" class="btn-home">Return to Homepage</a>
+    <a href="index.html" class="back-button"><span class="material-symbols-outlined">
+            redo
+        </span>Return to Homepage</a>
     <br><br>
     <footer>
         <p>Jain Group © 2024, All Rights Reserved.</p>
     </footer>
 
     <script>
-        // Function to get query parameters from the URL
         function getQueryParams() {
             const params = {};
             const queryString = window.location.search.substring(1);
@@ -294,8 +329,6 @@
             }
             return params;
         }
-
-        // Function to display user details
         function displayUserDetails() {
             const params = getQueryParams();
             const name = `${params.name || ''}`;
@@ -307,10 +340,14 @@
             if (enquiry_type == 'brochure') {
                 document.querySelector('.btn-home').href = 'https://onedrive.live.com/download?resid=DDAF5DF6F5777143%21192&authkey=!ACgyrBWVP1LJUIo&em=2'
                 document.querySelector('.btn-home').innerHTML = "<strong>Download Brochure</strong>";
+                document.querySelector('.back-button').style.display = 'flex';
+            }
+            else if (enquiry_type == 'floor plan') {
+                document.querySelector('.btn-home').href = 'https://onedrive.live.com/download?resid=DDAF5DF6F5777143%21192&authkey=!ACgyrBWVP1LJUIo&em=2'
+                document.querySelector('.btn-home').innerHTML = "<strong>Download Floor Plans</strong>";
+                document.querySelector('.back-button').style.display = 'flex';
             }
         }
-
-        // Call the function to display user details
         displayUserDetails();
     </script>
 </body>
