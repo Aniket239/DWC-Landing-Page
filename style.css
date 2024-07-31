@@ -1296,6 +1296,7 @@ input[type="number"] {
   border-color: #4CAF50;
 }
 
+
 .location-map {
   text-align: center;
   padding: 20px;
@@ -1309,8 +1310,27 @@ input[type="number"] {
 }
 
 .map {
+  text-align: center;
   position: relative;
   width: 100%;
+}
+.map h1::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  height: 3px;
+  width: 40%;
+  background-color: black;
+  vertical-align: middle;
+}
+.map h1::after {
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+  height: 3px;
+  width: 40%;
+  background-color: black;
+  vertical-align: middle;
 }
 
 .map img {
@@ -1340,7 +1360,7 @@ input[type="number"] {
 .map-text {
   position: absolute;
   bottom: -40px;
-  left: 15%;
+  left: 19%;
   background-color: #004221;
   color: white;
   border: none;
@@ -1782,7 +1802,7 @@ footer a {
 
   nav ul li a img {
     margin-top: 3%;
-    width: 150px;
+    width: 160px;
     height: 65px;
   }
 
@@ -2403,6 +2423,14 @@ footer a {
     width: 100%;
   }
 
+  .map h1::before{
+    width: 30%;
+  }
+
+  .map h1:after{
+    width: 30%;
+  }
+
 
   .map img {
     width: 100%;
@@ -2470,11 +2498,11 @@ footer a {
 
   .map-carousel {
     margin-top: 20px;
-    width: 90%;
+    width: 80%;
   }
 
   .map-item ul li h2 {
-    font-size: 23px;
+    font-size: 21px;
   }
 
   .map-control.prev {
