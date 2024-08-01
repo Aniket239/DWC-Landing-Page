@@ -88,13 +88,39 @@ function openMenu() {
     }
 }
 
-
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('#nav-links a');
     const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
     const mobileNav = document.querySelector('.mobile-nav');
     var checkbox = document.getElementById('hamburger-checkbox');
 
+    // Function to set the active section
+    function setActiveSection(sectionId) {
+        mobileNavLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === sectionId) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    // Function to handle scroll event
+    function handleScroll() {
+        let fromTop = window.scrollY + 80;
+        let activeSet = false;
+        mobileNavLinks.forEach(link => {
+            let section = document.getElementById(link.getAttribute('href').substring(1));
+            if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+                link.classList.add('active');
+                activeSet = true;
+            } else {
+                link.classList.remove('active');
+            }
+        });
+        return activeSet;
+    }
+
+    // Add click event listeners to navigation links
     navLinks.forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
@@ -127,26 +153,16 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    function setActiveSection(sectionId) {
-        mobileNavLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').substring(1) === sectionId) {
-                link.classList.add('active');
-            }
-        });
-    }
-
-    window.addEventListener('scroll', function () {
-        let fromTop = window.scrollY + 80;
-        mobileNavLinks.forEach(link => {
-            let section = document.getElementById(link.getAttribute('href').substring(1));
-            if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
-                link.classList.add('active');
-            } else {
-                link.classList.remove('active');
-            }
-        });
+    // Check initial scroll position on load
+    window.addEventListener('load', function () {
+        const activeSet = handleScroll();
+        if (!activeSet) {
+            mobileNavLinks[0].classList.add('active');
+        }
     });
+
+    // Handle scroll event
+    window.addEventListener('scroll', handleScroll);
 });
 // ================================================== nav items animation =========================================================
 
@@ -501,71 +517,71 @@ floorPlansTabs[0].classList.add('focus');
 floorPlanShowTab(1);
 
 // ==================================== Location Map ===========================================
-var mapLoaded = false;
-var loadingMap = false;
+// var mapLoaded = false;
+// var loadingMap = false;
 
-document.getElementById('view-map-btn').addEventListener('click', function () {
-    var skeletonLoader = document.getElementById('skeleton-loader');
+// document.getElementById('view-map-btn').addEventListener('click', function () {
+//     var skeletonLoader = document.getElementById('skeleton-loader');
 
-    if (screenWidth > 768) {
-        document.getElementById('map-image-desktop').classList.add('hidden');
-        setTimeout(() => {
-            document.getElementById('map-image-desktop').style.display = 'none';
-            document.getElementById('google-map').style.display = 'block';
-            document.getElementById('google-map').classList.remove('hidden');
-            document.getElementById('view-map-btn').style.display = 'none';
-            document.getElementById('go-back-btn').style.display = 'block';
-        }, 500);
-    } else {
-        document.getElementById('map-image-mobile').classList.add('hidden');
-        setTimeout(() => {
-            document.getElementById('map-image-mobile').style.display = 'none';
-            document.getElementById('google-map').style.display = 'block';
-            document.getElementById('google-map').classList.remove('hidden');
-            document.getElementById('view-map-btn').style.display = 'none';
-            document.getElementById('go-back-btn').style.display = 'block';
-        }, 500);
-    }
-    if (!mapLoaded && !loadingMap) {
-        skeletonLoader.style.display = 'block';
-        loadingMap = true;
-    }
+//     if (screenWidth > 768) {
+//         document.getElementById('map-image-desktop').classList.add('hidden');
+//         setTimeout(() => {
+//             document.getElementById('map-image-desktop').style.display = 'none';
+//             document.getElementById('google-map').style.display = 'block';
+//             document.getElementById('google-map').classList.remove('hidden');
+//             document.getElementById('view-map-btn').style.display = 'none';
+//             document.getElementById('go-back-btn').style.display = 'block';
+//         }, 500);
+//     } else {
+//         document.getElementById('map-image-mobile').classList.add('hidden');
+//         setTimeout(() => {
+//             document.getElementById('map-image-mobile').style.display = 'none';
+//             document.getElementById('google-map').style.display = 'block';
+//             document.getElementById('google-map').classList.remove('hidden');
+//             document.getElementById('view-map-btn').style.display = 'none';
+//             document.getElementById('go-back-btn').style.display = 'block';
+//         }, 500);
+//     }
+//     if (!mapLoaded && !loadingMap) {
+//         skeletonLoader.style.display = 'block';
+//         loadingMap = true;
+//     }
 
-    document.getElementById('google-map').addEventListener('load', function () {
-        skeletonLoader.style.display = 'none';
-        mapLoaded = true;
-        loadingMap = false;
-    });
-});
+//     document.getElementById('google-map').addEventListener('load', function () {
+//         skeletonLoader.style.display = 'none';
+//         mapLoaded = true;
+//         loadingMap = false;
+//     });
+// });
 
-document.getElementById('go-back-btn').addEventListener('click', function () {
-    var skeletonLoader = document.getElementById('skeleton-loader');
+// document.getElementById('go-back-btn').addEventListener('click', function () {
+//     var skeletonLoader = document.getElementById('skeleton-loader');
 
-    if (screenWidth > 768) {
-        document.getElementById('google-map').classList.add('hidden');
-        setTimeout(() => {
-            document.getElementById('google-map').style.display = 'none';
-            document.getElementById('map-image-desktop').style.display = 'block';
-            document.getElementById('map-image-desktop').classList.remove('hidden');
-            document.getElementById('view-map-btn').style.display = 'block';
-            document.getElementById('go-back-btn').style.display = 'none';
-        }, 500);
-    } else {
-        document.getElementById('google-map').classList.add('hidden');
-        setTimeout(() => {
-            document.getElementById('google-map').style.display = 'none';
-            document.getElementById('map-image-mobile').style.display = 'block';
-            document.getElementById('map-image-mobile').classList.remove('hidden');
-            document.getElementById('view-map-btn').style.display = 'block';
-            document.getElementById('go-back-btn').style.display = 'none';
-        }, 500);
-    }
+//     if (screenWidth > 768) {
+//         document.getElementById('google-map').classList.add('hidden');
+//         setTimeout(() => {
+//             document.getElementById('google-map').style.display = 'none';
+//             document.getElementById('map-image-desktop').style.display = 'block';
+//             document.getElementById('map-image-desktop').classList.remove('hidden');
+//             document.getElementById('view-map-btn').style.display = 'block';
+//             document.getElementById('go-back-btn').style.display = 'none';
+//         }, 500);
+//     } else {
+//         document.getElementById('google-map').classList.add('hidden');
+//         setTimeout(() => {
+//             document.getElementById('google-map').style.display = 'none';
+//             document.getElementById('map-image-mobile').style.display = 'block';
+//             document.getElementById('map-image-mobile').classList.remove('hidden');
+//             document.getElementById('view-map-btn').style.display = 'block';
+//             document.getElementById('go-back-btn').style.display = 'none';
+//         }, 500);
+//     }
 
-    if (loadingMap) {
-        skeletonLoader.style.display = 'none';
-        loadingMap = false;
-    }
-});
+//     if (loadingMap) {
+//         skeletonLoader.style.display = 'none';
+//         loadingMap = false;
+//     }
+// });
 
 
 

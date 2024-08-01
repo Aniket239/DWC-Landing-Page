@@ -106,6 +106,7 @@ main {
   width: 90%;
 }
 
+
 #about-the-project {
   opacity: 0;
   transform: translateY(180px);
@@ -118,7 +119,8 @@ main {
 }
 
 .about-the-project h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
   font-size: 38px;
   color: #000000;
   margin-bottom: 10px;
@@ -299,7 +301,8 @@ main {
 }
 
 .form-heading {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "jost", sans-serif;
+  font-weight: 700;
   text-align: center;
   color: #333;
   font-size: 26px;
@@ -545,7 +548,8 @@ input[type="number"] {
   max-width: 0;
   opacity: 0;
   font-size: x-large;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
   padding: 10px 10px 0 10px;
@@ -648,7 +652,8 @@ input[type="number"] {
 
 
 .unit-details h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
   /* font-family: "Roboto", sans-serif; */
   font-size: 38px;
   color: rgb(255, 255, 255);
@@ -683,7 +688,8 @@ input[type="number"] {
 }
 
 .unit-details .unit-card h3 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
   font-size: 30px;
   color: #215b43;
 }
@@ -721,7 +727,8 @@ input[type="number"] {
 }
 
 .gallery h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
   /* font-family: "Roboto", sans-serif; */
   font-size: 38px;
   color: black;
@@ -875,7 +882,8 @@ input[type="number"] {
 }
 
 .amenities h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
   font-size: 38px;
   color: #000000;
   margin-bottom: 10px;
@@ -1073,7 +1081,8 @@ input[type="number"] {
 }
 
 .floor-plans-section h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
   /* font-family: "Roboto", sans-serif; */
   font-size: 38px;
   color: #000000;
@@ -1081,7 +1090,8 @@ input[type="number"] {
 }
 
 .floor-plans-heading-desktop {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
   font-size: 38px;
   color: #000000;
   margin-top: 60px;
@@ -1305,9 +1315,11 @@ input[type="number"] {
 }
 
 .location-map h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
   font-size: 38px;
   color: #000000;
+  /* text-align: left; */
 }
 
 .map {
@@ -1316,7 +1328,7 @@ input[type="number"] {
   width: 100%;
 }
 
-.map h1::before {
+/* .map h1::before {
   content: "";
   display: inline-block;
   margin-right: 10px;
@@ -1324,17 +1336,17 @@ input[type="number"] {
   width: 40%;
   background-color: black;
   vertical-align: middle;
-}
-
+} */
+/* 
 .map h1::after {
   content: "";
   display: inline-block;
   margin-left: 10px;
-  height: 3px;
-  width: 40%;
+  height: 2px;
+  width: 80%;
   background-color: black;
   vertical-align: middle;
-}
+} */
 
 .map img {
   width: 70%;
@@ -1506,7 +1518,8 @@ input[type="number"] {
 
 .map-item ul li h2 {
   font-size: 26px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
 }
 
 .map-item ul li {
@@ -1535,7 +1548,8 @@ input[type="number"] {
 
 .location-time {
   width: 25%;
-  text-align: right;
+  text-align: left;
+  padding-left: 10px;
 }
 
 .map-control {
@@ -1568,7 +1582,8 @@ input[type="number"] {
 }
 
 .project-video h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
   /* font-family: "Roboto", sans-serif; */
   font-size: 38px;
   margin-bottom: 30px;
@@ -1628,7 +1643,8 @@ input[type="number"] {
 }
 
 .home-loan h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
   margin: 20px;
   font-size: 38px;
 }
@@ -1667,7 +1683,8 @@ input[type="number"] {
 }
 
 .legacy h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
   font-size: 38px;
   margin-bottom: 40px;
   color: #000000;
@@ -1709,7 +1726,7 @@ input[type="number"] {
 footer {
   bottom: 0;
   background-color: #004221;
-  color: white;
+  color: #efe1bb;
   text-align: center;
   padding: 30px 0 0 0;
   display: flex;
@@ -1739,18 +1756,21 @@ footer div::after {
 
 
 footer h3 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-size: 23px;
+  font-weight: 400;
   margin: 20px 0 5px;
 }
 
 footer p {
   font-family: "Jost", sans-serif;
   font-size: 17px;
+  color: white;
 }
 
 footer a {
   text-decoration: none;
-  color: white;
+  color: #efe1bb;
 }
 
 .developer-office {
@@ -1923,7 +1943,7 @@ footer a {
     text-decoration: none;
     color: black;
     margin-bottom: 40px;
-    font-family: "Jost", sans-serif;
+    font-family: "Playfair Display", serif;
     font-size: 27px;
     font-weight: 600;
     padding: 10px 15px;
@@ -1938,12 +1958,12 @@ footer a {
   }
 
   .mobile-nav a.active::before {
-    content: "➣";
+    content: "✦";
     position: absolute;
     left: -30px;
     top: 5.5%;
     color: #004221;
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .mobile-nav li:nth-child(1) {
@@ -2161,6 +2181,9 @@ footer a {
     width: 95%;
     margin: 0 0 0 5%;
   }
+  .heading p{
+    margin: 0 0 0 2%;
+  }
 
   .project-about p {
     width: 95%;
@@ -2254,7 +2277,7 @@ footer a {
     grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
   }
 
-  .img-container{
+  .img-container {
     margin: 0 0 5%;
   }
 
@@ -2518,8 +2541,8 @@ footer a {
   }
 
   .map-carousel {
-    margin-top: 20px;
-    width: 80%;
+    margin: 20px 0 0 3%;
+    width: 95%;
   }
 
   .map-item ul li h2 {
@@ -2642,16 +2665,17 @@ footer a {
   }
 
   .mobile-nav a.active::before {
-    font-size: 30px;
-    top: 5.5%;
-    left: -20px;
+    font-size: 25px;
+    top: 7.5%;
+    left: -15px;
   }
 
   .side-nav-whatsapp-icon {
     height: 35px;
     width: 35px;
   }
-  .bottom-nav{
+
+  .bottom-nav {
     width: 95vw;
     padding: 20px 10px;
   }
@@ -2738,21 +2762,22 @@ footer a {
     height: 55px;
     width: 55px;
   }
+
   .map-text {
     width: 80%;
-}
+  }
 
-.map-item ul li h2 {
-  font-size: 19px;
-}
+  .map-item ul li h2 {
+    font-size: 19px;
+  }
 
-.map-carousel {
-  width: 95%;
-}
+  .map-carousel {
+    width: 95%;
+  }
 
-.location-name{
-  font-size: 16px;
-}
+  .location-name {
+    font-size: 16px;
+  }
 
   .home-loan {
     padding: 26px 0;
