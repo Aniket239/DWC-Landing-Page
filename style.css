@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-body{
+body {
   background-image: url('assets/background.webp');
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -153,7 +153,7 @@ main {
   text-align: left;
 }
 
-.about-the-project-description-container{
+.about-the-project-description-container {
   width: 60%;
   margin-left: 6px;
 }
@@ -183,7 +183,7 @@ main {
   margin: 10px;
 }
 
-.project-about-icons p{
+.project-about-icons p {
   font-size: 20px;
 }
 
@@ -1023,7 +1023,7 @@ input[type="number"] {
   transition: all 0.1s ease-in-out;
 }
 
-.carousel-control:hover{
+.carousel-control:hover {
   background-color: #02753c;
 }
 
@@ -1263,7 +1263,8 @@ input[type="number"] {
   border: 3px solid white;
   height: 65px;
   width: 65px;
-  border-radius: 50%;  cursor: pointer;
+  border-radius: 50%;
+  cursor: pointer;
   font-size: larger;
   font-weight: bold;
   z-index: 20;
@@ -1314,6 +1315,7 @@ input[type="number"] {
   position: relative;
   width: 100%;
 }
+
 .map h1::before {
   content: "";
   display: inline-block;
@@ -1323,6 +1325,7 @@ input[type="number"] {
   background-color: black;
   vertical-align: middle;
 }
+
 .map h1::after {
   content: "";
   display: inline-block;
@@ -1361,7 +1364,7 @@ input[type="number"] {
   position: absolute;
   bottom: -40px;
   left: 50%;
-  transform: translateX(-50%);  
+  transform: translateX(-50%);
   background-color: #004221;
   color: white;
   border: none;
@@ -1568,7 +1571,7 @@ input[type="number"] {
   font-family: "Josefin Sans", sans-serif;
   /* font-family: "Roboto", sans-serif; */
   font-size: 38px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: white;
 }
 
@@ -1794,7 +1797,7 @@ footer a {
   }
 
   nav {
-    width: 96vw;
+    width: 95vw;
     padding: 0 10px;
   }
 
@@ -1803,8 +1806,8 @@ footer a {
   }
 
   nav ul li a img {
-    margin-top: 3%;
-    width: 160px;
+    margin-top: 8%;
+    width: 155px;
     height: 65px;
   }
 
@@ -1967,6 +1970,7 @@ footer a {
   .mobile-nav li:nth-child(7) {
     animation-delay: 0.7s;
   }
+
   .enquiry-form {
     padding: 7%;
     width: 80%;
@@ -2022,7 +2026,7 @@ footer a {
     background-size: contain;
     /* border-right: 2px solid white; */
     background-color: inherit;
-    margin:0 5px 4px 0;
+    margin: 0 5px 4px 0;
   }
 
   .bottom-nav div a {
@@ -2064,7 +2068,7 @@ footer a {
     flex-direction: row;
   }
 
-  .side-nav{
+  .side-nav {
     width: 30px;
   }
 
@@ -2181,7 +2185,7 @@ footer a {
     margin-right: 5px;
   }
 
-  .about-the-project-description-container{
+  .about-the-project-description-container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -2205,10 +2209,11 @@ footer a {
     justify-content: flex-start;
     height: 20vh;
   }
-  .project-about-icons p{
+
+  .project-about-icons p {
     font-size: 17px;
   }
-  
+
 
   .project-about-icon img {
     width: 80px;
@@ -2266,7 +2271,8 @@ footer a {
   .modal-content {
     width: 95%;
   }
-/* 
+
+  /* 
   .amenities{
     background-image: url('assets/amenities\ background.webp');
     background-repeat: no-repeat;
@@ -2431,11 +2437,11 @@ footer a {
     width: 100%;
   }
 
-  .map h1::before{
+  .map h1::before {
     width: 30%;
   }
 
-  .map h1:after{
+  .map h1:after {
     width: 30%;
   }
 
@@ -2474,7 +2480,7 @@ footer a {
     width: 100%;
   }
 
-  .location-map{
+  .location-map {
     /* background-image: url('assets/background.webp'); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -2522,7 +2528,7 @@ footer a {
     display: block;
   }
 
-  .play-button{
+  .play-button {
     font-size: 70px;
   }
 
@@ -2585,13 +2591,47 @@ footer a {
 
 @media screen and (max-width: 390px) {
 
+  .about-the-project h1,
+  .unit-details h1,
+  .gallery h1,
+  .amenities h1,
+  .floor-plans-section h1,
+  .location-map h1,
+  .project-video h1,
+  .home-loan h1,
+  .legacy h1 {
+    font-size: 28px;
+  }
+
+  nav ul li a img {
+    width: 135px;
+    height: 52px;
+  }
+
+  .hamburger svg {
+    height: 2.7em;
+  }
+
   .mobile-nav {
     height: 70vh;
     padding-top: 30px;
-    margin-top: 35px;
+    margin-top: 0;
   }
 
-  .bottom-nav div a{
+  .mobile-nav a {
+    font-size: 18px;
+  }
+
+  .mobile-nav a.active {
+    font-size: 20px;
+  }
+
+  .side-nav-whatsapp-icon {
+    height: 35px;
+    width: 35px;
+  }
+
+  .bottom-nav div a {
     padding-right: 0;
     justify-content: flex-start;
   }
@@ -2612,13 +2652,76 @@ footer a {
     height: 25vh;
   }
 
+  .project-about-icon img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .project-about-icon p {
+    font-size: 15px;
+  }
+
+  .project-description {
+    font-size: 17px;
+  }
+
+  .project-about h2 {
+    font-size: 19px;
+  }
+
+  .download-brochure {
+    font-size: 15px;
+  }
+
   .unit-details .unit-card {
     height: 35vh;
     width: 55vw;
   }
 
+  .unit-details .unit-card h3 {
+    font-size: 24px;
+  }
+
+  .unit-details .unit-card button.view-details {
+
+    font-size: 19px;
+  }
+
   .unit-plan-size {
     width: 50vw;
+  }
+
+  .gallery-tab {
+    font-size: 14px;
+  }
+
+  .carousel-control{
+    width: 55px;
+    height: 55px;
+  }
+  .amenities-name {
+    font-size: 18px;
+  }
+  .floor-plans-tab{
+    font-size: 16px;
+  }
+  .floor-plans-control {
+    height: 55px;
+    width: 55px;
+  }
+  .home-loan h1{
+    font-size: 25px;
+  }
+  .home-loan {
+    padding: 26px 0;
+  }
+  .home-loan h1{
+    font-size: 16px;
+  }
+
+  .stat img{
+    width: 80px;
+    height: 80px;
   }
 
 }
