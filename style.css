@@ -1859,12 +1859,12 @@ footer a {
     height: 70vh;
     display: none;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     position: fixed;
     z-index: 100;
     background-color: white;
-    background-image: url('assets/paper texture nav.webp'), linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+    background-image: url('assets/mobile\ nav\ background.webp'), linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 4px solid #004221;
@@ -1872,6 +1872,7 @@ footer a {
     box-shadow: 0 451px 0 rgba(0, 0, 0, 0.7);
     width: 100vw;
     margin-top: 8px;
+    padding-left: 55px;
     animation: fadeIn 0.5s ease-in-out forwards;
   }
 
@@ -1931,16 +1932,18 @@ footer a {
   .mobile-nav a.active {
     color: #004221;
     padding: 10px 15px;
-    font-size: 27px;
+    font-size: 30px;
     position: relative;
     /* Needed for the pseudo-element positioning */
   }
 
   .mobile-nav a.active::before {
-    content: "➤";
+    content: "➣";
     position: absolute;
-    left: -15px;
+    left: -30px;
+    top: 2px;
     color: #004221;
+    font-size: 40px;
   }
 
   .mobile-nav li:nth-child(1) {
@@ -2545,6 +2548,14 @@ footer a {
   .video-thumbnail img {
     border-radius: 12px;
   }
+  .home-loan h1{
+    margin: 40px 0 0 0;
+    font-size: 29px;
+  }
+
+  .bank-logos{
+    margin: 40px auto 0 auto;
+  }
 
   .bank-logos img {
     flex: 1 1 calc(50% - 40px);
@@ -2565,7 +2576,7 @@ footer a {
   }
 
   footer {
-    padding-bottom: 7vh;
+    padding-bottom: 8vh;
   }
 
   footer div {
