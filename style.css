@@ -1941,7 +1941,7 @@ footer a {
     content: "➣";
     position: absolute;
     left: -30px;
-    top: 2px;
+    top: 5.5%;
     color: #004221;
     font-size: 40px;
   }
