@@ -173,120 +173,97 @@ const observer = new IntersectionObserver(entries => {
     });
 });
 observer.observe(aboutProjectSection);
-
-// ============================================== form ============================================
-function enquiryForm(value) {
+document.addEventListener('DOMContentLoaded', function () {
     const formContainer = document.getElementById('form-container');
     const body = document.getElementsByTagName('body')[0];
     const form = document.querySelector('.enquiry-form');
 
-    // Remove any existing hidden input
-    const existingHiddenInput = form.querySelector('input[type="hidden"]');
-    if (existingHiddenInput) {
-        existingHiddenInput.remove();
-    }
+    function enquiryForm(value) {
+        // Ensure the element exists before setting its value
+        const utmFormNameInput = document.getElementById('utm_form_name');
+        if (utmFormNameInput) {
+            utmFormNameInput.value = value;
+            console.log(`utm form name: ${utmFormNameInput.value}`);
+        }
 
-    console.log(`Form origin: ${value}`);
+        const hiddenInput = document.createElement('input');
+        hiddenInput.type = 'hidden';
+        hiddenInput.name = 'enquiry_type';
+        hiddenInput.id = 'enquiryType';
+        hiddenInput.value = value;
+        form.appendChild(hiddenInput);
 
-    // Create and add the hidden input
-    document.getElementById("utm_form_name").value = value;
-    console.log(`utm form name: ${document.getElementById("utm_form_name").value}`)
-    const hiddenInput = document.createElement('input');
-    hiddenInput.type = 'hidden';
-    hiddenInput.name = 'enquiry_type';
-    hiddenInput.id = 'enquiryType';
-    hiddenInput.value = value;
-    form.appendChild(hiddenInput);
-
-    formContainer.style.display = 'grid';
-    formContainer.classList.add('fade-in');
-    formContainer.classList.remove('fade-out');
-    body.style.overflow = 'hidden';
-    formContainer.dataset.closed = 'false'; // Reset the closed flag when opening the form
-}
-
-// const downloadBrochureBtn = document.querySelector('.download-brochure');
-// downloadBrochureBtn.addEventListener('click', enquiryForm);
-
-const closeButton = document.getElementById('close-button');
-closeButton.addEventListener('click', closeForm);
-
-function closeForm() {
-    const formContainer = document.getElementById('form-container');
-    const body = document.getElementsByTagName('body')[0];
-    formContainer.classList.remove('fade-in');
-    formContainer.classList.add('fade-out');
-
-    formContainer.addEventListener('animationend', function handleAnimationEnd() {
-        formContainer.style.display = 'none';
-        formContainer.classList.remove('fade-out');
-        formContainer.removeEventListener('animationend', handleAnimationEnd);
-    });
-
-    body.style.overflow = 'auto';
-    formContainer.dataset.closed = 'true'; // Set the closed flag when closing the form
-}
-
-document.getElementById('nameInput').setCustomValidity('Please enter your full name');
-document.getElementById('phoneInput').setCustomValidity('Please enter a valid 10-Digit mobile number');
-document.getElementById('emailInput').setCustomValidity('');
-
-
-function clearValidityMessage(element) {
-    element.setCustomValidity('');
-    const value = element.value.toString();
-    console.log(value);
-
-    // Check if the value as a string is not an empty string or invalid intermediate states
-    if (value !== '' && value !== '-' && value !== '+' && value !== 'e' && value !== '-e' && value !== '+e') {
-        element.classList.add('has-value');
-        console.log("has value activated");
-    } else {
-        element.classList.remove('has-value');
-        console.log("has value deactivated");
-    }
-}
-
-document.getElementById('phoneInput').addEventListener('input', function () {
-    let phoneValue = this.value;
-    let regex = /^\d{10}$/;
-
-    if (!regex.test(phoneValue)) {
-        this.setCustomValidity('Please enter a valid 10-digit mobile number');
-    } else {
-        this.setCustomValidity('');
-    }
-});
-
-
-window.addEventListener('scroll', function () {
-    var scrollAmount = window.scrollY;
-    const formContainer = document.getElementById('form-container');
-    const body = document.getElementsByTagName('body')[0];
-    if (scrollAmount > 900 && formContainer.dataset.closed !== 'true') {
         formContainer.style.display = 'grid';
         formContainer.classList.add('fade-in');
+        formContainer.classList.remove('fade-out');
         body.style.overflow = 'hidden';
-    } else if (formContainer.dataset.closed !== 'true') {
-        formContainer.style.display = 'none';
-        formContainer.classList.remove('fade-in');
-        body.style.overflow = 'auto';
+        formContainer.dataset.closed = 'false';
     }
-});
 
-// ================================================ form submission =============================================
+    const closeButton = document.getElementById('close-button');
+    closeButton.addEventListener('click', closeForm);
+
+    function closeForm() {
+        formContainer.classList.remove('fade-in');
+        formContainer.classList.add('fade-out');
+
+        formContainer.addEventListener('animationend', function handleAnimationEnd() {
+            formContainer.style.display = 'none';
+            formContainer.classList.remove('fade-out');
+            formContainer.removeEventListener('animationend', handleAnimationEnd);
+        });
+
+        body.style.overflow = 'auto';
+        formContainer.dataset.closed = 'true';
+    }
+
+    document.getElementById('nameInput').setCustomValidity('Please enter your full name');
+    document.getElementById('phoneInput').setCustomValidity('Please enter a valid 10-Digit mobile number');
+    document.getElementById('emailInput').setCustomValidity('');
+
+    function clearValidityMessage(element) {
+        element.setCustomValidity('');
+        const value = element.value.toString();
+        if (value !== '' && value !== '-' && value !== '+' && value !== 'e' && value !== '-e' && value !== '+e') {
+            element.classList.add('has-value');
+        } else {
+            element.classList.remove('has-value');
+        }
+    }
+
+    document.getElementById('phoneInput').addEventListener('input', function () {
+        let phoneValue = this.value;
+        let regex = /^\d{10}$/;
+        if (!regex.test(phoneValue)) {
+            this.setCustomValidity('Please enter a valid 10-digit mobile number');
+        } else {
+            this.setCustomValidity('');
+        }
+    });
+
+    window.addEventListener('scroll', function () {
+        var scrollAmount = window.scrollY;
+        if (scrollAmount > 900 && formContainer.dataset.closed !== 'true') {
+            formContainer.style.display = 'grid';
+            formContainer.classList.add('fade-in');
+            body.style.overflow = 'hidden';
+        } else if (formContainer.dataset.closed !== 'true') {
+            formContainer.style.display = 'none';
+            formContainer.classList.remove('fade-in');
+            body.style.overflow = 'auto';
+        }
+    });
+
+    window.enquiryForm = enquiryForm; // Expose the function to the global scope
+});
 
 function formSubmit(e) {
     e.preventDefault();
     const name = document.getElementById('nameInput').value;
     const phone = document.getElementById('phoneInput').value;
     const email = document.getElementById('emailInput').value;
-    console.log("name: " + name + ", phone: " + phone + ", email: " + email);
     window.location.assign(`form_submit.php?name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}&email=${encodeURIComponent(email)}`);
 }
-
-
-
 // ================================= Gallery ========================================
 const tabs = document.getElementsByClassName('gallery-tab');
 const tabContents = document.getElementsByClassName('gallery-tab-content');
