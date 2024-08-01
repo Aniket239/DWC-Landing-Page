@@ -178,11 +178,11 @@ observer.observe(aboutProjectSection);
 function enquiryForm(value) {
 
     // Ensure the element exists before setting its value
-    const utmFormNameInput = document.getElementById('utm_form_name');
-    if (utmFormNameInput) {
-        utmFormNameInput.value = value;
-        console.log(`utm form name: ${utmFormNameInput.value}`);
-    }
+    // const utmFormNameInput = document.getElementById('utm_form_name');
+    // if (utmFormNameInput) {
+    //     utmFormNameInput.value = value;
+    //     console.log(`utm form name: ${utmFormNameInput.value}`);
+    // }
     const formContainer = document.getElementById('form-container');
     const body = document.getElementsByTagName('body')[0];
     const form = document.querySelector('.enquiry-form');
