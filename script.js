@@ -189,11 +189,14 @@ function enquiryForm(value) {
     console.log(`Form origin: ${value}`);
 
     // Create and add the hidden input
+    const utm_form_name = document.getElementById('utm_form_name');
+    console.log(`urm form name: ${utm_form_name.value} `);
     const hiddenInput = document.createElement('input');
     hiddenInput.type = 'hidden';
     hiddenInput.name = 'enquiry_type';
     hiddenInput.id = 'enquiryType';
     hiddenInput.value = value;
+    // utm_form_name.value = value;
     form.appendChild(hiddenInput);
 
     formContainer.style.display = 'grid';
@@ -276,16 +279,13 @@ window.addEventListener('scroll', function () {
 
 function formSubmit(e) {
     e.preventDefault();
-
     const name = document.getElementById('nameInput').value;
     const phone = document.getElementById('phoneInput').value;
     const email = document.getElementById('emailInput').value;
-    const enquiryType = document.getElementById('enquiryType').value;
-
-    console.log("name: " + name + ", phone: " + phone + ", email: " + email + ", enquiryType: " + enquiryType);
-
-    window.location.href = `thankYou.html?name=${name}&phone=${phone}&email=${email}&enquiryType=${enquiryType}`;
+    console.log("name: " + name + ", phone: " + phone + ", email: " + email);
+    window.location.assign(`form_submit.php?name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}&email=${encodeURIComponent(email)}`);
 }
+
 
 
 // ================================= Gallery ========================================

@@ -1360,7 +1360,8 @@ input[type="number"] {
 .map-text {
   position: absolute;
   bottom: -40px;
-  left: 20%;
+  left: 50%;
+  transform: translateX(-50%);  
   background-color: #004221;
   color: white;
   border: none;
@@ -1659,7 +1660,7 @@ input[type="number"] {
 .legacy {
   text-align: center;
   padding: 50px 20px;
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
 }
 
 .legacy h1 {
@@ -1730,7 +1731,7 @@ footer div::after {
   position: absolute;
   bottom: 0;
   width: 100%;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
 }
 
 
@@ -1755,6 +1756,7 @@ footer a {
 
 .developer-office img {
   width: 12%;
+  border-radius: 3px;
   padding: 5px;
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -2020,7 +2022,7 @@ footer a {
     background-size: contain;
     /* border-right: 2px solid white; */
     background-color: inherit;
-    margin-right: 5px;
+    margin:0 5px 4px 0;
   }
 
   .bottom-nav div a {
@@ -2029,11 +2031,12 @@ footer a {
     color: rgb(0, 0, 0);
     font-family: "jost", sans-serif;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     border-right: 3px solid #ffffff;
     color: white;
+    padding-right: 20px;
   }
 
   .bottom-nav div button div {
@@ -2045,7 +2048,7 @@ footer a {
     border-radius: 50%;
     /* border-right: 2px solid white; */
     background-color: inherit;
-    margin-right: 5px;
+    margin-right: 10px;
   }
 
   .bottom-nav div button {
@@ -2245,7 +2248,7 @@ footer a {
   }
 
   .gallery-tab {
-    font-size: 14px;
+    font-size: 15px;
     padding: 8px;
     min-width: 33%;
     ;
@@ -2453,6 +2456,7 @@ footer a {
 
   .map-text {
     bottom: -33px;
+    width: 75%;
   }
 
   .google-map-text {
@@ -2579,12 +2583,17 @@ footer a {
 
 /* =================================================== Small mobile version ==================================== */
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 390px) {
 
   .mobile-nav {
     height: 70vh;
     padding-top: 30px;
     margin-top: 35px;
+  }
+
+  .bottom-nav div a{
+    padding-right: 0;
+    justify-content: flex-start;
   }
 
   .bottom-nav div a div {
