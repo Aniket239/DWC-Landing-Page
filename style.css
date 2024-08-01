@@ -1756,7 +1756,7 @@ footer a {
 .developer-office img {
   width: 12%;
   padding: 5px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .site-address {
@@ -2572,7 +2572,7 @@ footer a {
   }
 
   .developer-office img {
-    width: 40%;
+    width: 35%;
   }
 
 }
