@@ -81,7 +81,7 @@
     <main id="main"></main>
     <div class="form-container" id="form-container" onsubmit="return formSubmit(event)">
         <form class="enquiry-form">
-            <input id="utm_form_name" name="utm_form_name" type="hidden" value="registration">
+            <input id="utm_form_name" name="utm_form_name" type="hidden" value="">
             <input id="utm_source" name="utm_source" type="hidden" value="">
             <input id="utm_medium" name="utm_medium" type="hidden" value="">
             <input id="utm_content" name="utm_content" type="hidden" value="">
@@ -1308,7 +1308,7 @@
                 return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
             }
 
-            var utm_form_name = getParameterByName('utm_form_name');
+            // var utm_form_name = getParameterByName('utm_form_name');
             var utm_source = getParameterByName('utm_source');
             console.log(utm_source);
             console.log("==========");

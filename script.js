@@ -189,14 +189,13 @@ function enquiryForm(value) {
     console.log(`Form origin: ${value}`);
 
     // Create and add the hidden input
-    const utm_form_name = document.getElementById('utm_form_name');
-    console.log(`urm form name: ${utm_form_name.value} `);
+    document.getElementById("utm_form_name").value = value;
+    console.log(`utm form name: ${document.getElementById("utm_form_name").value}`)
     const hiddenInput = document.createElement('input');
     hiddenInput.type = 'hidden';
     hiddenInput.name = 'enquiry_type';
     hiddenInput.id = 'enquiryType';
     hiddenInput.value = value;
-    // utm_form_name.value = value;
     form.appendChild(hiddenInput);
 
     formContainer.style.display = 'grid';
