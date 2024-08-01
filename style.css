@@ -2548,12 +2548,13 @@ footer a {
   .video-thumbnail img {
     border-radius: 12px;
   }
-  .home-loan h1{
+
+  .home-loan h1 {
     margin: 40px 0 0 0;
     font-size: 29px;
   }
 
-  .bank-logos{
+  .bank-logos {
     margin: 40px auto 0 auto;
   }
 
@@ -2620,12 +2621,12 @@ footer a {
   }
 
   .hamburger svg {
-    height: 2.7em;
+    height: 2.6em;
   }
 
   .mobile-nav {
     height: 70vh;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     margin-top: 0;
   }
 
@@ -2637,18 +2638,28 @@ footer a {
     font-size: 20px;
   }
 
+  .mobile-nav a.active::before {
+    font-size: 35px;
+    top: 1.5%;
+  }
+
   .side-nav-whatsapp-icon {
     height: 35px;
     width: 35px;
   }
+  .bottom-nav{
+    width: 95vw;
+    padding: 20px 10px;
+  }
 
   .bottom-nav div a {
-    padding-right: 0;
-    justify-content: flex-start;
+    padding-right: 10px;
+    justify-content: center;
   }
 
   .bottom-nav div a div {
     height: 4vh;
+    margin: 0;
   }
 
   main {
@@ -2686,7 +2697,7 @@ footer a {
 
   .unit-details .unit-card {
     height: 35vh;
-    width: 55vw;
+    width: 60vw;
   }
 
   .unit-details .unit-card h3 {
@@ -2706,40 +2717,62 @@ footer a {
     font-size: 14px;
   }
 
-  .carousel-control{
+  .carousel-control {
     width: 55px;
     height: 55px;
   }
+
   .amenities-name {
     font-size: 18px;
   }
-  .floor-plans-tab{
+
+  .floor-plans-tab {
     font-size: 16px;
   }
+
   .floor-plans-control {
     height: 55px;
     width: 55px;
   }
+  .map-text {
+    width: 80%;
+}
+
+.map-item ul li h2 {
+  font-size: 19px;
+}
+
+.map-carousel {
+  width: 95%;
+}
+
+.location-name{
+  font-size: 16px;
+}
 
   .home-loan {
     padding: 26px 0;
   }
-  .home-loan h1{
+
+  .home-loan h1 {
     margin: 20px 0;
     font-size: 25px;
   }
-  .bank-logos{
+
+  .bank-logos {
     margin: 40px auto 0 auto;
   }
+
   .bank-logos img {
     max-width: 40%;
   }
 
-  .stat img{
+  .stat img {
     width: 80px;
     height: 80px;
   }
-  footer{
+
+  footer {
     padding-bottom: 10vh;
   }
 
