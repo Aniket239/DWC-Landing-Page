@@ -2709,19 +2709,27 @@ footer a {
     height: 55px;
     width: 55px;
   }
-  .home-loan h1{
-    font-size: 25px;
-  }
+
   .home-loan {
     padding: 26px 0;
   }
   .home-loan h1{
-    font-size: 16px;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+  .bank-logos{
+    margin: 40px auto 0 auto;
+  }
+  .bank-logos img {
+    max-width: 40%;
   }
 
   .stat img{
     width: 80px;
     height: 80px;
+  }
+  footer{
+    padding-bottom: 10vh;
   }
 
 }
