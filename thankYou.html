@@ -193,7 +193,7 @@
             display: none;
         }
 
-        .back-button:hover{
+        .back-button:hover {
             color: #016935;
         }
 
@@ -203,7 +203,7 @@
                 'wght' 400,
                 'GRAD' 0,
                 'opsz' 24;
-                /* margin-bottom: 3px; */
+            /* margin-bottom: 3px; */
         }
 
         @keyframes pulse {
@@ -265,29 +265,52 @@
                 font-size: 1em;
                 padding: 15px 35px 10px;
             }
+
             .back-button .material-symbols-outlined {
-            font-variation-settings:
-                'FILL' 0,
-                'wght' 400,
-                'GRAD' 0,
-                'opsz' 24;
+                font-variation-settings:
+                    'FILL' 0,
+                    'wght' 400,
+                    'GRAD' 0,
+                    'opsz' 24;
                 margin-bottom: 1px;
-        }
+            }
         }
 
         @media (max-width: 380px) {
-            nav {
-                background-color: white;
-            }
-
+            
             body {
                 height: auto;
                 overflow: auto;
                 margin-top: 80px;
             }
+            nav {
+                background-color: #E2EBE6;
+            }
 
+            nav ul li .dwc-logo {
+                width: 140px;
+                height: 50px;
+            }
+
+            nav ul li .jaingroup-logo {
+                width: 140px;
+                height: 45px;
+            }
+
+            .body-text{
+                max-width: 95%;
+            }
+            
+            .thank-you{
+                font-size: 3rem;
+                margin-bottom: 28px;
+            }
             footer {
                 position: relative;
+                margin: 0;
+            }
+            footer p {
+                font-size: 1em;
             }
         }
     </style>
