@@ -176,6 +176,13 @@ observer.observe(aboutProjectSection);
 
 // ============================================== form ============================================
 function enquiryForm(value) {
+
+    // Ensure the element exists before setting its value
+    const utmFormNameInput = document.getElementById('utm_form_name');
+    if (utmFormNameInput) {
+        utmFormNameInput.value = value;
+        console.log(`utm form name: ${utmFormNameInput.value}`);
+    }
     const formContainer = document.getElementById('form-container');
     const body = document.getElementsByTagName('body')[0];
     const form = document.querySelector('.enquiry-form');
@@ -279,8 +286,9 @@ function formSubmit(e) {
     const name = document.getElementById('nameInput').value;
     const phone = document.getElementById('phoneInput').value;
     const email = document.getElementById('emailInput').value;
+    const enquiryType = document.getElementById('enquiryType').value;
     console.log("name: " + name + ", phone: " + phone + ", email: " + email);
-    window.location.assign(`thankYou.html?name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}&email=${encodeURIComponent(email)}`);
+    window.location.assign(`thankYou.html?name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}&email=${encodeURIComponent(email)}&enquiryType=${encodeURIComponent(enquiryType)}`);
 }
 
 
@@ -522,7 +530,7 @@ document.getElementById('view-map-btn').addEventListener('click', function () {
         skeletonLoader.style.display = 'block';
         loadingMap = true;
     }
-    
+
     document.getElementById('google-map').addEventListener('load', function () {
         skeletonLoader.style.display = 'none';
         mapLoaded = true;
@@ -532,7 +540,7 @@ document.getElementById('view-map-btn').addEventListener('click', function () {
 
 document.getElementById('go-back-btn').addEventListener('click', function () {
     var skeletonLoader = document.getElementById('skeleton-loader');
-    
+
     if (screenWidth > 768) {
         document.getElementById('google-map').classList.add('hidden');
         setTimeout(() => {
