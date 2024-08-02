@@ -647,7 +647,7 @@ input[type="number"] {
   padding: 150px 0;
   align-items: center;
   flex-direction: column;
-  background-color: #004221;
+  background-color: transparent;
 }
 
 
@@ -656,7 +656,7 @@ input[type="number"] {
   font-weight: 400;
   /* font-family: "Roboto", sans-serif; */
   font-size: 38px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   margin: 0 0 40px;
 }
 
@@ -1578,7 +1578,7 @@ input[type="number"] {
 .project-video {
   text-align: center;
   padding: 60px 20px;
-  background-color: #004221;
+  background-color: transparent;
 }
 
 .project-video h1 {
@@ -1587,7 +1587,7 @@ input[type="number"] {
   /* font-family: "Roboto", sans-serif; */
   font-size: 38px;
   margin-bottom: 30px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .video-container {
@@ -1725,7 +1725,7 @@ input[type="number"] {
 
 footer {
   bottom: 0;
-  background-color: #004221;
+  background-color: #001d0e;
   color: #efe1bb;
   text-align: center;
   padding: 30px 0 0 0;
@@ -1737,7 +1737,7 @@ footer {
 
 footer div {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-end;
   flex-direction: row;
   width: 95%;
@@ -1751,9 +1751,13 @@ footer div::after {
   position: absolute;
   bottom: 0;
   width: 100%;
-  border-bottom: 1px solid white;
+  /* border-bottom: 1px solid white; */
 }
 
+footer div p{
+  color: #efe1bb;
+  font-size: 18px;
+}
 
 footer h3 {
   font-family: "Playfair Display", serif;
@@ -1764,7 +1768,7 @@ footer h3 {
 
 footer p {
   font-family: "Jost", sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   color: white;
 }
 
@@ -1778,10 +1782,12 @@ footer a {
 }
 
 .developer-office img {
-  width: 12%;
+  position: relative;
+  left: -16px;
+  width: 220px;
   border-radius: 3px;
-  padding: 5px;
-  background-color: rgba(255, 255, 255, 0.9);
+  /* padding: 5px; */
+  /* background-color: rgba(255, 255, 255, 0.9); */
 }
 
 .site-address {
@@ -1876,7 +1882,7 @@ footer a {
   }
 
   .mobile-nav {
-    height: 70vh;
+    height: 60vh;
     display: none;
     justify-content: center;
     align-items: flex-start;
@@ -1944,7 +1950,7 @@ footer a {
     color: black;
     margin-bottom: 40px;
     font-family: "Playfair Display", serif;
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 600;
     padding: 10px 15px;
   }
@@ -1952,7 +1958,7 @@ footer a {
   .mobile-nav a.active {
     color: #004221;
     padding: 10px 15px;
-    font-size: 30px;
+    font-size: 28px;
     position: relative;
     /* Needed for the pseudo-element positioning */
   }
@@ -1961,7 +1967,7 @@ footer a {
     content: "✦";
     position: absolute;
     left: -30px;
-    top: 5.5%;
+    top: 2.5%;
     color: #004221;
     font-size: 35px;
   }
@@ -2611,16 +2617,24 @@ footer a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0;
+    padding: 0 0 30px 0;
   }
 
   footer section {
     width: 90%;
     margin-bottom: 5%;
   }
+  .developer-office{
+      text-align: center ;
+  }
+
+  .site-address{
+    text-align: center;
+  }
 
   .developer-office img {
-    width: 35%;
+    width: 250px;
+    left: 0;
   }
 
 }
