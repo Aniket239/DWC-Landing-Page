@@ -1577,7 +1577,7 @@ input[type="number"] {
 
 .project-video {
   text-align: center;
-  padding: 60px 20px;
+  padding: 0 20px 60px 20px;
   background-color: transparent;
 }
 
@@ -1679,7 +1679,7 @@ input[type="number"] {
 .legacy {
   text-align: center;
   padding: 50px 20px;
-  /* background-color: #f8f8f8; */
+  background-color: #f8f8f8;
 }
 
 .legacy h1 {
@@ -1707,8 +1707,8 @@ input[type="number"] {
 }
 
 .stat img {
-  width: 100px;
-  height: 100px;
+  /* width: 100px;
+  height: 100px; */
   margin-bottom: 20px;
 }
 
@@ -1728,7 +1728,7 @@ footer {
   background-color: #001d0e;
   color: #efe1bb;
   text-align: center;
-  padding: 30px 0 0 0;
+  padding: 30px 0 30px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1741,7 +1741,7 @@ footer div {
   align-items: flex-end;
   flex-direction: row;
   width: 95%;
-  padding: 0 0 20px 0;
+  padding: 0 0 50px 0;
   position: relative;
   /* Ensure the pseudo-element is positioned relative to this element */
 }
@@ -2160,7 +2160,7 @@ footer a {
 
   main {
     height: 84vh;
-    background-image: url('assets/DWC\ banner\ mobile.webp');
+    background-image: url('assets/DWC\ banner\ mobile\ \(2\).webp');
     margin-top: 60px;
   }
 
@@ -2465,6 +2465,7 @@ footer a {
   .location-container {
     flex-direction: column-reverse;
     align-items: center;
+    border-bottom: 1px solid brown;
   }
 
   .map {
@@ -2810,9 +2811,13 @@ footer a {
     max-width: 40%;
   }
 
-  .stat img {
+  .icon {
     width: 80px;
     height: 80px;
+  }
+  .custom-icon{
+    width: 90px;
+    height: 90px;
   }
 
   footer {
