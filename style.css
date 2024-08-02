@@ -717,6 +717,32 @@ input[type="number"] {
   color: white;
 }
 
+/* Add this CSS to your stylesheet */
+
+/* Add this CSS to your stylesheet */
+
+@keyframes fadeInMoveUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.unit-card.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.unit-card.visible {
+  animation: fadeInMoveUp 1.5s forwards;
+}
+
+
+
 .gallery {
   /* background-color: #ffffff; */
   display: flex;
@@ -1675,6 +1701,30 @@ input[type="number"] {
   mix-blend-mode: multiply;
   object-fit: contain;
 }
+@keyframes fadeInMoveUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bank-logos img.hidden {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.bank-logos img.visible {
+  animation: fadeInMoveUp 2.5s forwards;
+}
+
+.bank-logos img {
+  opacity: 0; /* Ensure they are hidden initially */
+  transition: opacity 2.5s, transform 2.5s; /* Add transition for smoother appearance */
+}
 
 .legacy {
   text-align: center;
@@ -1722,6 +1772,27 @@ input[type="number"] {
   font-size: 24px;
   color: #000;
 }
+
+@keyframes fadeInMoveUp {
+  from {
+    opacity: 0;
+    transform: translateY(120px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stat.hidden {
+  opacity: 0;
+  transform: translateY(120px);
+}
+
+.stat.visible {
+  animation: fadeInMoveUp 2.5s forwards;
+}
+
 
 footer {
   bottom: 0;
@@ -1794,6 +1865,33 @@ footer a {
   text-align: left;
 
 }
+
+@keyframes fadeInMoveUp {
+  from {
+    opacity: 0;
+    transform: translateY(120px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(120px);
+}
+
+.visible {
+  animation: fadeInMoveUp 2.5s forwards;
+}
+
+.developer-office, .site-address {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2.5s, transform 2.5s;
+}
+
 
 /*===================================================== small desktop ============================= */
 
