@@ -284,27 +284,24 @@ document.getElementById('phoneInput').addEventListener('input', function () {
 
 // ==================================== open form on scroll =================================
 
-window.addEventListener('scroll', function () {
-    var scrollAmount = window.scrollY;
-    const formContainer = document.getElementById('form-container');
-    const body = document.getElementsByTagName('body')[0];
-    const formShouldOpen = scrollAmount > 900 && scrollAmount <= 1500 ||
-                           scrollAmount > 1500 && scrollAmount <= 3000 ||
-                           scrollAmount > 3000;
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('section'); // Select all sections within the main content
+    let sectionCounter = 0;
 
-    if (formShouldOpen && formContainer.dataset.closed !== 'true') {
-        enquiryForm('registration');
-        formContainer.style.display = 'grid';
-        formContainer.classList.add('fade-in');
-        body.style.overflow = 'hidden';
-    } else if (!formShouldOpen && formContainer.dataset.closed !== 'true') {
-        formContainer.style.display = 'none';
-        formContainer.classList.remove('fade-in');
-        body.style.overflow = 'auto';
-    }
+    window.addEventListener('scroll', function () {
+        sections.forEach((section, index) => {
+            if (section.getBoundingClientRect().top < window.innerHeight && !section.classList.contains('viewed')) {
+                section.classList.add('viewed');
+                sectionCounter++;
+                console.log(`section count: ${sectionCounter}`)
+                
+                if (sectionCounter>4 && sectionCounter % 4 === 0) { // Check if two sections have been viewed
+                    enquiryForm('registration');
+                }
+            }
+        });
+    });
 });
-
-
 
 
 // ================================================ form submission =============================================
