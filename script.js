@@ -44,6 +44,38 @@ document.addEventListener('DOMContentLoaded', function () {
 //     });
 // });
 
+document.addEventListener('DOMContentLoaded', function() {
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(window.location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    var mobile = getParameterByName('cellno');
+    console.log(`cell no: ${mobile}`); // Debugging log
+
+    var callLink = document.getElementById('click_to_call');
+    var phoneNumberElement = document.getElementById('phone_number');
+    var sideNavPhoneNumber = document.getElementById('side-nav-phone-number');
+    
+    console.log(`callLink: ${callLink}`);
+    console.log(`phoneNumberElement: ${phoneNumberElement}`);
+    console.log(`sideNavPhoneNumber: ${sideNavPhoneNumber}`);
+
+    if (mobile) {
+        var phoneNumber = mobile.startsWith('+91') ? mobile : '+91' + mobile;
+        callLink.href = "tel:" + phoneNumber;
+        var formattedNumber = phoneNumber.slice(0, 3) + " " + phoneNumber.slice(3, 7) + " " + phoneNumber.slice(7, 10) + " " + phoneNumber.slice(10);
+        console.log(`Formatted Number: ${formattedNumber}`); // Debugging log
+        phoneNumberElement.textContent = formattedNumber;
+        sideNavPhoneNumber.textContent = formattedNumber;
+    }
+});
+
+
+
+
 
 // ===================================== Add shadow in nav ================================
 const nav = document.querySelector('nav');
@@ -191,29 +223,24 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(aboutProjectSection);
 
 // ============================================== form ============================================
-var utmFormNameValue;
 function enquiryForm(value) {
-
-    // Ensure the element exists before setting its value
-    const utmFormNameInput = document.getElementById('utm_form_name');
+    var utmFormNameInput = document.getElementById('utm_form_name');
     if (utmFormNameInput) {
         utmFormNameInput.value = value;
-        console.log(`utm form name: ${utmFormNameInput.value}`);
-        utmFormNameValue = utmFormNameInput.value;
     }
     const formContainer = document.getElementById('form-container');
     const body = document.getElementsByTagName('body')[0];
     const form = document.querySelector('.enquiry-form');
 
-    // Remove any existing hidden input
-    const existingHiddenInput = form.querySelector('input[type="hidden"]');
+    // Remove any existing hidden input for enquiry_type
+    const existingHiddenInput = document.getElementById('enquiryType');
     if (existingHiddenInput) {
         existingHiddenInput.remove();
     }
 
     console.log(`Form origin: ${value}`);
 
-    // Create and add the hidden input
+    // Create and add the hidden input for enquiry_type
     const hiddenInput = document.createElement('input');
     hiddenInput.type = 'hidden';
     hiddenInput.name = 'enquiry_type';
@@ -225,11 +252,8 @@ function enquiryForm(value) {
     formContainer.classList.add('fade-in');
     formContainer.classList.remove('fade-out');
     body.style.overflow = 'hidden';
-    formContainer.dataset.closed = 'false'; // Reset the closed flag when opening the form
+    formContainer.dataset.closed = 'false';
 }
-
-// const downloadBrochureBtn = document.querySelector('.download-brochure');
-// downloadBrochureBtn.addEventListener('click', enquiryForm);
 
 const closeButton = document.getElementById('close-button');
 closeButton.addEventListener('click', closeForm);
@@ -247,42 +271,32 @@ function closeForm() {
     });
 
     body.style.overflow = 'auto';
-    formContainer.dataset.closed = 'true'; // Set the closed flag when closing the form
+    formContainer.dataset.closed = 'true';
 }
 
 document.getElementById('nameInput').setCustomValidity('Please enter your full name');
-document.getElementById('phoneInput').setCustomValidity('Please enter a valid 10-Digit mobile number');
+document.getElementById('phoneInput').setCustomValidity('Please enter a valid 10-digit mobile number');
 document.getElementById('emailInput').setCustomValidity('');
-
 
 function clearValidityMessage(element) {
     element.setCustomValidity('');
     const value = element.value.toString();
-    console.log(value);
-
-    // Check if the value as a string is not an empty string or invalid intermediate states
     if (value !== '' && value !== '-' && value !== '+' && value !== 'e' && value !== '-e' && value !== '+e') {
         element.classList.add('has-value');
-        console.log("has value activated");
     } else {
         element.classList.remove('has-value');
-        console.log("has value deactivated");
     }
 }
 
 document.getElementById('phoneInput').addEventListener('input', function () {
     let phoneValue = this.value;
     let regex = /^\d{10}$/;
-
     if (!regex.test(phoneValue)) {
         this.setCustomValidity('Please enter a valid 10-digit mobile number');
     } else {
         this.setCustomValidity('');
     }
 });
-
-
-// ==================================== open form on scroll =================================
 
 window.addEventListener('scroll', function () {
     var scrollAmount = window.scrollY;
@@ -324,16 +338,18 @@ window.addEventListener('scroll', function () {
 
 // ================================================ form submission =============================================
 
-function formSubmit(e) {
-    e.preventDefault();
-    const name = document.getElementById('nameInput').value;
-    const phone = document.getElementById('phoneInput').value;
-    const email = document.getElementById('emailInput').value;
-    const enquiryType = document.getElementById('enquiryType').value;
-    const utm_form_name  = document.getElementById('utm_form_name').value;
-    console.log("name: " + name + ", phone: " + phone + ", email: " + email);
-    window.location.assign(`thankYou.html?name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}&email=${encodeURIComponent(email)}&enquiryType=${encodeURIComponent(enquiryType)}&utm_form_nam=${encodeURIComponent(utmFormNameValue)}`);
-}
+// function formSubmit(e) {
+//     e.preventDefault();
+//     const name = document.getElementById('nameInput').value;
+//     const phone = document.getElementById('phoneInput').value;
+//     const email = document.getElementById('emailInput').value;
+//     const enquiryType = document.getElementById('enquiryType').value;
+//     // const utm_form_name  = document.getElementById('utm_form_name').value;
+//     // console.log(`utm_form_name value: ${utm_form_name}`);
+//     console.log("name: " + name + ", phone: " + phone + ", email: " + email);
+//     // window.location.assign(`https://thejaingroup.co.in/dream_world_city/form_submit.php?name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}&email=${encodeURIComponent(email)}&enquiryType=${encodeURIComponent(enquiryType)}&utm_form_nam=${encodeURIComponent(utmFormNameValue)}`);
+// }
+
 
 // ===================================== project configuration ==============================
 
