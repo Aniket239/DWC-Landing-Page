@@ -191,14 +191,16 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(aboutProjectSection);
 
 // ============================================== form ============================================
+var utmFormNameValue;
 function enquiryForm(value) {
 
     // Ensure the element exists before setting its value
-    // const utmFormNameInput = document.getElementById('utm_form_name');
-    // if (utmFormNameInput) {
-    //     utmFormNameInput.value = value;
-    //     console.log(`utm form name: ${utmFormNameInput.value}`);
-    // }
+    const utmFormNameInput = document.getElementById('utm_form_name');
+    if (utmFormNameInput) {
+        utmFormNameInput.value = value;
+        console.log(`utm form name: ${utmFormNameInput.value}`);
+        utmFormNameValue = utmFormNameInput.value;
+    }
     const formContainer = document.getElementById('form-container');
     const body = document.getElementsByTagName('body')[0];
     const form = document.querySelector('.enquiry-form');
@@ -280,20 +282,30 @@ document.getElementById('phoneInput').addEventListener('input', function () {
 });
 
 
+// ==================================== open form on scroll =================================
+
 window.addEventListener('scroll', function () {
     var scrollAmount = window.scrollY;
     const formContainer = document.getElementById('form-container');
     const body = document.getElementsByTagName('body')[0];
-    if (scrollAmount > 900 && formContainer.dataset.closed !== 'true') {
+    const formShouldOpen = scrollAmount > 900 && scrollAmount <= 1500 ||
+                           scrollAmount > 1500 && scrollAmount <= 3000 ||
+                           scrollAmount > 3000;
+
+    if (formShouldOpen && formContainer.dataset.closed !== 'true') {
+        enquiryForm('registration');
         formContainer.style.display = 'grid';
         formContainer.classList.add('fade-in');
         body.style.overflow = 'hidden';
-    } else if (formContainer.dataset.closed !== 'true') {
+    } else if (!formShouldOpen && formContainer.dataset.closed !== 'true') {
         formContainer.style.display = 'none';
         formContainer.classList.remove('fade-in');
         body.style.overflow = 'auto';
     }
 });
+
+
+
 
 // ================================================ form submission =============================================
 
@@ -303,8 +315,9 @@ function formSubmit(e) {
     const phone = document.getElementById('phoneInput').value;
     const email = document.getElementById('emailInput').value;
     const enquiryType = document.getElementById('enquiryType').value;
+    const utm_form_name  = document.getElementById('utm_form_name').value;
     console.log("name: " + name + ", phone: " + phone + ", email: " + email);
-    window.location.assign(`thankYou.html?name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}&email=${encodeURIComponent(email)}&enquiryType=${encodeURIComponent(enquiryType)}`);
+    window.location.assign(`thankYou.html?name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}&email=${encodeURIComponent(email)}&enquiryType=${encodeURIComponent(enquiryType)}&utm_form_nam=${encodeURIComponent(utmFormNameValue)}`);
 }
 
 // ===================================== project configuration ==============================

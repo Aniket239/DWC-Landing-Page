@@ -548,16 +548,17 @@ input[type="number"] {
   max-width: 0;
   opacity: 0;
   font-size: x-large;
-  font-family: "Playfair Display", serif;
+  font-family: "josefin sans",sans-serif;
   font-weight: 400;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
   padding: 10px 10px 0 10px;
-  width: 170px;
+  width: 175px;
   height: 30px;
   transform: translateX(256px);
   z-index: 0;
   color: white;
+  /* margin: 0 0px 6px 0px; */
 }
 
 .side-nav-call p.revealed {
@@ -904,7 +905,7 @@ input[type="number"] {
 
 .amenities {
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .amenities h1 {
@@ -946,7 +947,7 @@ input[type="number"] {
 }
 
 .amenities-description p {
-  padding: 0 3.5% 30px 3.5%;
+  padding: 0 2.5% 30px 1.5%;
   font-size: 20px;
   text-align: left;
 }
@@ -2062,12 +2063,12 @@ footer a {
   }
 
   .mobile-nav a.active::before {
-    content: "✦";
+    content: "✧";
     position: absolute;
-    left: -30px;
-    top: 2.5%;
+    left: -20px;
+    top: 10%;
     color: #004221;
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .mobile-nav li:nth-child(1) {
@@ -2321,6 +2322,7 @@ footer a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0;
   }
 
   .project-description {
@@ -2345,11 +2347,14 @@ footer a {
   }
 
 
-  .project-about-icon img {
+  .icon {
     width: 80px;
     height: 80px;
   }
-
+  .custom-icon{
+    width: 90px;
+    height: 90px;
+  }
   .project-about-icon p {
     text-align: center;
   }
@@ -2364,7 +2369,7 @@ footer a {
   }
 
   .unit-details {
-    padding: 70px 0 60px 0;
+    padding: 70px 0 0 0;
   }
 
   .unit-details h1 {
@@ -2405,20 +2410,24 @@ footer a {
     width: 95%;
   }
 
-  /* 
+  
   .amenities{
-    background-image: url('assets/amenities\ background.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */
+  padding: 20px;
+
+  }
+
+  .amenities h1{
+    padding: 20px 0 0 1%;
+  }
 
   .amenities-container {
     flex-direction: column;
   }
 
   .amenities-description {
-    width: 90%;
+    width: 100%;
     margin-bottom: 20px;
+    padding: 0;
   }
 
   .amenities-description p {
@@ -2778,9 +2787,9 @@ footer a {
   }
 
   .mobile-nav a.active::before {
-    font-size: 25px;
-    top: 7.5%;
-    left: -15px;
+    font-size: 20px;
+    top: 14.5%;
+    left: -8px;
   }
 
   .side-nav-whatsapp-icon {
