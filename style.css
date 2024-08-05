@@ -952,7 +952,7 @@ input[type="number"] {
   text-align: left;
 }
 
-.amenities-description .download-brochure {
+.amenities .download-brochure {
   margin: 0 0 30px 1%;
 }
 
@@ -2749,7 +2749,7 @@ footer a {
 
 /* =================================================== Small mobile version ==================================== */
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 410px) {
 
   .about-the-project h1,
   .unit-details h1,

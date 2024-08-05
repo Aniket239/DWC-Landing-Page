@@ -32,8 +32,10 @@ nav {
   align-items: center;
   padding: 0 30px;
   background-color: white;
+  /* border-bottom: 3px solid white; */
   z-index: 150;
   top: -1px;
+  transition: all 0.3s ease-in-out;
 }
 
 nav ul {
@@ -73,9 +75,9 @@ nav ul li a {
 }
 
 nav ul li a img {
-  margin-top: 3%;
+  margin-top: 5%;
   width: 160px;
-  height: 70px;
+  height: 62px;
 }
 
 .nav-items-hamburger {
@@ -173,7 +175,7 @@ main {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  width: 40%;
+  width: 35%;
   flex-wrap: wrap;
 }
 
@@ -915,7 +917,7 @@ input[type="number"] {
   color: #000000;
   margin-bottom: 10px;
   text-align: left;
-  padding: 20px 0 0 7%;
+  padding: 20px 0 0 5%;
 }
 
 .amenities h1::after {
@@ -952,8 +954,9 @@ input[type="number"] {
   text-align: left;
 }
 
-.amenities-description .download-brochure {
-  margin: 0 0 30px 3%;
+.amenities .download-brochure {
+  margin: 30px auto 0 auto;
+  font-family: "Jost", sans-serif;
 }
 
 .amenities-container {
@@ -2749,7 +2752,7 @@ footer a {
 
 /* =================================================== Small mobile version ==================================== */
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 410px) {
 
   .about-the-project h1,
   .unit-details h1,

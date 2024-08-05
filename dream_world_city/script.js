@@ -83,8 +83,12 @@ function addShadowOnScroll() {
     let scrollPosition = window.scrollY;
     if (scrollPosition > 0) {
         nav.style.boxShadow = "0 4px 15px rgba(0, 0, 0, 0.3)";
+        nav.style.backdropFilter = 'blur(10px)';
+        nav.style.backgroundColor = 'rgba(249, 237, 216, 0.5)';
     } else {
         nav.style.boxShadow = "none";
+        nav.style.backdropFilter = 'none';
+        nav.style.backgroundColor = 'white';
     }
 }
 window.addEventListener('scroll', addShadowOnScroll);

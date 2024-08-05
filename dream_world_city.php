@@ -43,7 +43,7 @@
         <ul id="nav-links">
             <li>
                 <a href="#main">
-                    <img src="dream_world_city/assets/DWC logo.webp" alt="logo">
+                    <img src="dream_world_city/assets/dwc logo no background.webp" alt="logo">
                 </a>
             </li>
         </ul>
@@ -281,9 +281,6 @@
                 needs, there is a daily convenience store, a medical store, an ATM, utility and support services, a
                 security management system, and generator backup.
                 Uncover more secrets firsthand.</p>
-            <button class="download-brochure" onclick="enquiryForm('brochure')">
-                Download Brochure
-            </button>
         </div>
         <div class="amenities-container">
             <div class="amenities-list">
@@ -468,6 +465,9 @@
                 <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
             </div>
         </div>
+        <button class="download-brochure" id="amenities-download-brochure" onclick="enquiryForm('brochure')">
+            Download Brochure
+        </button>
     </section>
     <section class="unit-details">
         <h1>Project Configuration</h1>
@@ -478,7 +478,7 @@
                 <p>2 BHK</p>
                 <br>
                 <br>
-                <h3>Carpet Area</h3>
+                <h3>Sizes</h3>
                 <p>630 to 800 sq.ft</p>
                 <button class="view-details" onclick="enquiryForm('registration')">
                     View Details
@@ -489,7 +489,7 @@
                 <p>3 BHK</p>
                 <br>
                 <br>
-                <h3>Carpet Area</h3>
+                <h3>Sizes</h3>
                 <p>795 to 930 sq.ft</p>
                 <button class="view-details" onclick="enquiryForm('registration')">
                     View Details
@@ -604,7 +604,7 @@
             <div class="gallery-tab-content">
                 <div class="gallery-mobile-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/6.webp" alt="Image 1">
+                        <img src="dream_world_city/assets/gallery images/actual image/16.webp" alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
@@ -621,7 +621,7 @@
                 </div>
                 <div class="gallery-mobile-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/7.webp" alt="Image 3">
+                        <img src="dream_world_city/assets/gallery images/actual image/17.webp" alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>

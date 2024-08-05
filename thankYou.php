@@ -375,12 +375,12 @@
             document.getElementById('name').innerHTML = name;
             document.getElementById('phone').innerHTML = phone;
             if (enquiry_type == 'brochure') {
-                document.querySelector('.btn-home').href = '';
+                document.querySelector('.btn-home').href = 'https://onedrive.live.com/download?resid=DDAF5DF6F5777143%21192&authkey=!ACgyrBWVP1LJUIo&em=2'
                 document.querySelector('.btn-home').innerHTML = "<strong>Download Brochure</strong>";
                 document.querySelector('.back-button').style.display = 'flex';
             }
             else if (enquiry_type == 'floor+plan') {
-                document.querySelector('.btn-home').href = '';
+                document.querySelector('.btn-home').href = 'https://onedrive.live.com/download?resid=DDAF5DF6F5777143%21194&authkey=!ABSrkkB3eoMUgwc&em=2'
                 document.querySelector('.btn-home').innerHTML = "<strong>Download Floor Plans</strong>";
                 document.querySelector('.back-button').style.display = 'flex';
             }
