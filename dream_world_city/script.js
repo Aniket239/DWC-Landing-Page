@@ -306,7 +306,7 @@ window.addEventListener('scroll', function () {
     var scrollAmount = window.scrollY;
     const formContainer = document.getElementById('form-container');
     const body = document.getElementsByTagName('body')[0];
-    if (scrollAmount > 900 && formContainer.dataset.closed !== 'true') {
+    if (scrollAmount > 1500 && formContainer.dataset.closed !== 'true') {
         enquiryForm('registration');
         formContainer.style.display = 'grid';
         formContainer.classList.add('fade-in');

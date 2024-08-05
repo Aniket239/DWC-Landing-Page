@@ -1263,7 +1263,7 @@
         <div class="legacy-stats">
             <div class="stat">
                 <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/building.webp" alt="skyscrapers" />
-                <p><strong>5</strong><br>Million sq.ft. Developed</p>
+                <p><strong>7</strong><br>Million sq.ft. Developed</p>
             </div>
             <div class="stat">
                 <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/construction.webp" alt="constructing" />
