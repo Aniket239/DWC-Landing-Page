@@ -83,8 +83,12 @@ function addShadowOnScroll() {
     let scrollPosition = window.scrollY;
     if (scrollPosition > 0) {
         nav.style.boxShadow = "0 4px 15px rgba(0, 0, 0, 0.3)";
+        nav.style.backdropFilter = 'blur(10px)';
+        nav.style.backgroundColor = 'rgba(249, 237, 216, 0.5)';
     } else {
         nav.style.boxShadow = "none";
+        nav.style.backdropFilter = 'none';
+        nav.style.backgroundColor = 'white';
     }
 }
 window.addEventListener('scroll', addShadowOnScroll);
@@ -302,7 +306,7 @@ window.addEventListener('scroll', function () {
     var scrollAmount = window.scrollY;
     const formContainer = document.getElementById('form-container');
     const body = document.getElementsByTagName('body')[0];
-    if (scrollAmount > 900 && formContainer.dataset.closed !== 'true') {
+    if (scrollAmount > 1500 && formContainer.dataset.closed !== 'true') {
         enquiryForm('registration');
         formContainer.style.display = 'grid';
         formContainer.classList.add('fade-in');

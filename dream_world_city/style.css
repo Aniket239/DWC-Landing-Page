@@ -89,8 +89,8 @@ nav ul li a img {
 }
 
 main {
-  background-image: url("assets/DWC\ banner.webp");
-  height: 100vh;
+  background-image: url("assets/DWC\ banner\ desktop.webp");
+  height: 103vh;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin-top: 20px;
@@ -2262,7 +2262,7 @@ footer a {
 
   main {
     height: 84vh;
-    background-image: url('assets/DWC\ banner\ mobile\ \(2\).webp');
+    background-image: url('assets/DWC\ banner\ mobile.webp');
     margin-top: 60px;
   }
 
@@ -2446,7 +2446,7 @@ footer a {
   }
 
   .amenities-description-mobile {
-    display: block;
+    display: none;
   }
 
   .amenities-desktop-image {
@@ -2801,8 +2801,8 @@ footer a {
   }
 
   .bottom-nav {
-    width: 95vw;
-    padding: 20px 10px;
+    width: 100vw;
+    padding: 20px 0px 20px 8px;
   }
 
   .bottom-nav div a {
@@ -2934,4 +2934,12 @@ footer a {
     padding-bottom: 10vh;
   }
 
+}
+@media screen and (max-width: 365px) {
+  #phone_number {
+    font-size: 14px;
+  }
+  .bottom-nav div button{
+    font-size: 16px;
+  }
 }

@@ -32,8 +32,10 @@ nav {
   align-items: center;
   padding: 0 30px;
   background-color: white;
+  /* border-bottom: 3px solid white; */
   z-index: 150;
   top: -1px;
+  transition: all 0.3s ease-in-out;
 }
 
 nav ul {
@@ -73,9 +75,9 @@ nav ul li a {
 }
 
 nav ul li a img {
-  margin-top: 3%;
+  margin-top: 5%;
   width: 160px;
-  height: 70px;
+  height: 62px;
 }
 
 .nav-items-hamburger {
@@ -953,7 +955,8 @@ input[type="number"] {
 }
 
 .amenities .download-brochure {
-  margin: 0 0 30px 1%;
+  margin: 30px auto 0 auto;
+  font-family: "Jost", sans-serif;
 }
 
 .amenities-container {
@@ -2798,8 +2801,8 @@ footer a {
   }
 
   .bottom-nav {
-    width: 95vw;
-    padding: 20px 10px;
+    width: 100vw;
+    padding: 20px 0px 20px 8px;
   }
 
   .bottom-nav div a {
@@ -2931,4 +2934,12 @@ footer a {
     padding-bottom: 10vh;
   }
 
+}
+@media screen and (max-width: 365px) {
+  #phone_number {
+    font-size: 14px;
+  }
+  .bottom-nav div button{
+    font-size: 16px;
+  }
 }

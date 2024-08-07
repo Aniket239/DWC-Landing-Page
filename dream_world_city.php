@@ -631,7 +631,7 @@
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/11.webp" alt="Image 1">
+                        <img src="dream_world_city/assets/gallery images/actual image/1.webp" alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
@@ -647,15 +647,10 @@
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
-                    <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/9.webp" alt="Image 1">
-                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                        </span>
-                    </div>
                 </div>
                 <div class="gallery-desktop-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/4.webp" alt="Image 3">
+                        <img src="dream_world_city/assets/gallery images/actual image/3.webp" alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
@@ -664,16 +659,7 @@
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
-                    <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/6.webp" alt="Image 1">
-                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                        </span>
-                    </div>
-                    <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/7.webp" alt="Image 3">
-                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                        </span>
-                    </div>
+
                 </div>
                 <div class="gallery-desktop-images">
                     <div class="img-container">
@@ -682,7 +668,7 @@
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/3.webp" alt="Image 1">
+                        <img src="dream_world_city/assets/gallery images/actual image/6.webp" alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
@@ -694,12 +680,7 @@
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/11.webp" alt="Image 1">
-                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                        </span>
-                    </div>
-                    <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/12.webp" alt="Image 1">
+                        <img src="dream_world_city/assets/gallery images/actual image/7.webp" alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
