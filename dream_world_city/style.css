@@ -89,11 +89,11 @@ nav ul li a img {
 }
 
 main {
-  background-image: url("assets/DWC\ banner\ desktop.webp");
-  height: 103vh;
+  background-image: url("assets/DWC\ Banner\ desktop.jpg");
+  height: 90vh;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin-top: 20px;
+  margin-top: 10vh;
 }
 
 .about-the-project {
@@ -564,7 +564,7 @@ input[type="number"] {
 }
 
 .side-nav-call p.revealed {
-  max-width: 200px;
+  max-width: 165px;
   opacity: 1;
   transform: translateX(0px);
 }

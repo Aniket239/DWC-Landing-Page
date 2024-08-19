@@ -3,12 +3,39 @@
 
 <head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TN95X483');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TN95X483');</script>
     <!-- End Google Tag Manager -->
+
+    <!-- Primary Meta Tags -->
+    <title>Dream World City | 2/3 BHK Ready Flats in Joka</title>
+    <meta name="title" content="Dream World City | 2/3 BHK Ready Flats in Joka" />
+    <meta name="description"
+        content="Dream World City - A Project By Jain Group  offering affordable 2 & 3 BHK Starting 29 Lakh in Joka. Just 10 min from Joka Metro." />
+    <meta name="keywords"
+        content="flats in joka, apartment in joka, 2 bhk ready flats in joka, 3 bhk ready flats in joka ">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thejaingroup.co.in/dream_world_city.php" />
+    <meta property="og:title" content="Dream World City | 2/3 BHK Ready Flats in Joka" />
+    <meta property="og:description"
+        content="Dream World City - A Project By Jain Group  offering affordable 2 & 3 BHK Starting 29 Lakh in Joka. Just 10 min from Joka Metro." />
+    <meta property="og:image" content="dream_world_city\assets\gallery images\elevation\desktop\desktop 5.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://thejaingroup.co.in/dream_world_city.php" />
+    <meta property="twitter:title" content="Dream World City | 2/3 BHK Ready Flats in Joka" />
+    <meta property="twitter:description"
+        content="Dream World City - A Project By Jain Group  offering affordable 2 & 3 BHK Starting 29 Lakh in Joka. Just 10 min from Joka Metro." />
+    <meta property="twitter:image"  content="dream_world_city\assets\gallery images\elevation\desktop\desktop 5.webp"   />
 
 
     <meta charset="UTF-8">
@@ -35,8 +62,8 @@
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN95X483"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN95X483" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <nav>
@@ -94,82 +121,86 @@
     </div>
     <main id="main"></main>
     <div class="form-container" id="form-container">
-    <form class="enquiry-form" action="dream_world_city/form_submit.php" method="post">
-        <input id="utm_form_name" name="utm_form_name" type="hidden" value="registration">
-        <input id="utm_source" name="utm_source" type="hidden" value="">
-        <input id="utm_medium" name="utm_medium" type="hidden" value="">
-        <input id="utm_content" name="utm_content" type="hidden" value="">
-        <input id="utm_term" name="utm_term" type="hidden" value="">
-        <input id="network" name="network" type="hidden" value="">
-        <input id="campaign_id" name="campaign_id" type="hidden" value="">
-        <input id="adgroup_id" name="adgroup_id" type="hidden" value="">
-        <input id="gclid" name="gclid" type="hidden" value="">
-        <input id="device" name="device" type="hidden" value="">
-        <input id="creative" name="creative" type="hidden" value="">
-        <input id="placement" name="placement" type="hidden" value="">
-        <input id="extension_id" name="extension_id" type="hidden" value="">
-        <input id="target_id" name="target_id" type="hidden" value="">
-        <input id="loc_interest_ms" name="loc_interest_ms" type="hidden" value="">
-        <input id="loc_physical_ms" name="loc_physical_ms" type="hidden" value="">
-        <input id="device_model" name="device_model" type="hidden" value="">
-        <input id="keyword" name="keyword" type="hidden" value="">
-        <input id="match_type" name="match_type" type="hidden" value="">
-        <input id="adposition" name="adposition" type="hidden" value="">
-        <input id="source_id" name="source_id" type="hidden" value="">
-        <input id="target" name="target" type="hidden" value="">
+        <form class="enquiry-form" action="dream_world_city/form_submit.php" method="post">
+            <input id="utm_form_name" name="utm_form_name" type="hidden" value="registration">
+            <input id="utm_source" name="utm_source" type="hidden" value="">
+            <input id="utm_medium" name="utm_medium" type="hidden" value="">
+            <input id="utm_content" name="utm_content" type="hidden" value="">
+            <input id="utm_term" name="utm_term" type="hidden" value="">
+            <input id="network" name="network" type="hidden" value="">
+            <input id="campaign_id" name="campaign_id" type="hidden" value="">
+            <input id="adgroup_id" name="adgroup_id" type="hidden" value="">
+            <input id="gclid" name="gclid" type="hidden" value="">
+            <input id="device" name="device" type="hidden" value="">
+            <input id="creative" name="creative" type="hidden" value="">
+            <input id="placement" name="placement" type="hidden" value="">
+            <input id="extension_id" name="extension_id" type="hidden" value="">
+            <input id="target_id" name="target_id" type="hidden" value="">
+            <input id="loc_interest_ms" name="loc_interest_ms" type="hidden" value="">
+            <input id="loc_physical_ms" name="loc_physical_ms" type="hidden" value="">
+            <input id="device_model" name="device_model" type="hidden" value="">
+            <input id="keyword" name="keyword" type="hidden" value="">
+            <input id="match_type" name="match_type" type="hidden" value="">
+            <input id="adposition" name="adposition" type="hidden" value="">
+            <input id="source_id" name="source_id" type="hidden" value="">
+            <input id="target" name="target" type="hidden" value="">
 
-        <span class="material-symbols-outlined" id="close-button">close</span>
-        <h2 class="form-heading">Enquire Now</h2>
-        <br><br>
-        <div class="group">
-            <input type="text" class="input" id="nameInput" name="name" required oninput="clearValidityMessage(this)">
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label class="form-label">Name*</label>
-        </div>
-        <br><br>
-        <div class="group">
-            <input type="number" class="input" id="phoneInput" name="phone" required pattern="[0-9]{10}" oninput="clearValidityMessage(this)">
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label class="form-label">Phone Number*</label>
-        </div>
-        <br><br>
-        <div class="group">
-            <input type="text" class="input" id="emailInput" name="email" oninput="clearValidityMessage(this)">
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label class="form-label">Email Address</label>
-        </div>
-        <br><br>
-        <div class="terms-and-condition-container">
-            <input type="checkbox" class="terms-and-condition" id="terms-and-condition" checked>
-            <label for="terms-and-condition">I agree to be contacted by the Jain Group on the above supplied phone number and email address.*</label>
-        </div>
-        <br>
-        <input type="submit">
-    </form>
-</div>
+            <span class="material-symbols-outlined" id="close-button">close</span>
+            <h2 class="form-heading">Enquire Now</h2>
+            <br><br>
+            <div class="group">
+                <input type="text" class="input" id="nameInput" name="name" required
+                    oninput="clearValidityMessage(this)">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="form-label">Name*</label>
+            </div>
+            <br><br>
+            <div class="group">
+                <input type="number" class="input" id="phoneInput" name="phone" required pattern="[0-9]{10}"
+                    oninput="clearValidityMessage(this)">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="form-label">Phone Number*</label>
+            </div>
+            <br><br>
+            <div class="group">
+                <input type="text" class="input" id="emailInput" name="email" oninput="clearValidityMessage(this)">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="form-label">Email Address</label>
+            </div>
+            <br><br>
+            <div class="terms-and-condition-container">
+                <input type="checkbox" class="terms-and-condition" id="terms-and-condition" checked>
+                <label for="terms-and-condition">I agree to be contacted by the Jain Group on the above supplied phone
+                    number and email address.*</label>
+            </div>
+            <br>
+            <input type="submit">
+        </form>
+    </div>
 
 
-<section class="side-nav">
-    <div class="side-nav-call">
-        <span class="material-symbols-outlined">
-            call
-        </span>
-        <p id="side-nav-phone-number">+91 9681 911 911</p>
-    </div>
-    <div class="side-nav-whatsapp">
-        <a href="https://wa.me/+918910863852?text=I%20want%20to%20know%20more%20about%20Dream%20World%20City" target="_blank">
-            <div class="side-nav-whatsapp-icon"></div>
-        </a>
-    </div>
-    <div class="side-nav-enquiry">
-        <button onclick="enquiryForm('registration')">
-            Enquire Now
-        </button>
-    </div>
-</section>
+    <section class="side-nav">
+        <div class="side-nav-call">
+            <span class="material-symbols-outlined">
+                call
+            </span>
+            <p id="side-nav-phone-number">+91 9681 911 911</p>
+        </div>
+        <div class="side-nav-whatsapp">
+            <a href="https://wa.me/+918910863852?text=I%20want%20to%20know%20more%20about%20Dream%20World%20City"
+                target="_blank">
+                <div class="side-nav-whatsapp-icon"></div>
+            </a>
+        </div>
+        <div class="side-nav-enquiry">
+            <button onclick="enquiryForm('registration')">
+                Enquire Now
+            </button>
+        </div>
+    </section>
 
     <section class="usp">
         <div class="usp-container">
@@ -180,23 +211,23 @@
 
 
     <section class="bottom-nav">
-    <div>
-        <a id="click_to_call" href="tel:+919681911911">
-            <div></div>
-            <span id="phone_number">+91 9681 911 911</span>
-        </a>
-    </div>
-    <div>
-        <button onclick="enquiryForm('registration')">
-            <div></div>Enquire Now
-        </button>
-    </div>
-</section>
+        <div>
+            <a id="click_to_call" href="tel:+919681911911">
+                <div></div>
+                <span id="phone_number">+91 9681 911 911</span>
+            </a>
+        </div>
+        <div>
+            <button onclick="enquiryForm('registration')">
+                <div></div>Enquire Now
+            </button>
+        </div>
+    </section>
     <section class="about-the-project" id="about-the-project" class="scroll-animation">
         <br>
         <br>
         <div class="heading">
-            <p>Welcome to Dream World City</p>
+            <!-- <p>Welcome to Dream World City</p> -->
             <h1>Overview</h1>
         </div>
         <br>
@@ -207,7 +238,8 @@
                 <div class="project-about-icon">
                     <!-- <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/city-buildings.png"
                         alt="city-buildings"> -->
-                    <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/building.webp" alt="skyscrapers" />
+                    <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/building.webp"
+                        alt="skyscrapers" />
                     <br>
                     <p class="project-icon-text">6 Towers, G+9 Stories</p>
                 </div>
@@ -227,7 +259,8 @@
                 </div>
                 <div class="project-about-icon">
                     <!-- <img width="100" height="100" src="https://img.icons8.com/material-sharp/100/rupee.png" alt="rupee"> -->
-                    <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/indian-rupee.webp" alt="rupee" />
+                    <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/indian-rupee.webp"
+                        alt="rupee" />
                     <br>
                     <p class="project-icon-text">29 Lacs Onwards*</p>
                 </div>
@@ -332,54 +365,62 @@
             <div class="carousel">
                 <div class="carousel-container">
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image" src="dream_world_city/assets/amenities/amenities desktop/swimming pool.webp"
+                        <img class="amenities-desktop-image"
+                            src="dream_world_city/assets/amenities/amenities desktop/swimming pool.webp"
                             alt="Swimming Pool">
                         <img class="amenities-mobile-image"
-                            src="dream_world_city/assets/amenities/amenities mobile/swimming pool mobile.webp" alt="Swimming Pool">
+                            src="dream_world_city/assets/amenities/amenities mobile/swimming pool mobile.webp"
+                            alt="Swimming Pool">
                         <p class="amenities-name"><span class="material-symbols-outlined">
                                 pool
                             </span>Swimming Pool</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image" src="dream_world_city/assets/amenities/amenities desktop/gym.webp"
-                            alt="Gymnasium">
-                        <img class="amenities-mobile-image" src="dream_world_city/assets/amenities/amenities mobile/gym_mobile.webp"
-                            alt="Gymnasium">
+                        <img class="amenities-desktop-image"
+                            src="dream_world_city/assets/amenities/amenities desktop/gym.webp" alt="Gymnasium">
+                        <img class="amenities-mobile-image"
+                            src="dream_world_city/assets/amenities/amenities mobile/gym_mobile.webp" alt="Gymnasium">
                         <p class="amenities-name"><span class="material-symbols-outlined">
                                 exercise
                             </span>Gymnasium</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image" src="dream_world_city/assets/amenities/amenities desktop/mini theatre.webp"
+                        <img class="amenities-desktop-image"
+                            src="dream_world_city/assets/amenities/amenities desktop/mini theatre.webp"
                             alt="Mini Theatre">
                         <img class="amenities-mobile-image"
-                            src="dream_world_city/assets/amenities/amenities mobile/Mini theater mobile.webp" alt="Mini Theatre">
+                            src="dream_world_city/assets/amenities/amenities mobile/Mini theater mobile.webp"
+                            alt="Mini Theatre">
                         <p class="amenities-name"><span class="material-symbols-outlined">
                                 movie
                             </span>Mini Theatre</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image" src="dream_world_city/assets/amenities/amenities desktop/indoor games.webp"
+                        <img class="amenities-desktop-image"
+                            src="dream_world_city/assets/amenities/amenities desktop/indoor games.webp"
                             alt="Indoor Games">
                         <img class="amenities-mobile-image"
-                            src="dream_world_city/assets/amenities/amenities mobile/indoor games mobile.webp" alt="Indoor Games">
+                            src="dream_world_city/assets/amenities/amenities mobile/indoor games mobile.webp"
+                            alt="Indoor Games">
                         <p class="amenities-name"><span class="material-symbols-outlined">
                                 sports_tennis
                             </span>Indoor Games</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image" src="dream_world_city/assets/amenities/amenities desktop/park.webp"
-                            alt="Children Park">
+                        <img class="amenities-desktop-image"
+                            src="dream_world_city/assets/amenities/amenities desktop/park.webp" alt="Children Park">
                         <img class="amenities-mobile-image"
-                            src="dream_world_city/assets/amenities/amenities mobile/children_park mobile.webp" alt="Children Park">
+                            src="dream_world_city/assets/amenities/amenities mobile/children_park mobile.webp"
+                            alt="Children Park">
                         <p class="amenities-name"><span class="material-symbols-outlined">
                                 dashboard
                             </span>Children Park</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image" src="dream_world_city/assets/amenities/amenities desktop/banquet.webp"
-                            alt="Ac Banquet">
-                        <img class="amenities-mobile-image" src="dream_world_city/assets/amenities/amenities mobile/banquet mobile.webp"
+                        <img class="amenities-desktop-image"
+                            src="dream_world_city/assets/amenities/amenities desktop/banquet.webp" alt="Ac Banquet">
+                        <img class="amenities-mobile-image"
+                            src="dream_world_city/assets/amenities/amenities mobile/banquet mobile.webp"
                             alt="Ac Banquet">
                         <p class="amenities-name"><span class="material-symbols-outlined">
                                 chair
@@ -387,7 +428,8 @@
                     </div>
                     <div class="carousel-item">
                         <img class="amenities-desktop-image"
-                            src="dream_world_city/assets/amenities/amenities desktop/senior citizen.webp" alt="senior citizen corner">
+                            src="dream_world_city/assets/amenities/amenities desktop/senior citizen.webp"
+                            alt="senior citizen corner">
                         <img class="amenities-mobile-image"
                             src="dream_world_city/assets/amenities/amenities mobile/senior sitting mobile.webp"
                             alt="senior citizen corner">
@@ -397,8 +439,10 @@
                     </div>
                     <div class="carousel-item">
                         <img class="amenities-desktop-image"
-                            src="dream_world_city/assets/amenities/amenities desktop/cricket ground.webp" alt="Cricket Field">
-                        <img class="amenities-mobile-image" src="dream_world_city/assets/amenities/amenities mobile/cricket mobile.webp"
+                            src="dream_world_city/assets/amenities/amenities desktop/cricket ground.webp"
+                            alt="Cricket Field">
+                        <img class="amenities-mobile-image"
+                            src="dream_world_city/assets/amenities/amenities mobile/cricket mobile.webp"
                             alt="Cricket Field">
                         <p class="amenities-name"><span class="material-symbols-outlined">
                                 sports_cricket
@@ -406,7 +450,8 @@
                     </div>
                     <div class="carousel-item">
                         <img class="amenities-desktop-image"
-                            src="dream_world_city/assets/amenities/amenities desktop/convinience store.webp" alt="Convenience Store">
+                            src="dream_world_city/assets/amenities/amenities desktop/convinience store.webp"
+                            alt="Convenience Store">
                         <img class="amenities-mobile-image"
                             src="dream_world_city/assets/amenities/amenities mobile/convinience store mobile.webp"
                             alt="Convenience Store">
@@ -415,46 +460,50 @@
                             </span>Convenience Store</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image" src="dream_world_city/assets/amenities/amenities desktop/jacuzzi.webp"
-                            alt="Jacuzzi">
-                        <img class="amenities-mobile-image" src="dream_world_city/assets/amenities/amenities mobile/jacuzzi mobile.webp"
-                            alt="Jacuzzi">
+                        <img class="amenities-desktop-image"
+                            src="dream_world_city/assets/amenities/amenities desktop/jacuzzi.webp" alt="Jacuzzi">
+                        <img class="amenities-mobile-image"
+                            src="dream_world_city/assets/amenities/amenities mobile/jacuzzi mobile.webp" alt="Jacuzzi">
                         <p class="amenities-name"><span class="material-symbols-outlined">
                                 spa
                             </span>Jacuzzi</p>
                     </div>
                     <div class="carousel-item">
                         <img class="amenities-desktop-image"
-                            src="dream_world_city/assets/amenities/amenities desktop/barbeque corner.webp" alt="Barbecue Corner">
+                            src="dream_world_city/assets/amenities/amenities desktop/barbeque corner.webp"
+                            alt="Barbecue Corner">
                         <img class="amenities-mobile-image"
-                            src="dream_world_city/assets/amenities/amenities mobile/barbecue corner mobile.webp" alt="Barbecue Corner">
+                            src="dream_world_city/assets/amenities/amenities mobile/barbecue corner mobile.webp"
+                            alt="Barbecue Corner">
                         <p class="amenities-name"><span class="material-symbols-outlined">
                                 outdoor_grill
                             </span>Barbecue Corner</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image" src="dream_world_city/assets/amenities/amenities desktop/jooging track.webp"
+                        <img class="amenities-desktop-image"
+                            src="dream_world_city/assets/amenities/amenities desktop/jooging track.webp"
                             alt="Jogging & Cycling Track">
-                        <img class="amenities-mobile-image" src="dream_world_city/assets/amenities/amenities mobile/jooging mobile.webp"
+                        <img class="amenities-mobile-image"
+                            src="dream_world_city/assets/amenities/amenities mobile/jooging mobile.webp"
                             alt="Jogging & Cycling Track">
                         <p class="amenities-name"><span class="material-symbols-outlined">
                                 directions_run
                             </span>Jogging & Cycling Track</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image" src="dream_world_city/assets/amenities/amenities desktop/yoga.webp"
-                            alt="Yoga">
-                        <img class="amenities-mobile-image" src="dream_world_city/assets/amenities/amenities mobile/yoga mobile.webp"
-                            alt="Yoga">
+                        <img class="amenities-desktop-image"
+                            src="dream_world_city/assets/amenities/amenities desktop/yoga.webp" alt="Yoga">
+                        <img class="amenities-mobile-image"
+                            src="dream_world_city/assets/amenities/amenities mobile/yoga mobile.webp" alt="Yoga">
                         <p class="amenities-name"><span class="material-symbols-outlined">
                                 self_improvement
                             </span>Yoga</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image" src="dream_world_city/assets/amenities/amenities desktop/atm.webp"
-                            alt="ATM">
-                        <img class="amenities-mobile-image" src="dream_world_city/assets/amenities/amenities mobile/ATM mobile.webp"
-                            alt="ATM">
+                        <img class="amenities-desktop-image"
+                            src="dream_world_city/assets/amenities/amenities desktop/atm.webp" alt="ATM">
+                        <img class="amenities-mobile-image"
+                            src="dream_world_city/assets/amenities/amenities mobile/ATM mobile.webp" alt="ATM">
                         <p class="amenities-name"><span class="material-symbols-outlined">
                                 credit_card
                             </span>ATM</p>
@@ -513,25 +562,29 @@
                             <p class="unit-plan-size">London(Pre 1) Floor:1-9</p>
                             <button class="floor-plans-view-button" onclick="enquiryForm('floor plan')">View
                                 Plan</button>
-                            <img src="dream_world_city/assets/Floor and Master plans/Floor Plan London-02.jpg" alt="Floor Plan 1">
+                            <img src="dream_world_city/assets/Floor and Master plans/Floor Plan London-02.jpg"
+                                alt="Floor Plan 1">
                         </div>
                         <div class="floor-plans-item">
                             <p class="unit-plan-size">London(Pre 2) Floor:1-9</p>
                             <button class="floor-plans-view-button" onclick="enquiryForm('floor plan')">View
                                 Plan</button>
-                            <img src="dream_world_city/assets/Floor and Master plans/Floor Plan London-1.jpg" alt="Floor Plan 2">
+                            <img src="dream_world_city/assets/Floor and Master plans/Floor Plan London-1.jpg"
+                                alt="Floor Plan 2">
                         </div>
                         <div class="floor-plans-item">
                             <p class="unit-plan-size">Paris Block: 1-1, 1-2</p>
                             <button class="floor-plans-view-button" onclick="enquiryForm('floor plan')">View
                                 Plan</button>
-                            <img src="dream_world_city/assets/Floor and Master plans/paris Floor Plan Paris-01.jpg" alt="Floor Plan 3">
+                            <img src="dream_world_city/assets/Floor and Master plans/paris Floor Plan Paris-01.jpg"
+                                alt="Floor Plan 3">
                         </div>
                         <div class="floor-plans-item">
                             <p class="unit-plan-size">Paris Block: 2-1, 2-2</p>
                             <button class="floor-plans-view-button" onclick="enquiryForm('floor plan')">View
                                 Plan</button>
-                            <img src="dream_world_city/assets/Floor and Master plans/paris Floor Plan Paris-02.jpg" alt="Floor Plan 3">
+                            <img src="dream_world_city/assets/Floor and Master plans/paris Floor Plan Paris-02.jpg"
+                                alt="Floor Plan 3">
                         </div>
                         <!-- Add more items as needed -->
                     </div>
@@ -545,12 +598,12 @@
                 <div class="thumbnail-strip">
                     <img src="dream_world_city/assets/Floor and Master plans/Floor Plan London-1.jpg" alt="Floor Plan 1"
                         onclick="floorPlansShowSlide(0)">
-                    <img src="dream_world_city/assets/Floor and Master plans/Floor Plan London-02.jpg" alt="Floor Plan 2"
-                        onclick="floorPlansShowSlide(1)">
-                    <img src="dream_world_city/assets/Floor and Master plans/paris Floor Plan Paris-01.jpg" alt="Floor Plan 3"
-                        onclick="floorPlansShowSlide(2)">
-                    <img src="dream_world_city/assets/Floor and Master plans/paris Floor Plan Paris-02.jpg" alt="Floor Plan 3"
-                        onclick="floorPlansShowSlide(3)">
+                    <img src="dream_world_city/assets/Floor and Master plans/Floor Plan London-02.jpg"
+                        alt="Floor Plan 2" onclick="floorPlansShowSlide(1)">
+                    <img src="dream_world_city/assets/Floor and Master plans/paris Floor Plan Paris-01.jpg"
+                        alt="Floor Plan 3" onclick="floorPlansShowSlide(2)">
+                    <img src="dream_world_city/assets/Floor and Master plans/paris Floor Plan Paris-02.jpg"
+                        alt="Floor Plan 3" onclick="floorPlansShowSlide(3)">
                     <!-- Add more thumbnails as needed -->
                 </div>
             </div>
@@ -561,13 +614,15 @@
                             <p class="unit-plan-size">London Cluster</p>
                             <button class="floor-plans-view-button" onclick="enquiryForm('floor plan')">View
                                 Plan</button>
-                            <img src="dream_world_city/assets/Floor and Master plans/master Plan London-01.jpg" alt="Master Plan 1">
+                            <img src="dream_world_city/assets/Floor and Master plans/master Plan London-01.jpg"
+                                alt="Master Plan 1">
                         </div>
                         <div class="master-floor-plans-item">
                             <p class="unit-plan-size">Paris Cluster</p>
                             <button class="floor-plans-view-button" onclick="enquiryForm('floor plan')">View
                                 Plan</button>
-                            <img src="dream_world_city/assets/Floor and Master plans/paris master plan.jpg" alt="Master Plan 2">
+                            <img src="dream_world_city/assets/Floor and Master plans/paris master plan.jpg"
+                                alt="Master Plan 2">
                         </div>
                         <!-- Add more items as needed -->
                     </div>
@@ -581,8 +636,8 @@
                     </button>
                 </div>
                 <div class="thumbnail-strip" id="master-plan-strip">
-                    <img src="dream_world_city/assets/Floor and Master plans/master Plan London-01.jpg" alt="Master Plan 1"
-                        onclick="masterfloorPlansShowSlide(0)">
+                    <img src="dream_world_city/assets/Floor and Master plans/master Plan London-01.jpg"
+                        alt="Master Plan 1" onclick="masterfloorPlansShowSlide(0)">
                     <img src="dream_world_city/assets/Floor and Master plans/paris master plan.jpg" alt="Master Plan 2"
                         onclick="masterfloorPlansShowSlide(1)">
                     <!-- Add more thumbnails as needed -->
@@ -690,7 +745,8 @@
             <div class="gallery-tab-content">
                 <div class="gallery-mobile-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/mobile/Building-22.webp" alt="Image 3">
+                        <img src="dream_world_city/assets/gallery images/elevation/mobile/Building-22.webp"
+                            alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
@@ -707,7 +763,8 @@
                 </div>
                 <div class="gallery-mobile-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/mobile/Building-23.webp" alt="Image 1">
+                        <img src="dream_world_city/assets/gallery images/elevation/mobile/Building-23.webp"
+                            alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
@@ -724,48 +781,56 @@
                 </div>
                 <div class="gallery-desktop-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 1.webp" alt="Image 3">
+                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 1.webp"
+                            alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 2.webp" alt="Image 1">
-                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                        </span>
-                    </div>
-                </div>
-                <div class="gallery-desktop-images">
-                    <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 3.webp" alt="Image 1">
-                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                        </span>
-                    </div>
-                    <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 4.webp" alt="Image 1">
+                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 2.webp"
+                            alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                 </div>
                 <div class="gallery-desktop-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 5.webp" alt="Image 3">
+                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 3.webp"
+                            alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 6.webp" alt="Image 1">
+                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 4.webp"
+                            alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                 </div>
                 <div class="gallery-desktop-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 7.webp" alt="Image 1">
+                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 5.webp"
+                            alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 8.webp" alt="Image 1">
+                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 6.webp"
+                            alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                </div>
+                <div class="gallery-desktop-images">
+                    <div class="img-container">
+                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 7.webp"
+                            alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 8.webp"
+                            alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
@@ -1243,35 +1308,43 @@
         <h1>Our Legacy</h1>
         <div class="legacy-stats">
             <div class="stat">
-                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/building.webp" alt="skyscrapers" />
+                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/building.webp"
+                    alt="skyscrapers" />
                 <p><strong>7</strong><br>Million sq.ft. Developed</p>
             </div>
             <div class="stat">
-                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/construction.webp" alt="constructing" />
+                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/construction.webp"
+                    alt="constructing" />
                 <p><strong>20</strong><br>Million sq.ft. under Planning and Development</p>
             </div>
             <div class="stat">
-                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/happy customer.webp" alt="batch-assign" />
+                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/happy customer.webp"
+                    alt="batch-assign" />
                 <p><strong>7000</strong><br>Happy Customers</p>
             </div>
             <div class="stat">
-                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/trophy.webp" alt="trophy" />
+                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/trophy.webp"
+                    alt="trophy" />
                 <p><strong>40+</strong><br>Industry Awards and Recognitions</p>
             </div>
             <div class="stat">
-                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/reputation.webp" alt="handshake-heart" />
+                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/reputation.webp"
+                    alt="handshake-heart" />
                 <p>Reputed Name in Real Estate, Hospitality & Finance Sectors</p>
             </div>
             <div class="stat">
-                <img class="custom-icon" width="100" height="100" src="dream_world_city/assets/Key-01.png" alt="giving" />
+                <img class="custom-icon" width="100" height="100" src="dream_world_city/assets/Key-01.png"
+                    alt="giving" />
                 <p>Over 2 Decades of Delivering Excellence</p>
             </div>
             <div class="stat">
-                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/family.webp" alt="family--v1" />
+                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/family.webp"
+                    alt="family--v1" />
                 <p><strong>7000+</strong><br>Happy Families</p>
             </div>
             <div class="stat">
-                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/building quality.webp" alt="best-seller" />
+                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/building quality.webp"
+                    alt="best-seller" />
                 <p>Known for Our Commitment to Quality</p>
             </div>
         </div>
