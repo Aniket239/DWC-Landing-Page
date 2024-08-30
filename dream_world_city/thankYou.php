@@ -367,7 +367,8 @@
         }
         function displayUserDetails() {
             const params = getQueryParams();
-            const name = `${params.name || ''}`;
+            let name = `${params.name || ''}`;
+            name = name.replace(/\+/g, ' '); // Replaces + with a space
             const phone = `${params.phone || ''}`;
             const email = `${params.email || ''}`;
             const enquiry_type = `${params.enquiryType || ''}`;
