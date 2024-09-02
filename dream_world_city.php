@@ -70,7 +70,7 @@
         <ul id="nav-links">
             <li>
                 <a href="#main">
-                    <img src="dream_world_city/assets/dwc logo no background.webp" alt="logo">
+                    <img loading="lazy" src="dream_world_city/assets/dwc logo no background.webp" alt="logo">
                 </a>
             </li>
         </ul>
@@ -209,7 +209,6 @@
         <div class="usp-container"></div>
     </section>
 
-
     <section class="bottom-nav">
         <div>
             <a id="click_to_call" href="tel:+919681911911">
@@ -236,30 +235,30 @@
         <div class="project-about">
             <div class="project-about-icons">
                 <div class="project-about-icon">
-                    <!-- <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/city-buildings.png"
+                    <!-- <img loading="lazy" width="100" height="100" src="https://img.icons8.com/ios-filled/100/city-buildings.png"
                         alt="city-buildings"> -->
-                    <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/building.webp"
+                    <img loading="lazy"  class="icon" width="100" height="100" src="dream_world_city/assets/icon/building.webp"
                         alt="skyscrapers" />
                     <br>
                     <p class="project-icon-text">6 Towers, G+9 Stories</p>
                 </div>
                 <div class="project-about-icon">
-                    <!-- <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/bed.png" alt="bed"> -->
-                    <img class="icon" width="120" height="120" src="dream_world_city/assets/Key-01.png" alt="giving" />
+                    <!-- <img loading="lazy" width="100" height="100" src="https://img.icons8.com/ios-filled/100/bed.png" alt="bed"> -->
+                    <img loading="lazy" class="icon" width="120" height="120" src="dream_world_city/assets/Key-01.png" alt="giving" />
                     <br>
                     <p class="project-icon-text">Ready To Move In</p>
                 </div>
                 <div class="project-about-icon">
-                    <!-- <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/screen-resolution.png"
+                    <!-- <img loading="lazy" width="100" height="100" src="https://img.icons8.com/ios-filled/100/screen-resolution.png"
                         alt="screen-resolution"> -->
-                    <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/area.webp"
+                    <img loading="lazy" class="icon" width="100" height="100" src="dream_world_city/assets/icon/area.webp"
                         alt="resize-four-directions--v1" />
                     <br>
                     <p class="project-icon-text">630 sq.ft - 930 sq.ft SBU</p>
                 </div>
                 <div class="project-about-icon">
-                    <!-- <img width="100" height="100" src="https://img.icons8.com/material-sharp/100/rupee.png" alt="rupee"> -->
-                    <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/indian-rupee.webp"
+                    <!-- <img loading="lazy" width="100" height="100" src="https://img.icons8.com/material-sharp/100/rupee.png" alt="rupee"> -->
+                    <img loading="lazy" class="icon" width="100" height="100" src="dream_world_city/assets/icon/indian-rupee.webp"
                         alt="rupee" />
                     <br>
                     <p class="project-icon-text">29 Lacs Onwards*</p>
@@ -365,10 +364,10 @@
             <div class="carousel">
                 <div class="carousel-container">
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image"
+                        <img loading="lazy" class="amenities-desktop-image"
                             src="dream_world_city/assets/amenities/amenities desktop/swimming pool.webp"
                             alt="Swimming Pool">
-                        <img class="amenities-mobile-image"
+                        <img loading="lazy" class="amenities-mobile-image"
                             src="dream_world_city/assets/amenities/amenities mobile/swimming pool mobile.webp"
                             alt="Swimming Pool">
                         <p class="amenities-name"><span class="material-symbols-outlined">
@@ -376,19 +375,19 @@
                             </span>Swimming Pool</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image"
+                        <img loading="lazy" class="amenities-desktop-image"
                             src="dream_world_city/assets/amenities/amenities desktop/gym.webp" alt="Gymnasium">
-                        <img class="amenities-mobile-image"
+                        <img loading="lazy" class="amenities-mobile-image"
                             src="dream_world_city/assets/amenities/amenities mobile/gym_mobile.webp" alt="Gymnasium">
                         <p class="amenities-name"><span class="material-symbols-outlined">
                                 exercise
                             </span>Gymnasium</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image"
+                        <img loading="lazy" class="amenities-desktop-image"
                             src="dream_world_city/assets/amenities/amenities desktop/mini theatre.webp"
                             alt="Mini Theatre">
-                        <img class="amenities-mobile-image"
+                        <img loading="lazy" class="amenities-mobile-image"
                             src="dream_world_city/assets/amenities/amenities mobile/Mini theater mobile.webp"
                             alt="Mini Theatre">
                         <p class="amenities-name"><span class="material-symbols-outlined">
@@ -396,10 +395,10 @@
                             </span>Mini Theatre</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image"
+                        <img loading="lazy" class="amenities-desktop-image"
                             src="dream_world_city/assets/amenities/amenities desktop/indoor games.webp"
                             alt="Indoor Games">
-                        <img class="amenities-mobile-image"
+                        <img loading="lazy" class="amenities-mobile-image"
                             src="dream_world_city/assets/amenities/amenities mobile/indoor games mobile.webp"
                             alt="Indoor Games">
                         <p class="amenities-name"><span class="material-symbols-outlined">
@@ -407,9 +406,9 @@
                             </span>Indoor Games</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image"
+                        <img loading="lazy" class="amenities-desktop-image"
                             src="dream_world_city/assets/amenities/amenities desktop/park.webp" alt="Children Park">
-                        <img class="amenities-mobile-image"
+                        <img loading="lazy" class="amenities-mobile-image"
                             src="dream_world_city/assets/amenities/amenities mobile/children_park mobile.webp"
                             alt="Children Park">
                         <p class="amenities-name"><span class="material-symbols-outlined">
@@ -417,9 +416,9 @@
                             </span>Children Park</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image"
+                        <img loading="lazy" class="amenities-desktop-image"
                             src="dream_world_city/assets/amenities/amenities desktop/banquet.webp" alt="Ac Banquet">
-                        <img class="amenities-mobile-image"
+                        <img loading="lazy" class="amenities-mobile-image"
                             src="dream_world_city/assets/amenities/amenities mobile/banquet mobile.webp"
                             alt="Ac Banquet">
                         <p class="amenities-name"><span class="material-symbols-outlined">
@@ -427,10 +426,10 @@
                             </span>AC Banquet</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image"
+                        <img loading="lazy" class="amenities-desktop-image"
                             src="dream_world_city/assets/amenities/amenities desktop/senior citizen.webp"
                             alt="senior citizen corner">
-                        <img class="amenities-mobile-image"
+                        <img loading="lazy" class="amenities-mobile-image"
                             src="dream_world_city/assets/amenities/amenities mobile/senior sitting mobile.webp"
                             alt="senior citizen corner">
                         <p class="amenities-name"><span class="material-symbols-outlined">
@@ -438,10 +437,10 @@
                             </span>Senior Citizen Corner</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image"
+                        <img loading="lazy" class="amenities-desktop-image"
                             src="dream_world_city/assets/amenities/amenities desktop/cricket ground.webp"
                             alt="Cricket Field">
-                        <img class="amenities-mobile-image"
+                        <img loading="lazy" class="amenities-mobile-image"
                             src="dream_world_city/assets/amenities/amenities mobile/cricket mobile.webp"
                             alt="Cricket Field">
                         <p class="amenities-name"><span class="material-symbols-outlined">
@@ -449,10 +448,10 @@
                             </span>Cricket Field</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image"
+                        <img loading="lazy" class="amenities-desktop-image"
                             src="dream_world_city/assets/amenities/amenities desktop/convinience store.webp"
                             alt="Convenience Store">
-                        <img class="amenities-mobile-image"
+                        <img loading="lazy" class="amenities-mobile-image"
                             src="dream_world_city/assets/amenities/amenities mobile/convinience store mobile.webp"
                             alt="Convenience Store">
                         <p class="amenities-name"><span class="material-symbols-outlined">
@@ -460,19 +459,19 @@
                             </span>Convenience Store</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image"
+                        <img loading="lazy" class="amenities-desktop-image"
                             src="dream_world_city/assets/amenities/amenities desktop/jacuzzi.webp" alt="Jacuzzi">
-                        <img class="amenities-mobile-image"
+                        <img loading="lazy" class="amenities-mobile-image"
                             src="dream_world_city/assets/amenities/amenities mobile/jacuzzi mobile.webp" alt="Jacuzzi">
                         <p class="amenities-name"><span class="material-symbols-outlined">
                                 spa
                             </span>Jacuzzi</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image"
+                        <img loading="lazy" class="amenities-desktop-image"
                             src="dream_world_city/assets/amenities/amenities desktop/barbeque corner.webp"
                             alt="Barbecue Corner">
-                        <img class="amenities-mobile-image"
+                        <img loading="lazy" class="amenities-mobile-image"
                             src="dream_world_city/assets/amenities/amenities mobile/barbecue corner mobile.webp"
                             alt="Barbecue Corner">
                         <p class="amenities-name"><span class="material-symbols-outlined">
@@ -480,10 +479,10 @@
                             </span>Barbecue Corner</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image"
+                        <img loading="lazy" class="amenities-desktop-image"
                             src="dream_world_city/assets/amenities/amenities desktop/jooging track.webp"
                             alt="Jogging & Cycling Track">
-                        <img class="amenities-mobile-image"
+                        <img loading="lazy" class="amenities-mobile-image"
                             src="dream_world_city/assets/amenities/amenities mobile/jooging mobile.webp"
                             alt="Jogging & Cycling Track">
                         <p class="amenities-name"><span class="material-symbols-outlined">
@@ -491,18 +490,18 @@
                             </span>Jogging & Cycling Track</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image"
+                        <img loading="lazy" class="amenities-desktop-image"
                             src="dream_world_city/assets/amenities/amenities desktop/yoga.webp" alt="Yoga">
-                        <img class="amenities-mobile-image"
+                        <img loading="lazy" class="amenities-mobile-image"
                             src="dream_world_city/assets/amenities/amenities mobile/yoga mobile.webp" alt="Yoga">
                         <p class="amenities-name"><span class="material-symbols-outlined">
                                 self_improvement
                             </span>Yoga</p>
                     </div>
                     <div class="carousel-item">
-                        <img class="amenities-desktop-image"
+                        <img loading="lazy" class="amenities-desktop-image"
                             src="dream_world_city/assets/amenities/amenities desktop/atm.webp" alt="ATM">
-                        <img class="amenities-mobile-image"
+                        <img loading="lazy" class="amenities-mobile-image"
                             src="dream_world_city/assets/amenities/amenities mobile/ATM mobile.webp" alt="ATM">
                         <p class="amenities-name"><span class="material-symbols-outlined">
                                 credit_card
@@ -562,28 +561,28 @@
                             <p class="unit-plan-size">London(Pre 1) Floor:1-9</p>
                             <button class="floor-plans-view-button" onclick="enquiryForm('floor plan')">View
                                 Plan</button>
-                            <img src="dream_world_city/assets/Floor and Master plans/Floor Plan London-02.jpg"
+                            <img loading="lazy" src="dream_world_city/assets/Floor and Master plans/Floor Plan London-02.jpg"
                                 alt="Floor Plan 1">
                         </div>
                         <div class="floor-plans-item">
                             <p class="unit-plan-size">London(Pre 2) Floor:1-9</p>
                             <button class="floor-plans-view-button" onclick="enquiryForm('floor plan')">View
                                 Plan</button>
-                            <img src="dream_world_city/assets/Floor and Master plans/Floor Plan London-1.jpg"
+                            <img loading="lazy" src="dream_world_city/assets/Floor and Master plans/Floor Plan London-1.jpg"
                                 alt="Floor Plan 2">
                         </div>
                         <div class="floor-plans-item">
                             <p class="unit-plan-size">Paris Block: 1-1, 1-2</p>
                             <button class="floor-plans-view-button" onclick="enquiryForm('floor plan')">View
                                 Plan</button>
-                            <img src="dream_world_city/assets/Floor and Master plans/paris Floor Plan Paris-01.jpg"
+                            <img loading="lazy" src="dream_world_city/assets/Floor and Master plans/paris Floor Plan Paris-01.jpg"
                                 alt="Floor Plan 3">
                         </div>
                         <div class="floor-plans-item">
                             <p class="unit-plan-size">Paris Block: 2-1, 2-2</p>
                             <button class="floor-plans-view-button" onclick="enquiryForm('floor plan')">View
                                 Plan</button>
-                            <img src="dream_world_city/assets/Floor and Master plans/paris Floor Plan Paris-02.jpg"
+                            <img loading="lazy" src="dream_world_city/assets/Floor and Master plans/paris Floor Plan Paris-02.jpg"
                                 alt="Floor Plan 3">
                         </div>
                         <!-- Add more items as needed -->
@@ -596,13 +595,13 @@
                     </button>
                 </div>
                 <div class="thumbnail-strip">
-                    <img src="dream_world_city/assets/Floor and Master plans/Floor Plan London-1.jpg" alt="Floor Plan 1"
+                    <img loading="lazy" src="dream_world_city/assets/Floor and Master plans/Floor Plan London-1.jpg" alt="Floor Plan 1"
                         onclick="floorPlansShowSlide(0)">
-                    <img src="dream_world_city/assets/Floor and Master plans/Floor Plan London-02.jpg"
+                    <img loading="lazy" src="dream_world_city/assets/Floor and Master plans/Floor Plan London-02.jpg"
                         alt="Floor Plan 2" onclick="floorPlansShowSlide(1)">
-                    <img src="dream_world_city/assets/Floor and Master plans/paris Floor Plan Paris-01.jpg"
+                    <img loading="lazy" src="dream_world_city/assets/Floor and Master plans/paris Floor Plan Paris-01.jpg"
                         alt="Floor Plan 3" onclick="floorPlansShowSlide(2)">
-                    <img src="dream_world_city/assets/Floor and Master plans/paris Floor Plan Paris-02.jpg"
+                    <img loading="lazy" src="dream_world_city/assets/Floor and Master plans/paris Floor Plan Paris-02.jpg"
                         alt="Floor Plan 3" onclick="floorPlansShowSlide(3)">
                     <!-- Add more thumbnails as needed -->
                 </div>
@@ -614,14 +613,14 @@
                             <p class="unit-plan-size">London Cluster</p>
                             <button class="floor-plans-view-button" onclick="enquiryForm('floor plan')">View
                                 Plan</button>
-                            <img src="dream_world_city/assets/Floor and Master plans/master Plan London-01.jpg"
+                            <img loading="lazy" src="dream_world_city/assets/Floor and Master plans/master Plan London-01.jpg"
                                 alt="Master Plan 1">
                         </div>
                         <div class="master-floor-plans-item">
                             <p class="unit-plan-size">Paris Cluster</p>
                             <button class="floor-plans-view-button" onclick="enquiryForm('floor plan')">View
                                 Plan</button>
-                            <img src="dream_world_city/assets/Floor and Master plans/paris master plan.jpg"
+                            <img loading="lazy" src="dream_world_city/assets/Floor and Master plans/paris master plan.jpg"
                                 alt="Master Plan 2">
                         </div>
                         <!-- Add more items as needed -->
@@ -636,9 +635,9 @@
                     </button>
                 </div>
                 <div class="thumbnail-strip" id="master-plan-strip">
-                    <img src="dream_world_city/assets/Floor and Master plans/master Plan London-01.jpg"
+                    <img loading="lazy" src="dream_world_city/assets/Floor and Master plans/master Plan London-01.jpg"
                         alt="Master Plan 1" onclick="masterfloorPlansShowSlide(0)">
-                    <img src="dream_world_city/assets/Floor and Master plans/paris master plan.jpg" alt="Master Plan 2"
+                    <img loading="lazy" src="dream_world_city/assets/Floor and Master plans/paris master plan.jpg" alt="Master Plan 2"
                         onclick="masterfloorPlansShowSlide(1)">
                     <!-- Add more thumbnails as needed -->
                 </div>
@@ -659,58 +658,58 @@
             <div class="gallery-tab-content">
                 <div class="gallery-mobile-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/16.webp" alt="Image 1">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/actual image/16.webp" alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/2.webp" alt="Image 1">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/actual image/2.webp" alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/8.webp" alt="Image 1">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/actual image/8.webp" alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                 </div>
                 <div class="gallery-mobile-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/17.webp" alt="Image 3">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/actual image/17.webp" alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/10.webp" alt="Image 3">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/actual image/10.webp" alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/1.webp" alt="Image 1">
-                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                        </span>
-                    </div>
-                </div>
-                <div class="gallery-desktop-images">
-                    <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/1.webp" alt="Image 1">
-                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                        </span>
-                    </div>
-                    <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/2.webp" alt="Image 1">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/actual image/1.webp" alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                 </div>
                 <div class="gallery-desktop-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/3.webp" alt="Image 1">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/actual image/1.webp" alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/5.webp" alt="Image 1">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/actual image/2.webp" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                </div>
+                <div class="gallery-desktop-images">
+                    <div class="img-container">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/actual image/3.webp" alt="Image 1">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/actual image/5.webp" alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
@@ -718,24 +717,24 @@
                 </div>
                 <div class="gallery-desktop-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/8.webp" alt="Image 1">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/actual image/8.webp" alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/6.webp" alt="Image 1">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/actual image/6.webp" alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                 </div>
                 <div class="gallery-desktop-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/10.webp" alt="Image 3">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/actual image/10.webp" alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/actual image/7.webp" alt="Image 3">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/actual image/7.webp" alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
@@ -745,49 +744,49 @@
             <div class="gallery-tab-content">
                 <div class="gallery-mobile-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/mobile/Building-22.webp"
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/elevation/mobile/Building-22.webp"
                             alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/mobile/mobile 2.webp" alt="Image 1">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/elevation/mobile/mobile 2.webp" alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/mobile/mobile 3.webp" alt="Image 1">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/elevation/mobile/mobile 3.webp" alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                 </div>
                 <div class="gallery-mobile-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/mobile/Building-23.webp"
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/elevation/mobile/Building-23.webp"
                             alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/mobile/mobile 5.webp" alt="Image 1">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/elevation/mobile/mobile 5.webp" alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/mobile/mobile 6.webp" alt="Image 1">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/elevation/mobile/mobile 6.webp" alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                 </div>
                 <div class="gallery-desktop-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 1.webp"
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/elevation/desktop/desktop 1.webp"
                             alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 2.webp"
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/elevation/desktop/desktop 2.webp"
                             alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
@@ -795,13 +794,13 @@
                 </div>
                 <div class="gallery-desktop-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 3.webp"
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/elevation/desktop/desktop 3.webp"
                             alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 4.webp"
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/elevation/desktop/desktop 4.webp"
                             alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
@@ -809,13 +808,13 @@
                 </div>
                 <div class="gallery-desktop-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 5.webp"
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/elevation/desktop/desktop 5.webp"
                             alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 6.webp"
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/elevation/desktop/desktop 6.webp"
                             alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
@@ -823,13 +822,13 @@
                 </div>
                 <div class="gallery-desktop-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 7.webp"
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/elevation/desktop/desktop 7.webp"
                             alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/elevation/desktop/desktop 8.webp"
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/elevation/desktop/desktop 8.webp"
                             alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
@@ -839,92 +838,92 @@
             <div class="gallery-tab-content">
                 <div class="gallery-mobile-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/interior/1.webp" alt="Image 3">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/interior/1.webp" alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/interior/2.webp" alt="Image 1">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/interior/2.webp" alt="Image 1">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/interior/3.webp" alt="Image 3">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/interior/3.webp" alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/interior/4.webp" alt="Image 3">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/interior/4.webp" alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                 </div>
                 <div class="gallery-mobile-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/interior/5.webp" alt="Image 3">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/interior/5.webp" alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/interior/6.webp" alt="Image 3">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/interior/6.webp" alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/interior/7.webp" alt="Image 3">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/interior/7.webp" alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/interior/8.webp" alt="Image 3">
-                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                        </span>
-                    </div>
-                </div>
-                <div class="gallery-desktop-images">
-                    <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/interior/1.webp" alt="Image 3">
-                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                        </span>
-                    </div>
-                    <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/interior/2.webp" alt="Image 3">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/interior/8.webp" alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                 </div>
                 <div class="gallery-desktop-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/interior/3.webp" alt="Image 3">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/interior/1.webp" alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/interior/4.webp" alt="Image 3">
-                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                        </span>
-                    </div>
-                </div>
-                <div class="gallery-desktop-images">
-                    <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/interior/5.webp" alt="Image 3">
-                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
-                        </span>
-                    </div>
-                    <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/interior/6.webp" alt="Image 3">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/interior/2.webp" alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                 </div>
                 <div class="gallery-desktop-images">
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/interior/7.webp" alt="Image 3">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/interior/3.webp" alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
                     <div class="img-container">
-                        <img src="dream_world_city/assets/gallery images/interior/8.webp" alt="Image 3">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/interior/4.webp" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                </div>
+                <div class="gallery-desktop-images">
+                    <div class="img-container">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/interior/5.webp" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/interior/6.webp" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                </div>
+                <div class="gallery-desktop-images">
+                    <div class="img-container">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/interior/7.webp" alt="Image 3">
+                        <span class="material-symbols-outlined" id="zoom-icon">zoom_in
+                        </span>
+                    </div>
+                    <div class="img-container">
+                        <img loading="lazy" src="dream_world_city/assets/gallery images/interior/8.webp" alt="Image 3">
                         <span class="material-symbols-outlined" id="zoom-icon">zoom_in
                         </span>
                     </div>
@@ -933,7 +932,7 @@
         </div>
         <div id="modal" class="modal" onclick="closeModal()">
             <span class="close">&times;</span>
-            <img class="modal-content" id="modal-image">
+            <img loading="lazy" class="modal-content" id="modal-image">
         </div>
     </section>
 
@@ -1259,8 +1258,8 @@
         <div class="map">
             <h1>Location</h1>
             <!-- <button class="map-text" id="view-map-btn">Click to view on Google Map</button>
-            <img class="map-desktop" src="dream_world_city/assets/map.webp" alt="map" id="map-image-desktop">
-            <img class="map-mobile" src="dream_world_city/assets/map portrait.webp" alt="map" id="map-image-mobile">
+            <img loading="lazy" class="map-desktop" src="dream_world_city/assets/map.webp" alt="map" id="map-image-desktop">
+            <img loading="lazy" class="map-mobile" src="dream_world_city/assets/map portrait.webp" alt="map" id="map-image-mobile">
             <button class="google-map-text" id="go-back-btn" style="display:none;">Go Back</button>
             <div id="skeleton-loader" class="skeleton-loader"></div> -->
             <iframe
@@ -1275,7 +1274,7 @@
         <h1>Project Overview Video</h1>
         <div class="video-container">
             <div class="video-thumbnail" id="video-thumbnail">
-                <img src="dream_world_city/assets/Video Thumbnail.webp" alt="Video Thumbnail" id="thumbnail-image">
+                <img loading="lazy" src="dream_world_city/assets/Video Thumbnail.webp" alt="Video Thumbnail" id="thumbnail-image">
                 <div class="play-button" id="play-button">▶</div>
             </div>
             <div class="video-wrapper" id="video-wrapper">
@@ -1292,15 +1291,15 @@
         <h1>Home Loan Available From</h1>
         <div class="bank-logos">
             <div>
-                <img src="dream_world_city/assets/bank/HDFC logo.svg" alt="Bank 1">
-                <img src="dream_world_city/assets/bank/DHFL Logo.png" alt="Bank 2">
-                <img src="dream_world_city/assets/bank/icici bank logo.png" alt="Bank 3">
-                <img src="dream_world_city/assets/bank/IDBI Logo.png" alt="Bank 4">
+                <img loading="lazy" src="dream_world_city/assets/bank/HDFC logo.svg" alt="Bank 1">
+                <img loading="lazy" src="dream_world_city/assets/bank/DHFL Logo.png" alt="Bank 2">
+                <img loading="lazy" src="dream_world_city/assets/bank/icici bank logo.png" alt="Bank 3">
+                <img loading="lazy" src="dream_world_city/assets/bank/IDBI Logo.png" alt="Bank 4">
             </div>
-            <div><img src="dream_world_city/assets/bank/LIC HFL Logo.png" alt="Bank 5">
-                <img src="dream_world_city/assets/bank/Pnb Hfl logo.png" alt="Bank 6">
-                <img src="dream_world_city/assets/bank/Tata Capital logo.png" alt="Bank 7">
-                <img src="dream_world_city/assets/bank/PNB Logo.png" alt="Bank 8">
+            <div><img loading="lazy" src="dream_world_city/assets/bank/LIC HFL Logo.png" alt="Bank 5">
+                <img loading="lazy" src="dream_world_city/assets/bank/Pnb Hfl logo.png" alt="Bank 6">
+                <img loading="lazy" src="dream_world_city/assets/bank/Tata Capital logo.png" alt="Bank 7">
+                <img loading="lazy" src="dream_world_city/assets/bank/PNB Logo.png" alt="Bank 8">
             </div>
         </div>
     </section>
@@ -1308,42 +1307,42 @@
         <h1>Our Legacy</h1>
         <div class="legacy-stats">
             <div class="stat">
-                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/building.webp"
+                <img loading="lazy" class="icon" width="100" height="100" src="dream_world_city/assets/icon/building.webp"
                     alt="skyscrapers" />
                 <p><strong>7</strong><br>Million sq.ft. Developed</p>
             </div>
             <div class="stat">
-                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/construction.webp"
+                <img loading="lazy" class="icon" width="100" height="100" src="dream_world_city/assets/icon/construction.webp"
                     alt="constructing" />
                 <p><strong>20</strong><br>Million sq.ft. under Planning and Development</p>
             </div>
             <div class="stat">
-                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/happy customer.webp"
+                <img loading="lazy" class="icon" width="100" height="100" src="dream_world_city/assets/icon/happy customer.webp"
                     alt="batch-assign" />
                 <p><strong>7000</strong><br>Happy Customers</p>
             </div>
             <div class="stat">
-                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/trophy.webp"
+                <img loading="lazy" class="icon" width="100" height="100" src="dream_world_city/assets/icon/trophy.webp"
                     alt="trophy" />
                 <p><strong>40+</strong><br>Industry Awards and Recognitions</p>
             </div>
             <div class="stat">
-                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/reputation.webp"
+                <img loading="lazy" class="icon" width="100" height="100" src="dream_world_city/assets/icon/reputation.webp"
                     alt="handshake-heart" />
                 <p>Reputed Name in Real Estate, Hospitality & Finance Sectors</p>
             </div>
             <div class="stat">
-                <img class="custom-icon" width="100" height="100" src="dream_world_city/assets/Key-01.png"
+                <img loading="lazy" class="custom-icon" width="100" height="100" src="dream_world_city/assets/Key-01.png"
                     alt="giving" />
                 <p>Over 2 Decades of Delivering Excellence</p>
             </div>
             <div class="stat">
-                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/family.webp"
+                <img loading="lazy" class="icon" width="100" height="100" src="dream_world_city/assets/icon/family.webp"
                     alt="family--v1" />
                 <p><strong>7000+</strong><br>Happy Families</p>
             </div>
             <div class="stat">
-                <img class="icon" width="100" height="100" src="dream_world_city/assets/icon/building quality.webp"
+                <img loading="lazy" class="icon" width="100" height="100" src="dream_world_city/assets/icon/building quality.webp"
                     alt="best-seller" />
                 <p>Known for Our Commitment to Quality</p>
             </div>
@@ -1353,7 +1352,7 @@
     <footer>
         <div>
             <section class="developer-office">
-                <img src="dream_world_city/assets/jaingroup.webp" alt="Jain Group Logo">
+                <img loading="lazy" src="dream_world_city/assets/jaingroup.webp" alt="Jain Group Logo">
                 <h3>Developer Office</h3>
                 <p>Jain Tower, 44/2A, Hazra Road</p>
                 <p>Near Dover Road Crossing, Kolkata - 700019</p>
