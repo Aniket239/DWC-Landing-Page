@@ -934,6 +934,10 @@ input[type="number"] {
   vertical-align: middle;
 }
 
+.amenities-name-list{
+  display: none;
+}
+
 .amenities-description {
   /* width: 26.5%; */
   font-family: "Jost", sans-serif;
@@ -1040,7 +1044,7 @@ input[type="number"] {
 }
 
 .carousel-item img {
-  width: 90%;
+  width: 100%;
 }
 
 .carousel-control {
@@ -2421,6 +2425,21 @@ footer a {
 
   .amenities h1{
     padding: 20px 0 0 1%;
+  }
+
+  .amenities-name-list{
+    width: 88%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    /* list-style-type: none; */
+  }
+  .amenities-name-list li{
+    font-size: large;
+    font-family: 'Jost', sans-serif;
+  
   }
 
   .amenities-container {

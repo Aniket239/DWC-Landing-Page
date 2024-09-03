@@ -190,7 +190,7 @@
             <p id="side-nav-phone-number">+91 9681 911 911</p>
         </div>
         <div class="side-nav-whatsapp">
-            <a href="https://wa.me/+918910863852?text=I%20want%20to%20know%20more%20about%20Dream%20World%20City"
+            <a href="https://wa.me/+918910863852?text=I%20am%20interested%20in%20Dream%20World%20City."
                 target="_blank">
                 <div class="side-nav-whatsapp-icon"></div>
             </a>
@@ -296,6 +296,12 @@
     </section>
     <section class="amenities" id="amenities">
         <h1>Amenities</h1>
+        <ul class="amenities-name-list">
+            <li>Air Condition Gym</li>
+            <li>Swimming Pool & Jacuzzi</li>
+            <li>Indoor & Outdoor Games Area</li>
+            <li>Landscape Gardens & Ample Parks</li>
+        </ul>
         <div class="amenities-description">
             <p class="amenities-description-desktop">Discover an unparalleled lifestyle at Dream World City in Joka,
                 where every amenity elevates your living experience. Enjoy Club Hollywood, stay fit at the health club
