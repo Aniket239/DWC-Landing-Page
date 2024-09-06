@@ -297,10 +297,10 @@
     <section class="amenities" id="amenities">
         <h1>Amenities</h1>
         <ul class="amenities-name-list">
-            <li>Air Condition Gym</li>
+            <li>Air-Conditioned Gym</li>
             <li>Swimming Pool & Jacuzzi</li>
             <li>Indoor & Outdoor Games Area</li>
-            <li>Landscape Gardens & Ample Parks</li>
+            <li>Landscaped Gardens & Ample Parks</li>
         </ul>
         <div class="amenities-description">
             <p class="amenities-description-desktop">Discover an unparalleled lifestyle at Dream World City in Joka,
